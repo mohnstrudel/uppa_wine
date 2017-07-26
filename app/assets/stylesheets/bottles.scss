@@ -1,3 +1,146 @@
 // Place all the styles related to the bottles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+/*Main block*/
+.mainWrapper {
+    width: 320px;
+    height: 535px;
+    background-image: asset-url('main_bottles.png');
+    display: flex;
+    
+    .logoUPPA {
+        width: 26px;
+        height: 30px;
+        background-image: asset-url('logo.png');
+        margin-top: 24px;
+        margin-left: 25px;
+        cursor: pointer;
+    }
+    
+    .hamburgerButton {
+        width: 17px;
+        height: 16px;
+        background-image: asset-url('hamburger.svg');
+        margin-top: 32px;
+        margin-left: 227.5px;
+        cursor: pointer;
+    }
+}
+
+/*Menu; hidden by default*/
+.menuWrapper {
+    position: absolute;
+    width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    
+    .buttonsContainer {
+        width: 265px;
+        height: 30px;
+        display: flex;
+        margin-left: 25px;
+        margin-top: 24px;
+        justify-content: space-between;
+        align-items: center;
+
+        .logoUPPA {
+            width: 26px;
+            height: 30px;
+            background-image: asset-url('logo.png');
+            cursor: pointer;
+        }
+
+        .hamburgerClose {
+            width: 15px;
+            height: 15px;
+            background-image: asset-url('hamburger_close.svg');
+            cursor: pointer;
+        }
+    }
+    
+    .listItemsWrapper {
+        width: 164px;
+        height: 175px;
+        margin-top: 87px;
+        margin-left: 25px;
+        
+        ul {
+            list-style: none;
+            
+            li > a {
+                text-decoration: none;
+                color: rgba(216,216,216,0.3);
+                cursor: pointer;
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+    }
+    
+    .contactsWrapper {
+        width: 141px;
+        height: 45px;
+        margin-top: 61px;
+        margin-left: 25px;
+        
+        ul {
+            list-style: none;
+            
+            li > a {
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 1.2px;
+                color: rgba(216,216,216,0.3);
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .socialWrapper {
+        width: 81px;
+        height: 14px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 68px;
+        margin-left: 25px;
+        
+        a {
+            cursor: pointer;
+        }
+        
+        .instagram {
+            background-image: asset-url('instagram.svg');
+            width: 13px;
+            height: 13px;
+        }
+        
+        .facebook {
+            background-image: asset-url('facebook.svg');
+            width: 8px;
+            height: 13px;
+        }
+        
+        .vkontakte {
+            background-image: asset-url('vk.svg');
+            width: 16px;
+            height: 10px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
