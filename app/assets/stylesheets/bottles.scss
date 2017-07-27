@@ -13,35 +13,45 @@ body {
 }
 /*Main block*/
 .mainWrapper {
-    width: 320px;
+    width: 100%;
     height: 535px;
     background-image: asset-url('main_bottles.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     
-    .logoUPPA {
-        width: 26px;
+    .buttonsContainer {
+        width: 265px;
         height: 30px;
-        background-image: asset-url('logo.png');
-        margin-top: 24px;
         margin-left: 25px;
-        cursor: pointer;
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .logoUPPA {
+            width: 26px;
+            height: 30px;
+            background-image: asset-url('logo.png');
+            cursor: pointer;
+        }
+
+        .hamburgerButton {
+            width: 17px;
+            height: 16px;
+            background-image: asset-url('hamburger.svg');
+            cursor: pointer;
+        }
+        
     }
     
-    .hamburgerButton {
-        width: 17px;
-        height: 16px;
-        background-image: asset-url('hamburger.svg');
-        margin-top: 32px;
-        margin-left: 227.5px;
-        cursor: pointer;
-    }
 }
 
 /*Menu; hidden by default*/
 .menuWrapper {
     position: absolute;
-    width: 320px;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #1A1A1A;
@@ -70,73 +80,163 @@ body {
         }
     }
     
-    .listItemsWrapper {
-        width: 164px;
-        height: 175px;
+    .menuContainer {
+        width: auto;
+        height: auto;
         margin-top: 87px;
         margin-left: 25px;
-        
-        ul {
-            list-style: none;
-            
-            li > a {
-                text-decoration: none;
-                color: rgba(216,216,216,0.3);
-                cursor: pointer;
-                font-size: 24px;
-                line-height: 35px;
-            }
-        }
-    }
-    
-    .contactsWrapper {
-        width: 141px;
-        height: 45px;
-        margin-top: 61px;
-        margin-left: 25px;
-        
-        ul {
-            list-style: none;
-            
-            li > a {
-                text-decoration: none;
-                font-size: 12px;
-                line-height: 20px;
-                letter-spacing: 1.2px;
-                color: rgba(216,216,216,0.3);
-                cursor: pointer;
-            }
-        }
-    }
-    
-    .socialWrapper {
-        width: 81px;
-        height: 14px;
         display: flex;
-        justify-content: space-between;
-        margin-top: 68px;
-        margin-left: 25px;
+        flex-flow: column nowrap;
         
-        a {
-            cursor: pointer;
+        .listItemsWrapper {
+            width: auto;
+            height: 175px;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                }
+
+                li > a {
+                    text-decoration: none;
+                    color: rgba(216,216,216,0.3);
+                    cursor: pointer;
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+
+                .listItem:hover > .arrowBig {
+                    width: 20px;
+                    height: 12px;
+                    background-image: asset-url('arrow_big.png');
+                    align-self: center;
+                    margin-left: 7px;
+                }
+
+                .listItem:hover > a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .contactsWrapper {
+            width: 141px;
+            height: 45px;
+            margin-top: 61px;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                }
+
+                li > a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: 1.2px;
+                    color: rgba(216,216,216,0.3);
+                    cursor: pointer;
+                }
+
+                .contactItem:hover > .arrowSmall {
+                    width: 10px;
+                    height: 7px;
+                    background-image: asset-url('arrow_small.png');
+                    align-self: center;
+                    margin-left: 5px;
+                }
+
+                .contactItem:hover > a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .socialWrapper {
+            width: 81px;
+            height: 14px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 68px;
+
+            a {
+                cursor: pointer;
+            }
+
+            .instagram {
+                background-image: asset-url('instagram.svg');
+                width: 13px;
+                height: 13px;
+            }
+
+            .facebook {
+                background-image: asset-url('facebook.svg');
+                width: 8px;
+                height: 13px;
+            }
+
+            .vkontakte {
+                background-image: asset-url('vk.svg');
+                width: 16px;
+                height: 10px;
+            }
+        }
+
+        .signature {
+            width: 65px;
+            height: 20px;
+            background-image: asset-url('pavel_sign.png');
+            margin-top: 65px;
+            margin-bottom: 20px;
         }
         
-        .instagram {
-            background-image: asset-url('instagram.svg');
-            width: 13px;
-            height: 13px;
-        }
+    }
+    
+}
+
+@media (min-width: 568px) and (orientation: landscape) {
+    
+    .mainWrapper {
+        height: 320px;
         
-        .facebook {
-            background-image: asset-url('facebook.svg');
-            width: 8px;
-            height: 13px;
+        .buttonsContainer {
+            width: 519px;
         }
+    }
+    
+    .menuWrapper {
+        height: 100vh;
         
-        .vkontakte {
-            background-image: asset-url('vk.svg');
-            width: 16px;
-            height: 10px;
+        .buttonsContainer {
+            width: 519px;
+        }
+
+        .menuContainer {
+            height: 175px;
+            flex-flow: column wrap;
+            align-content: flex-start;
+
+            .listItemsWrapper {
+                width: 191px;
+            }
+
+            .contactsWrapper {
+                margin-top: 0;
+                margin-left: 90px;
+            }
+
+            .socialWrapper {
+                margin-top: 106px;
+                margin-left: 90px;
+            }
+        }
+
+        .signature {
+            display: none;
         }
     }
 }
