@@ -8,7 +8,7 @@
 }
 
 html, body {
-    height: 100%;
+//    height: 100%;
     width: 100%;
 }
 
@@ -246,4 +246,368 @@ body {
 
 .hidden {
     display: none;
+}
+
+/*Bottles cascade*/
+
+.bottlesWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .upperBlock {
+        width: 100%;
+        height: 100vh;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #EEEDE7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 7px;
+
+        .buttonsContainer {
+            width: 100%;
+            height: 30px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logoUPPA {
+                width: 26px;
+                height: 30px;
+                background-image: asset-url('logo_black.png');
+                cursor: pointer;
+            }
+
+            .hamburgerButton {
+                width: 17px;
+                height: 16px;
+                background-image: asset-url('hamburger_black.svg');
+                cursor: pointer;
+            }
+
+        }
+
+        .bottleImage {
+            width: 114px;
+            height: 427px;
+            align-self: center;
+            background-image: asset-url('bottles/first.png');
+            margin-top: -7px;
+        }
+
+        .bottleDescription {
+            width: auto;
+            height: 45px;
+            display: flex;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+
+            .wineDescription {
+                width: auto;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .arrowWine {
+                background-image: asset-url('arrow_wine.svg');
+                width: 11px;
+                height: 5px;
+                align-self: center;
+            }
+        }
+    }
+    
+    .firstBottle {
+        width: 100%;
+        height: 100vh;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #EDE1C5;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 7px;
+        
+        .bottleImage {
+            width: 114px;
+            height: 427px;
+            align-self: center;
+            background-image: asset-url('bottles/first.png');
+            margin-top: 50px;
+        }
+        
+        .bottleDescription {
+            width: auto;
+            height: 45px;
+            display: flex;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+
+            .wineDescription {
+                width: auto;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .arrowWine {
+                background-image: asset-url('arrow_wine.svg');
+                width: 11px;
+                height: 5px;
+                align-self: center;
+            }
+        }
+    }
+    
+    .secondBottle {
+        width: 100%;
+        height: 100vh;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #DBC2C5;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 7px;
+
+        .bottleImage {
+            width: 114px;
+            height: 413px;
+            align-self: center;
+            background-image: asset-url('bottles/second.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+        }
+
+        .bottleDescription {
+            width: auto;
+            height: 45px;
+            display: flex;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+
+            .wineDescription {
+                width: auto;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .arrowWine {
+                background-image: asset-url('arrow_wine.svg');
+                width: 11px;
+                height: 5px;
+                align-self: center;
+            }
+        }
+    }
+    
+    .thirdBottle {
+        width: 100%;
+        height: 100vh;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #EAE6D7;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 7px;
+
+        .bottleImage {
+            width: 114px;
+            height: 427px;
+            align-self: center;
+            background-image: asset-url('bottles/third.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+        }
+
+        .bottleDescription {
+            width: auto;
+            height: 45px;
+            display: flex;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+
+            .wineDescription {
+                width: auto;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .arrowWine {
+                background-image: asset-url('arrow_wine.svg');
+                width: 11px;
+                height: 5px;
+                align-self: center;
+            }
+        }
+    }
+    
+    .fourthBottle {
+        width: 100%;
+        height: 100vh;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #C5BEAA;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 7px;
+
+        .bottleImage {
+            width: 114px;
+            height: 427px;
+            align-self: center;
+            background-image: asset-url('bottles/fourth.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+        }
+
+        .bottleDescription {
+            width: auto;
+            height: 45px;
+            display: flex;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+
+            .wineDescription {
+                width: auto;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .arrowWine {
+                background-image: asset-url('arrow_wine.svg');
+                width: 11px;
+                height: 5px;
+                align-self: center;
+            }
+        }
+    }
+    
+    .fifthBottle {
+        width: 100%;
+        height: 100vh;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #BBB77A;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 7px;
+
+        .bottleImage {
+            width: 114px;
+            height: 427px;
+            align-self: center;
+            background-image: asset-url('bottles/fifth.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+        }
+
+        .bottleDescription {
+            width: auto;
+            height: 45px;
+            display: flex;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+
+            .wineDescription {
+                width: auto;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .arrowWine {
+                background-image: asset-url('arrow_wine.svg');
+                width: 11px;
+                height: 5px;
+                align-self: center;
+            }
+        }
+    }
+    
+    .sixthBottle {
+        width: 100%;
+        height: 100vh;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #FFEFE5;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 7px;
+
+        .bottleImage {
+            width: 114px;
+            height: 427px;
+            align-self: center;
+            background-image: asset-url('bottles/sixth.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+        }
+
+        .bottleDescription {
+            width: auto;
+            height: 45px;
+            display: flex;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+
+            .wineDescription {
+                width: auto;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .arrowWine {
+                background-image: asset-url('arrow_wine.svg');
+                width: 11px;
+                height: 5px;
+                align-self: center;
+            }
+        }
+    }
 }
