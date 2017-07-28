@@ -19,7 +19,7 @@ body {
 /*Main block*/
 .mainWrapper {
     width: 100%;
-    height: 535px;
+    height: 100%;
     padding-left: 25px;
     padding-right: 25px;
     background-image: asset-url('main_bottles.png');
@@ -216,10 +216,6 @@ body {
     
     .menuWrapper {
         height: 100vh;
-        
-        .buttonsContainer {
-            width: 519px;
-        }
 
         .menuContainer {
             height: 175px;
