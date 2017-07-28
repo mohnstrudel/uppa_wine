@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -15,15 +20,16 @@ body {
 .mainWrapper {
     width: 100%;
     height: 535px;
+    padding-left: 25px;
+    padding-right: 25px;
     background-image: asset-url('main_bottles.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     
     .buttonsContainer {
-        width: 265px;
+        width: 100%;
         height: 30px;
-        margin-left: 25px;
         margin-top: 24px;
         display: flex;
         justify-content: space-between;
@@ -52,15 +58,16 @@ body {
     position: absolute;
     width: 100%;
     height: auto;
+    padding-left: 25px;
+    padding-right: 25px;
     display: flex;
     flex-direction: column;
     background-color: #1A1A1A;
     
     .buttonsContainer {
-        width: 265px;
+        width: 100%;
         height: 30px;
         display: flex;
-        margin-left: 25px;
         margin-top: 24px;
         justify-content: space-between;
         align-items: center;
@@ -84,7 +91,6 @@ body {
         width: auto;
         height: auto;
         margin-top: 87px;
-        margin-left: 25px;
         display: flex;
         flex-flow: column nowrap;
         
@@ -112,6 +118,7 @@ body {
                     height: 12px;
                     background-image: asset-url('arrow_big.png');
                     align-self: center;
+                    margin-top: 7px;
                     margin-left: 7px;
                 }
 
@@ -147,6 +154,7 @@ body {
                     height: 7px;
                     background-image: asset-url('arrow_small.png');
                     align-self: center;
+                    margin-top: 3px;
                     margin-left: 5px;
                 }
 
@@ -161,6 +169,7 @@ body {
             height: 14px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin-top: 68px;
 
             a {
@@ -201,7 +210,8 @@ body {
 @media (min-width: 568px) and (orientation: landscape) {
     
     .mainWrapper {
-        height: 320px;
+        height: 100%;
+        background-position: 0 15%;
         
         .buttonsContainer {
             width: 519px;
@@ -217,6 +227,7 @@ body {
 
         .menuContainer {
             height: 175px;
+            margin-top: 69.5px;
             flex-flow: column wrap;
             align-content: flex-start;
 
