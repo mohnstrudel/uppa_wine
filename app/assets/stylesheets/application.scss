@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+$wineDesc: #000;
+$menuBackground: #1A1A1A;
+$linkColor: rgba(216,216,216,0.3);
+$linkColorHover: #fff;
+
+@import "shared.scss";
+@import "bottles/home.scss";
+@import "bottles/index.scss";

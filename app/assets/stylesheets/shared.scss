@@ -1,0 +1,36 @@
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 30px;
+    margin-top: 24px;
+
+    .logoUPPA {
+        width: 26px;
+        height: 30px;
+
+        cursor: pointer;
+
+        background-image: asset-url('logo.png');
+    }
+
+    .hamburgerButton {
+        width: 17px;
+        height: 16px;
+
+        cursor: pointer;
+
+        background-image: asset-url('hamburger.svg');
+    }
+
+    .hamburgerClose {
+        width: 15px;
+        height: 15px;
+
+        cursor: pointer;
+
+        background-image: asset-url('hamburger_close.svg');
+    }
+}
