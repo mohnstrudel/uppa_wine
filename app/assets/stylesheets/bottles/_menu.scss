@@ -151,16 +151,18 @@
             flex-flow: row nowrap;
 
             padding-top: 120px;
+        }
 
-            .contactsWrapper {
-                margin-left: 90px;
-                padding-top: 5px;
-            }
+        .menuFooter {
+          margin-left: 90px;
 
-            .socialWrapper {
-                margin-left: 90px;
-                padding-top: 40px;
-            }
+          .contactsWrapper {
+              padding-top: 5px;
+          }
+
+          .socialWrapper {
+              padding-top: 40px;
+          }
         }
 
         .signature {
