@@ -8,29 +8,32 @@
     height: auto;
     
     .bottle {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         width: 100%;
         height: 100vh;
-        padding: 0 25px 7px 25px;
         
         .bottleImage {
             align-self: center;
 
-            width: 114px;
+            width: auto;
             height: auto;
-            
-            background-repeat: no-repeat;
-            background-position: center;
+            min-height: 85%;
+            max-height: 100%;
+            padding-top: 15vh;
         }
         
         .bottleDescription {
+            position: absolute;
             display: flex;
 
             width: auto;
             height: 45px;
+            bottom: 10px;
+            left: 25px;
 
             letter-spacing: 1.5px;
 
@@ -72,66 +75,29 @@
                 background-image: asset-url('hamburger_black.svg');
             }
         }
-
-        .bottleImage {
-            margin-top: 50px;
-        }
-
     }
 
     .firstBottle {
         background-color: #EDE1C5;
-
-        .bottleImage {
-            margin-top: 50px;
-        }
     }
 
     .secondBottle {
         background-color: #DBC2C5;
-
-        .bottleImage {
-            margin-top: 50px;
-        }
     }
 
     .thirdBottle {
         background-color: #EAE6D7;
-
-        .bottleImage {
-            margin-top: 50px;
-
-            background-image: asset-url('bottles/third.png');
-        }
     }
 
     .fourthBottle {
         background-color: #C5BEAA;
-
-        .bottleImage {
-            margin-top: 50px;
-
-            background-image: asset-url('bottles/fourth.png');
-        }
     }
 
     .fifthBottle {
         background-color: #BBB77A;
-
-        .bottleImage {
-            margin-top: 50px;
-
-            background-image: asset-url('bottles/fifth.png');
-        }
     }
 
     .sixthBottle {
         background-color: #FFEFE5;
-
-        .bottleImage {
-            margin-top: 50px;
-
-            background-image: asset-url('bottles/sixth.png');
-        }
     }
 }
