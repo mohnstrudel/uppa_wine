@@ -6,8 +6,8 @@
 
     width: 100%;
     height: auto;
-
-    .upperBlock {
+    
+    .bottle {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -15,7 +15,52 @@
         width: 100%;
         height: 100vh;
         padding: 0 25px 7px 25px;
+        
+        .bottleImage {
+            align-self: center;
 
+            width: 114px;
+            height: auto;
+            
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .bottleDescription {
+            display: flex;
+
+            width: auto;
+            height: 45px;
+
+            letter-spacing: 1.5px;
+
+            font-size: 10px;
+            line-height: 15px;
+
+            .wineDescription {
+                display: flex;
+                flex-direction: column;
+
+                width: auto;
+                height: 45px;
+
+                text-decoration: none;
+
+                color: $wineDesc;
+            }
+
+            .arrowWine {
+                align-self: center;
+
+                width: 11px;
+                height: 5px;
+
+                background-image: asset-url('arrow_wine.svg');
+            }
+        }
+    }
+
+    .upperBlock {
         background-color: #EEEDE7;
 
         .buttonsContainer {
@@ -29,410 +74,64 @@
         }
 
         .bottleImage {
-            align-self: center;
-
-            width: 114px;
-            height: 427px;
-            margin-top: -7px;
-
-            background-image: asset-url('bottles/first.png');
+            margin-top: 50px;
         }
 
-        .bottleDescription {
-            display: flex;
-
-            width: auto;
-            height: 45px;
-
-            letter-spacing: 1.5px;
-
-            font-size: 10px;
-            line-height: 15px;
-
-            .wineDescription {
-                display: flex;
-                flex-direction: column;
-
-                width: auto;
-                height: 45px;
-
-                text-decoration: none;
-
-                color: $wineDesc;
-            }
-
-            .arrowWine {
-                align-self: center;
-
-                width: 11px;
-                height: 5px;
-
-                background-image: asset-url('arrow_wine.svg');
-            }
-        }
     }
 
     .firstBottle {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        width: 100%;
-        height: 100vh;
-        padding-right: 25px;
-        padding-bottom: 7px;
-        padding-left: 25px;
-
         background-color: #EDE1C5;
 
         .bottleImage {
-            align-self: center;
-
-            width: 114px;
-            height: 427px;
             margin-top: 50px;
-
-            background-image: asset-url('bottles/first.png');
-        }
-
-        .bottleDescription {
-            display: flex;
-
-            width: auto;
-            height: 45px;
-
-            letter-spacing: 1.5px;
-
-            font-size: 10px;
-            line-height: 15px;
-
-            .wineDescription {
-                display: flex;
-                flex-direction: column;
-
-                width: auto;
-                height: 45px;
-
-                text-decoration: none;
-
-                color: $wineDesc;
-            }
-
-            .arrowWine {
-                align-self: center;
-
-                width: 11px;
-                height: 5px;
-
-                background-image: asset-url('arrow_wine.svg');
-            }
         }
     }
 
     .secondBottle {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        width: 100%;
-        height: 100vh;
-        padding-right: 25px;
-        padding-bottom: 7px;
-        padding-left: 25px;
-
         background-color: #DBC2C5;
 
         .bottleImage {
-            align-self: center;
-
-            width: 114px;
-            height: 413px;
             margin-top: 50px;
-
-            background-image: asset-url('bottles/second.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .bottleDescription {
-            display: flex;
-
-            width: auto;
-            height: 45px;
-
-            letter-spacing: 1.5px;
-
-            font-size: 10px;
-            line-height: 15px;
-
-            .wineDescription {
-                display: flex;
-                flex-direction: column;
-
-                width: auto;
-                height: 45px;
-
-                text-decoration: none;
-
-                color: $wineDesc;
-            }
-
-            .arrowWine {
-                align-self: center;
-
-                width: 11px;
-                height: 5px;
-
-                background-image: asset-url('arrow_wine.svg');
-            }
         }
     }
 
     .thirdBottle {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        width: 100%;
-        height: 100vh;
-        padding-right: 25px;
-        padding-bottom: 7px;
-        padding-left: 25px;
-
         background-color: #EAE6D7;
 
         .bottleImage {
-            align-self: center;
-
-            width: 114px;
-            height: 427px;
             margin-top: 50px;
 
             background-image: asset-url('bottles/third.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .bottleDescription {
-            display: flex;
-
-            width: auto;
-            height: 45px;
-
-            letter-spacing: 1.5px;
-
-            font-size: 10px;
-            line-height: 15px;
-
-            .wineDescription {
-                display: flex;
-                flex-direction: column;
-
-                width: auto;
-                height: 45px;
-
-                text-decoration: none;
-
-                color: $wineDesc;
-            }
-
-            .arrowWine {
-                align-self: center;
-
-                width: 11px;
-                height: 5px;
-
-                background-image: asset-url('arrow_wine.svg');
-            }
         }
     }
 
     .fourthBottle {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        width: 100%;
-        height: 100vh;
-        padding-right: 25px;
-        padding-bottom: 7px;
-        padding-left: 25px;
-
         background-color: #C5BEAA;
 
         .bottleImage {
-            align-self: center;
-
-            width: 114px;
-            height: 427px;
             margin-top: 50px;
 
             background-image: asset-url('bottles/fourth.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .bottleDescription {
-            display: flex;
-
-            width: auto;
-            height: 45px;
-
-            letter-spacing: 1.5px;
-
-            font-size: 10px;
-            line-height: 15px;
-
-            .wineDescription {
-                display: flex;
-                flex-direction: column;
-
-                width: auto;
-                height: 45px;
-
-                text-decoration: none;
-
-                color: $wineDesc;
-            }
-
-            .arrowWine {
-                align-self: center;
-
-                width: 11px;
-                height: 5px;
-
-                background-image: asset-url('arrow_wine.svg');
-            }
         }
     }
 
     .fifthBottle {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        width: 100%;
-        height: 100vh;
-        padding-right: 25px;
-        padding-bottom: 7px;
-        padding-left: 25px;
-
         background-color: #BBB77A;
 
         .bottleImage {
-            align-self: center;
-
-            width: 114px;
-            height: 427px;
             margin-top: 50px;
 
             background-image: asset-url('bottles/fifth.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .bottleDescription {
-            display: flex;
-
-            width: auto;
-            height: 45px;
-
-            letter-spacing: 1.5px;
-
-            font-size: 10px;
-            line-height: 15px;
-
-            .wineDescription {
-                display: flex;
-                flex-direction: column;
-
-                width: auto;
-                height: 45px;
-
-                text-decoration: none;
-
-                color: $wineDesc;
-            }
-
-            .arrowWine {
-                align-self: center;
-
-                width: 11px;
-                height: 5px;
-
-                background-image: asset-url('arrow_wine.svg');
-            }
         }
     }
 
     .sixthBottle {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        width: 100%;
-        height: 100vh;
-        padding-right: 25px;
-        padding-bottom: 7px;
-        padding-left: 25px;
-
         background-color: #FFEFE5;
 
         .bottleImage {
-            align-self: center;
-
-            width: 114px;
-            height: 427px;
             margin-top: 50px;
 
             background-image: asset-url('bottles/sixth.png');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .bottleDescription {
-            display: flex;
-
-            width: auto;
-            height: 45px;
-
-            letter-spacing: 1.5px;
-
-            font-size: 10px;
-            line-height: 15px;
-
-            .wineDescription {
-                display: flex;
-                flex-direction: column;
-
-                width: auto;
-                height: 45px;
-
-                text-decoration: none;
-
-                color: $wineDesc;
-            }
-
-            .arrowWine {
-                align-self: center;
-
-                width: 11px;
-                height: 5px;
-
-                background-image: asset-url('arrow_wine.svg');
-            }
         }
     }
 }
