@@ -1,161 +1,12 @@
-/*Main block*/
 .mainWrapper {
     display: flex;
 
     width: 100%;
     height: 100%;
-    padding: 0 25px;
 
     background-image: asset-url('main_bottles.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/*Menu; hidden by default*/
-.menuWrapper {
-    position: absolute;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    height: 100%;
-    padding-right: 25px;
-    padding-left: 25px;
-
-    background-color: $menuBackground;
-
-    .menuContainer {
-        display: flex;
-        flex-flow: column nowrap;
-
-        width: auto;
-        height: auto;
-        margin-top: 87px;
-
-        .listItemsWrapper {
-            width: auto;
-            height: 175px;
-
-            ul {
-                list-style: none;
-
-                li {
-                    display: flex;
-                }
-
-                li > a {
-                    cursor: pointer;
-                    text-decoration: none;
-
-                    color: $linkColor;
-
-                    font-size: 24px;
-                    line-height: 35px;
-                }
-
-                .listItem:hover > .arrowBig {
-                    align-self: center;
-
-                    width: 20px;
-                    height: 12px;
-                    margin-top: 7px;
-                    margin-left: 7px;
-
-                    background-image: asset-url('arrow_big.png');
-                }
-
-                .listItem:hover > a {
-                    color: $linkColorHover;
-                }
-            }
-        }
-
-        .contactsWrapper {
-            width: 141px;
-            height: 45px;
-            margin-top: 61px;
-
-            ul {
-                list-style: none;
-
-                li {
-                    display: flex;
-                }
-
-                li > a {
-                    cursor: pointer;
-                    text-decoration: none;
-                    letter-spacing: 1.2px;
-
-                    color: $linkColor;
-
-                    font-size: 12px;
-                    line-height: 20px;
-                }
-
-                .contactItem:hover > .arrowSmall {
-                    align-self: center;
-
-                    width: 10px;
-                    height: 7px;
-                    margin-top: 3px;
-                    margin-left: 5px;
-
-                    background-image: asset-url('arrow_small.png');
-                }
-
-                .contactItem:hover > a {
-                    color: $linkColorHover;
-                }
-            }
-        }
-
-        .socialWrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            width: 81px;
-            height: 14px;
-            margin-top: 68px;
-
-            a {
-                cursor: pointer;
-            }
-
-            .instagram {
-                width: 13px;
-                height: 13px;
-
-                background-image: asset-url('instagram.svg');
-            }
-
-            .facebook {
-                width: 8px;
-                height: 13px;
-
-                background-image: asset-url('facebook.svg');
-            }
-
-            .vkontakte {
-                width: 16px;
-                height: 10px;
-
-                background-image: asset-url('vk.svg');
-            }
-        }
-
-        .signature {
-            width: 65px;
-            height: 20px;
-            margin-top: 65px;
-            margin-bottom: 20px;
-
-            background-image: asset-url('pavel_sign.png');
-        }
-
-    }
 }
 
 .hidden {
@@ -163,40 +14,7 @@
 }
 
 @media (min-width: 568px) and (orientation: landscape) {
-
     .mainWrapper {
-        height: 100%;
-
         background-position: 0 15%;
-    }
-
-    .menuWrapper {
-        height: 100vh;
-
-        .menuContainer {
-            align-content: flex-start;
-            flex-flow: column wrap;
-
-            height: 175px;
-            margin-top: 69.5px;
-
-            .listItemsWrapper {
-                width: 191px;
-            }
-
-            .contactsWrapper {
-                margin-top: 0;
-                margin-left: 90px;
-            }
-
-            .socialWrapper {
-                margin-top: 106px;
-                margin-left: 90px;
-            }
-        }
-
-        .signature {
-            display: none;
-        }
     }
 }

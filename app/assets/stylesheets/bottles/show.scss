@@ -1,0 +1,13 @@
+.showWrapper {
+  background-color: $pageBackground;
+
+  .buttonsContainer {
+      .logoUPPA {
+          background-image: asset-url('logo_black.png');
+      }
+
+      .hamburgerButton {
+          background-image: asset-url('hamburger_black.svg');
+      }
+  }
+}
