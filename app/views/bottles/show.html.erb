@@ -1,7 +1,6 @@
-<%= render "menu" %>
+<%= render "menu", is_black: true %>
 
 <div class="showWrapper">
-    <%= render "nav" %>
     <!--Выбор-->
     <div class="choice">
 		<div class="arrowBalance"></div><!--invisible helper element for symmetry-->
@@ -15,34 +14,34 @@
     <!--Содержание спирта и кислотность-->
     <table class="title">
     	<tr>
-    		<td class="spiritAcid">спирт</td>
+    		<td class="tableRowName">спирт</td>
     		<td>12,1%</td>
     	</tr>
     	<tr>
-			<td class="spiritAcid">кислотность</td>
+  			<td class="tableRowName">кислотность</td>
     		<td>5,9 г/л</td>
     	</tr>
     </table>
     <!--Внешний вид-->
-	<div class="appearance title">внешний вид</div>
-	<div class="appearanceDesc description">Желтовато-соломенного цвета насыщенное вино. Маслянистое.</div>
-	
+	<h3 class="title">внешний вид</h3>
+	<p class="description">Желтовато-соломенного цвета насыщенное вино. Маслянистое.</p>
+
 	<!--Аромат-->
-	<div class="aroma title">аромат</div>
-	<div class="aromaDesc description">Характерный для данного типа вин. Ваниль, полевые цветы, запах корочки ржаного хлеба, акация, медоносы.</div>
-	
+	<h3 class="title">аромат</h3>
+	<p class="description">Характерный для данного типа вин. Ваниль, полевые цветы, запах корочки ржаного хлеба, акация, медоносы.</p>
+
 	<!--Вкус-->
-	<div class="taste title">вкус</div>
-	<div class="tasteDesc description">Насыщенное, округлое вино, с приятной кислотностью, маслянистое, полнотелое.</div>
-	
+	<h3 class="title">вкус</h3>
+	<p class="description">Насыщенное, округлое вино, с приятной кислотностью, маслянистое, полнотелое.</p>
+
 	<!--Период созревания-->
-	<div class="expectedRipeness title">ожидаемый период зрелости</div>
-	<div class="ripenessYears description">2016 – 2020 год</div>
-	
+	<h3 class="title">ожидаемый период зрелости</h3>
+	<p class="description">2016 – 2020 год</p>
+
 	<!--Рекомаендации-->
-	<div class="recomendations title">гастрономические рекомендации</div>
-	<div class="recomendationsDesc description">Горячие блюда из птицы, пернатая дичь, свинина, запеченная в тесте, горячие блюда из морепродуктов и сливочными соусами.</div>
-	
+	<h3 class="title">гастрономические рекомендации</h3>
+	<p class="description">Горячие блюда из птицы, пернатая дичь, свинина, запеченная в тесте, горячие блюда из морепродуктов и сливочными соусами.</p>
+
 	<div class="footer">
 		<p>&copy; UPPA by Pavel Shvets</p>
 		<a href="#">Our name</a>
