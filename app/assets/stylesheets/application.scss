@@ -15,6 +15,7 @@ $linkColor: rgba(216,216,216,0.3);
 $linkColorHover: #fff;
 $pageBackground: #EEEDE7;
 
+@import "fonts.scss";
 @import "bottles/_menu.scss";
 @import "bottles/home.scss";
 @import "bottles/index.scss";
