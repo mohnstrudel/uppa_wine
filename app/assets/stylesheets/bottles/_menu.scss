@@ -221,3 +221,29 @@
         }
     }
 }
+
+@media (min-width: 800px) {
+	/*.buttonsContainer {
+		width: 50px;
+		height: 100%;
+		
+		padding: 36px 0 0 0;
+		top: 0;
+		
+		flex-direction: column;
+		
+		background-color: $menuBackground;
+		
+		.logoUPPA {
+			display: none;
+		}
+	}*/
+	
+	.menuWrapper {
+		left: -750px;
+	}
+	
+	.hidden {
+		display: block;
+	}
+}
