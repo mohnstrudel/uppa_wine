@@ -1,7 +1,7 @@
 <div id="menu" class="menuWrapper hidden">
-    <div class="buttonsContainer buttonsContainer--close">
+    <div class="menuHeader">
         <div class="logoUPPA"></div>
-        <div id="burgerCloseBtn" class="hamburgerClose"></div>
+        <div id="menuHeaderCloseBtn" class="menuHeaderCloseBtn"></div>
     </div>
 
     <div class="menuContainer">
@@ -35,13 +35,13 @@
 </div>
 
 <% if is_black ||= false %>
-    <div class="buttonsContainer buttonsContainerBlack">
+    <div class="header headerBlack">
         <div class="logoUPPA"></div>
-        <div id="burger" class="hamburgerButton"></div>
+        <div id="headerOpenBtn" class="headerOpenBtn"></div>
     </div>
 <% else %>
-    <div class="buttonsContainer">
+    <div class="header">
         <div class="logoUPPA"></div>
-        <div id="burger" class="hamburgerButton"></div>
+        <div id="headerOpenBtn" class="headerOpenBtn"></div>
     </div>
 <% end %>

@@ -142,7 +142,8 @@
     }
 }
 
-.buttonsContainer {
+.menuHeader,
+.header {
     position: absolute;
     z-index: 5;
     top: 25px;
@@ -164,7 +165,7 @@
         background-image: asset-url('logo.png');
     }
 
-    .hamburgerButton {
+    &OpenBtn {
         width: 17px;
         height: 16px;
 
@@ -173,7 +174,7 @@
         background-image: asset-url('hamburger.svg');
     }
 
-    .hamburgerClose {
+    &CloseBtn {
         width: 15px;
         height: 15px;
 
@@ -183,12 +184,12 @@
     }
 }
 
-.buttonsContainer.buttonsContainerBlack {
+.header.headerBlack {
   .logoUPPA {
     background-image: asset-url('logo_black.png');
   }
 
-  .hamburgerButton {
+  &CloseBtn {
     background-image: asset-url('hamburger_black.svg');
   }
 }
