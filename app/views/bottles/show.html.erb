@@ -1,9 +1,49 @@
-<%= render "menu" %>
+<%= render "menu", is_black: true %>
 
 <div class="showWrapper">
-    <%= render "nav" %>
-    <br />
-    <br />
-    <br />
-    <h1>Страница одной бутылки</h1>
+    <!--Выбор-->
+    <div class="choice">
+		<div class="arrowBalance"></div><!--invisible helper element for symmetry-->
+    	<div class="year">2016</div>
+    	<div class="arrow"></div>
+    </div>
+    <!--Имя бренда-->
+    <div class="brandName title">CLER POLATI</div>
+    <!--Сорт винограда-->
+    <div class="grapeVariety">Chardonay 2016</div>
+    <!--Содержание спирта и кислотность-->
+    <table class="title">
+    	<tr>
+    		<td class="tableRowName">спирт</td>
+    		<td>12,1%</td>
+    	</tr>
+    	<tr>
+  			<td class="tableRowName">кислотность</td>
+    		<td>5,9 г/л</td>
+    	</tr>
+    </table>
+    <!--Внешний вид-->
+	<h3 class="title">внешний вид</h3>
+	<p class="description">Желтовато-соломенного цвета насыщенное вино. Маслянистое.</p>
+
+	<!--Аромат-->
+	<h3 class="title">аромат</h3>
+	<p class="description">Характерный для данного типа вин. Ваниль, полевые цветы, запах корочки ржаного хлеба, акация, медоносы.</p>
+
+	<!--Вкус-->
+	<h3 class="title">вкус</h3>
+	<p class="description">Насыщенное, округлое вино, с приятной кислотностью, маслянистое, полнотелое.</p>
+
+	<!--Период созревания-->
+	<h3 class="title">ожидаемый период зрелости</h3>
+	<p class="description">2016 – 2020 год</p>
+
+	<!--Рекомаендации-->
+	<h3 class="title">гастрономические рекомендации</h3>
+	<p class="description">Горячие блюда из птицы, пернатая дичь, свинина, запеченная в тесте, горячие блюда из морепродуктов и сливочными соусами.</p>
+
+	<div class="footer">
+		<p>&copy; UPPA by Pavel Shvets</p>
+		<a href="#">Our name</a>
+	</div>
 </div>

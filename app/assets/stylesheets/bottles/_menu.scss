@@ -142,6 +142,57 @@
     }
 }
 
+.buttonsContainer {
+    position: absolute;
+    z-index: 5;
+    top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 30px;
+    padding: 0 25px;
+
+    .logoUPPA {
+        width: 26px;
+        height: 30px;
+
+        cursor: pointer;
+
+        background-image: asset-url('logo.png');
+    }
+
+    .hamburgerButton {
+        width: 17px;
+        height: 16px;
+
+        cursor: pointer;
+
+        background-image: asset-url('hamburger.svg');
+    }
+
+    .hamburgerClose {
+        width: 15px;
+        height: 15px;
+
+        cursor: pointer;
+
+        background-image: asset-url('hamburger_close.svg');
+    }
+}
+
+.buttonsContainer.buttonsContainerBlack {
+  .logoUPPA {
+    background-image: asset-url('logo_black.png');
+  }
+
+  .hamburgerButton {
+    background-image: asset-url('hamburger_black.svg');
+  }
+}
+
 
 @media (min-width: 568px) and (orientation: landscape) {
     .menuWrapper {
