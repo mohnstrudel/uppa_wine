@@ -32,8 +32,10 @@
 
                     color: $linkColor;
 
-                    font-size: 24px;
-                    line-height: 35px;
+					font-family: Kazimir-Regular;
+					font-size: 24px;
+					letter-spacing: 0;
+					line-height: 35px;
                 }
 
                 .listItem:hover > .arrowBig {
@@ -189,7 +191,7 @@
     background-image: asset-url('logo_black.png');
   }
 
-  &CloseBtn {
+  .headerOpenBtn {
     background-image: asset-url('hamburger_black.svg');
   }
 }
@@ -224,27 +226,76 @@
 }
 
 @media (min-width: 800px) {
-	/*.buttonsContainer {
-		width: 50px;
-		height: 100%;
-		
-		padding: 36px 0 0 0;
-		top: 0;
-		
-		flex-direction: column;
-		
-		background-color: $menuBackground;
-		
-		.logoUPPA {
-			display: none;
-		}
-	}*/
-	
 	.menuWrapper {
 		left: -750px;
+		
+		.menuHeader {
+			padding-right: 16px;
+			
+			&CloseBtn {
+				width: 17px;
+				height: 16px;
+				background-image: asset-url('hamburger.svg');
+			}
+		}
 	}
 	
-	.hidden {
-		display: block;
+	.header {
+		display: none;
+	}
+	
+	.open {
+		left: 0px;
+		width: 250px;
+		
+		.menuHeader {
+			top: 35px;
+			height: 45px;
+			padding: 0 30px 0 38px;
+			
+			align-items: flex-start;
+			
+			.logoUPPA {
+				width: 38px;
+				height: 45px;
+				
+				background-size: cover;
+				background-position: center;
+			}
+			
+			&CloseBtn {
+				width: 15px;
+				height: 15px;
+				background-image: asset-url('hamburger_close.svg');
+			}
+		}
+		
+		.menuContainer {
+			flex-wrap: wrap;
+			padding: 140px 38px 0;
+			
+			.menuFooter {
+				margin-left: 0px;
+				padding-top: 36px;
+				
+				.contactsWrapper {
+					padding-top: 0;
+				}
+				
+				.contactsWrapper li:first-child {
+					margin-bottom: 5px;
+				}
+				
+				.socialWrapper {
+					padding-top: 53px;
+				}
+				
+				.signature {
+					display: flex;
+					margin-top: 53px;
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 }

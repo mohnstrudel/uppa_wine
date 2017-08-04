@@ -23,4 +23,12 @@
 	.mainWrapper {
 		background-image: asset-url('main_bottles_800.png');
 	}
+	
+	.open {
+		background-position: 250px;
+	}
+	
+	.hidden {
+		display: inherit;
+	}
 }
