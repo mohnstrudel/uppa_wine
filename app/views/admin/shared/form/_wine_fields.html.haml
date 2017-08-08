@@ -1,0 +1,62 @@
+-if object.respond_to?(:harvest_year)
+  .form-group
+    %label.col-lg-2.control-label Год урожая
+    .col-lg-10
+      =f.text_field :harvest_year, class: "form-control"
+  .hr-line-dashed
+
+-if object.respond_to?(:bottle_amount)
+  .form-group
+    %label.col-lg-2.control-label Кол-во бутылок
+    .col-lg-10
+      =f.number_field :bottle_amount, class: "form-control"
+  .hr-line-dashed
+
+-if object.respond_to?(:spirit)
+  .form-group
+    %label.col-lg-2.control-label Процент алкоголя
+    .col-lg-10
+      =f.text_field :spirit, class: "form-control"
+  .hr-line-dashed
+
+-if object.respond_to?(:oxygen)
+  .form-group
+    %label.col-lg-2.control-label Насыщенность кислородом
+    .col-lg-10
+      =f.text_field :oxygen, class: "form-control"
+  .hr-line-dashed
+
+-if object.respond_to?(:aroma)
+  .form-group
+    %label.col-lg-2.control-label Аромат
+    .col-lg-10
+      =f.text_field :aroma, class: "form-control"
+  .hr-line-dashed
+
+-if object.respond_to?(:looks)
+  .form-group
+    %label.col-lg-2.control-label Внешний вид
+    .col-lg-10
+      =f.text_field :looks, class: "form-control"
+  .hr-line-dashed
+
+-if object.respond_to?(:taste)
+  .form-group
+    %label.col-lg-2.control-label Вкус
+    .col-lg-10
+      =f.text_field :taste, class: "form-control"
+  .hr-line-dashed
+
+-if object.respond_to?(:recommendations)
+  .form-group
+    %label.col-lg-2.control-label Рекомендации
+    .col-lg-10
+      =f.text_area :recommendations, class: "form-control", rows: 8
+  .hr-line-dashed
+
+-if object.respond_to?(:aging_period)
+  .form-group
+    %label.col-lg-2.control-label Период созревания
+    .col-lg-10
+      =f.text_field :aging_period, class: "form-control"
+  .hr-line-dashed

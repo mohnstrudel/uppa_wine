@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+$wineDesc: #000;
+$menuBackground: #1A1A1A;
+$linkColor: rgba(216,216,216,0.3);
+$linkColorHover: #fff;
+$pageBackground: #EEEDE7;
+
+@import "fonts.scss";
+@import "front/wines/_menu.scss";
+@import "front/wines/home.scss";
+@import "front/wines/index.scss";
+@import "front/wines/show.scss";
