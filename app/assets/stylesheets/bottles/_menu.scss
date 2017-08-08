@@ -1,0 +1,223 @@
+.menuWrapper {
+    position: fixed;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $menuBackground;
+
+    .menuContainer {
+        display: flex;
+        flex-flow: column nowrap;
+
+        width: auto;
+        height: auto;
+        padding: 140px 25px 0;
+
+        .listItemsWrapper {
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                }
+
+                li > a {
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    color: $linkColor;
+
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+
+                .listItem:hover > .arrowBig {
+                    align-self: center;
+
+                    width: 20px;
+                    height: 12px;
+                    margin-top: 7px;
+                    margin-left: 7px;
+
+                    background-image: asset-url('arrow_big.png');
+                }
+
+                .listItem:hover > a {
+                    color: $linkColorHover;
+                }
+            }
+        }
+
+        .menuFooter {
+          display: flex;
+          flex-flow: column nowrap;
+        }
+
+        .contactsWrapper {
+            padding-top: 60px;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                }
+
+                li > a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    letter-spacing: 1.2px;
+
+                    color: $linkColor;
+
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+
+                .contactItem:hover > .arrowSmall {
+                    align-self: center;
+
+                    width: 10px;
+                    height: 7px;
+                    margin-top: 3px;
+                    margin-left: 5px;
+
+                    background-image: asset-url('arrow_small.png');
+                }
+
+                .contactItem:hover > a {
+                    color: $linkColorHover;
+                }
+            }
+        }
+
+        .socialWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 80px;
+            padding-top: 70px;
+
+            a {
+                cursor: pointer;
+            }
+
+            .instagram {
+                width: 13px;
+                height: 13px;
+
+                background-image: asset-url('instagram.svg');
+            }
+
+            .facebook {
+                width: 8px;
+                height: 13px;
+
+                background-image: asset-url('facebook.svg');
+            }
+
+            .vkontakte {
+                width: 16px;
+                height: 10px;
+
+                background-image: asset-url('vk.svg');
+            }
+        }
+
+        .signature {
+            width: 65px;
+            height: 20px;
+            margin-top: 65px;
+            margin-bottom: 20px;
+
+            background-image: asset-url('pavel_sign.png');
+        }
+
+    }
+}
+
+.buttonsContainer {
+    position: absolute;
+    z-index: 5;
+    top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 30px;
+    padding: 0 25px;
+
+    .logoUPPA {
+        width: 26px;
+        height: 30px;
+
+        cursor: pointer;
+
+        background-image: asset-url('logo.png');
+    }
+
+    .hamburgerButton {
+        width: 17px;
+        height: 16px;
+
+        cursor: pointer;
+
+        background-image: asset-url('hamburger.svg');
+    }
+
+    .hamburgerClose {
+        width: 15px;
+        height: 15px;
+
+        cursor: pointer;
+
+        background-image: asset-url('hamburger_close.svg');
+    }
+}
+
+.buttonsContainer.buttonsContainerBlack {
+  .logoUPPA {
+    background-image: asset-url('logo_black.png');
+  }
+
+  .hamburgerButton {
+    background-image: asset-url('hamburger_black.svg');
+  }
+}
+
+
+@media (min-width: 568px) and (orientation: landscape) {
+    .menuWrapper {
+        height: 100vh;
+
+        .menuContainer {
+            flex-flow: row nowrap;
+
+            padding-top: 120px;
+        }
+
+        .menuFooter {
+          margin-left: 90px;
+
+          .contactsWrapper {
+              padding-top: 5px;
+          }
+
+          .socialWrapper {
+              padding-top: 40px;
+          }
+        }
+
+        .signature {
+            display: none;
+        }
+    }
+}
