@@ -10,14 +10,56 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170725180307) do
+ActiveRecord::Schema.define(version: 20170806113543) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "bottles", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "opening_hours", force: :cascade do |t|
+    t.string "title"
+    t.string "value"
+    t.bigint "setting_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["setting_id"], name: "index_opening_hours_on_setting_id"
+  end
+
+  create_table "settings", force: :cascade do |t|
+    t.string "url"
+    t.string "logo"
+    t.text "description"
+    t.text "address"
+    t.string "email"
+    t.float "long"
+    t.float "lat"
+    t.string "facebook"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.hstore "opening_hours"
+  end
+
+  create_table "wines", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "harvest_year"
+    t.integer "bottle_amount"
+    t.string "spirit"
+    t.string "oxygen"
+    t.string "aroma"
+    t.string "looks"
+    t.string "taste"
+    t.text "recommendations"
+    t.string "aging_period"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "opening_hours", "settings"
 end
