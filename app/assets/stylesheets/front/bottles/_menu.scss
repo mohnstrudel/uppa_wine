@@ -8,7 +8,7 @@
 	width: 100%;
 	height: 100%;
 
-	background-color: $menuBackground;
+	background-color: #1A1A1A;
 
 	.menuBody {
 		display: flex;
@@ -31,7 +31,7 @@
 					text-decoration: none;
 					letter-spacing: 0;
 
-					color: $linkColor;
+					color: rgba(216,216,216,0.3);
 
 					font-family: Kazimir-Regular;
 					font-size: 24px;
@@ -50,7 +50,7 @@
 				}
 
 				.listItem:hover > a {
-					color: $linkColorHover;
+					color: #fff;
 				}
 			}
 		}
@@ -75,7 +75,7 @@
 					text-decoration: none;
 					letter-spacing: 1.2px;
 
-					color: $linkColor;
+					color: rgba(216,216,216,0.3);
 
 					font-size: 12px;
 					line-height: 20px;
@@ -93,7 +93,7 @@
 				}
 
 				.contactItem:hover > a {
-					color: $linkColorHover;
+					color: #fff;
 				}
 			}
 		}

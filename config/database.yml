@@ -82,4 +82,4 @@ production:
   <<: *default
   database: uppa_wine_production
   username: uppa_wine
-  password: <%= ENV['UPPA_WINE_DATABASE_PASSWORD'] %>
+  password: <%= Figaro.env.database_password %>

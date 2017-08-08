@@ -68,3 +68,6 @@ bower.json
 
 # macOs related
 .DS_Store
+
+# Ignore application configuration
+/config/application.yml

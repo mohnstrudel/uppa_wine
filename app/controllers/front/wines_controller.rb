@@ -1,4 +1,4 @@
-class BottlesController < ApplicationController
+class Front::WinesController < FrontController
   def index
   end
 

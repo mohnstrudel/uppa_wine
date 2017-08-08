@@ -10,12 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170806113543) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "bottles", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "opening_hours", force: :cascade do |t|
     t.string "title"
@@ -58,16 +62,4 @@ ActiveRecord::Schema.define(version: 20170806113543) do
   end
 
   add_foreign_key "opening_hours", "settings"
-=======
-ActiveRecord::Schema.define(version: 20170725180307) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "bottles", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
->>>>>>> bbb7e5bf1516b6103b98bc30272dda7b88ec3e9c
 end
