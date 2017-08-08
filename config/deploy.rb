@@ -1,7 +1,7 @@
 # Change these
 server '46.101.161.208', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@github.com/evgeny-matveev/mbf-wine/tree/develop'
+set :repo_url,        'git@github.com/evgeny-matveev/mbf-wine/tree/anton_development_branch'
 set :application,     'uppa_wine'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
