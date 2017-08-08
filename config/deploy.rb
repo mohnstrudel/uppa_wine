@@ -1,7 +1,7 @@
 # Change these
 server '46.101.161.208', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@github.com:evgeny-matveev/mbf-wine.git'
+set :repo_url,        'git@github.com:mohnstrudel/uppa_wine.git'
 set :application,     'uppa_wine'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
@@ -29,7 +29,7 @@ set :rollbar_role, Proc.new { :app }
 
 ## Defaults:
 # set :scm,           :git
-set :branch,          'anton_development_branch'
+# set :branch,          'anton_development_branch'
 # set :branch,        :master
 # set :format,        :pretty
 # set :log_level,     :debug
