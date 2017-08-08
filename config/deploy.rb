@@ -1,5 +1,5 @@
 # Change these
-server '46.101.161.208', port: 22, roles: [:web, :app, :db], primary: true
+server '92.53.97.113', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:evgeny-matveev/mbf-wine.git'
 set :application,     'uppa_wine'
