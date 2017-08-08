@@ -1,8 +1,10 @@
 document.addEventListener('turbolinks:load', () => {
-  const burger = document.getElementById('burger')
-  const burgerCloseBtn = document.getElementById('burgerCloseBtn')
+  const headerOpenBtn = document.getElementById('headerOpenBtn')
+  const menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn')
+  const menuHeaderCloseBtn = document.getElementById('menuHeaderCloseBtn')
   const menu = document.getElementById('menu')
 
-  burger.onclick = () => menu.classList.remove('hidden')
-  burgerCloseBtn.onclick = () => menu.classList.add('hidden')
+  menuHeaderOpenBtn.onclick = () => menu.classList.remove('mobileHelper')
+  headerOpenBtn.onclick = () => menu.classList.remove('mobileHelper')
+  menuHeaderCloseBtn.onclick = () => menu.classList.add('mobileHelper')
 })
