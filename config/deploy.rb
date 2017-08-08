@@ -29,7 +29,7 @@ set :rollbar_role, Proc.new { :app }
 
 ## Defaults:
 # set :scm,           :git
-set :branch,          :anton_development_branch
+set :branch,          'anton_development_branch'
 # set :branch,        :master
 # set :format,        :pretty
 # set :log_level,     :debug
