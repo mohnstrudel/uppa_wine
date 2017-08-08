@@ -29,6 +29,7 @@ set :rollbar_role, Proc.new { :app }
 
 ## Defaults:
 # set :scm,           :git
+set :branch, ENV['BRANCH'] if ENV['BRANCH']
 # set :branch,        :master
 # set :format,        :pretty
 # set :log_level,     :debug
