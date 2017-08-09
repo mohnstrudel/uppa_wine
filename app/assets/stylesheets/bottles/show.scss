@@ -1,3 +1,20 @@
+.valleyView {
+    display: none;
+    
+    width: 250px;
+    height: 100vh;
+    
+    overflow: hidden;
+    
+    background-image: asset-url('800px_item_valley_pic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottleImage {
+    display: none;
+}
+
 .showWrapper {
 	display: flex;
 	flex-flow: column nowrap;
@@ -105,4 +122,63 @@
 
 		color: #EEEDE7;
 	}
+}
+
+@media (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: row;
+
+        padding-left: 50px;
+    }
+    
+    .valleyView {
+        display: flex;
+    }
+    
+    .bottleImage {
+        position: absolute;
+        display: flex;
+        
+        width: 132px;
+        height: auto;
+        left: 234px;
+        
+        padding-top: 11vh;
+    }
+    
+    .showWrapper {
+        width: 500px;
+        
+        padding-left: 127px;
+        padding-right: 80px;
+        padding-top: 40px;
+        
+        .choice {
+            display: none;
+        }
+        
+        .grapeVariety {
+            font-size: 34px;
+            letter-spacing: 0.55px;
+        }
+        
+        .title {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+        }
+        
+        .description {
+            padding-bottom: 14px;
+            
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 1.36px;
+        }
+        
+        .footer {
+            display: none;
+        }
+    }
 }

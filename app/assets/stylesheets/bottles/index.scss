@@ -105,16 +105,22 @@ heml, body {
         flex-direction: row;
         padding-left: 50px;
         
-        width: 100vw;
+        width: auto;
         
         overflow-x: scroll;
         overflow-y: hidden;
         
         .bottle {
             width: 250px;
+            flex-shrink: 0;
+            
+            .bottleImage {
+                min-height: 95%;
+                padding-top: 11vh;
+            }
             
             .bottleDescription {
-                left: 100px;
+                left: 50px;
                 bottom: 22px;
             }
         }
