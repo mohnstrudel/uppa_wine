@@ -1,4 +1,7 @@
 /*Bottles cascade*/
+heml, body {
+    width: auto;
+}
 
 .bottlesWrapper {
     display: flex;
@@ -91,5 +94,29 @@
 
     .sixthBottle {
         background-color: #FFEFE5;
+    }
+}
+
+@media (min-width: 800px) {
+    
+    .bottlesWrapper {
+        position: relative;
+        
+        flex-direction: row;
+        padding-left: 50px;
+        
+        width: 100vw;
+        
+        overflow-x: scroll;
+        overflow-y: hidden;
+        
+        .bottle {
+            width: 250px;
+            
+            .bottleDescription {
+                left: 100px;
+                bottom: 22px;
+            }
+        }
     }
 }
