@@ -1,10 +1,16 @@
-document.addEventListener('turbolinks:load', () => {
-  const headerOpenBtn = document.getElementById('headerOpenBtn')
-  const menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn')
-  const menuHeaderCloseBtn = document.getElementById('menuHeaderCloseBtn')
-  const menu = document.getElementById('menu')
+document.addEventListener('turbolinks:load', function () {
+  var headerOpenBtn = document.getElementById('headerOpenBtn')
+  var menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn')
+  var menuHeaderCloseBtn = document.getElementById('menuHeaderCloseBtn')
+  var menu = document.getElementById('menu')
 
-  menuHeaderOpenBtn.onclick = () => menu.classList.remove('mobileHelper')
-  headerOpenBtn.onclick = () => menu.classList.remove('mobileHelper')
-  menuHeaderCloseBtn.onclick = () => menu.classList.add('mobileHelper')
+  menuHeaderOpenBtn.onclick = function () {
+    menu.classList.remove('mobileHelper')
+  }
+  headerOpenBtn.onclick = function () {
+    menu.classList.remove('mobileHelper')
+  }
+  menuHeaderCloseBtn.onclick = function () {
+    menu.classList.add('mobileHelper')
+  }
 })
