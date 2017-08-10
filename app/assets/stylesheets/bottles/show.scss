@@ -1,7 +1,7 @@
 .valleyView {
     display: none;
     
-    width: 250px;
+    min-width: 250px;
     height: 100vh;
     
     overflow: hidden;
@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
 }
 
-.bottleImage {
+.showPage_bottleImage {
     display: none;
 }
 
@@ -129,7 +129,7 @@
 }
 
 @media (min-width: 800px) {
-    body {
+    .showOuterWrapper {
         display: flex;
         flex-direction: row;
 
@@ -140,7 +140,7 @@
         display: flex;
     }
     
-    .bottleImage {
+    .showPage_bottleImage {
         position: absolute;
         display: flex;
         
@@ -152,7 +152,7 @@
     }
     
     .showWrapper {
-        width: 500px;
+        min-width: 500px;
         
         padding-left: 127px;
         padding-right: 80px;
@@ -184,12 +184,14 @@
         
         .description {
             padding-bottom: 14px;
+            max-width: 300px;
             
             font-size: 10px;
             line-height: 15px;
             letter-spacing: 1.36px;
             font-family: AkzidenzGroteskPro-Regular;
         }
+        
         
         .wineSelector {
             display: flex;
