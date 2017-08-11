@@ -77,9 +77,6 @@
 		line-height: 20px;
 	}
 
-	.brandName {
-	}
-
 	.grapeVariety {
 		letter-spacing: 0.45px;
 
@@ -177,11 +174,6 @@
             font-family: AkzidenzGroteskPro-Md;
         }
         
-        .brandName,
-        .tableRowName {
-            font-family: Kazimir-Regular;
-        }
-        
         .description {
             padding-bottom: 14px;
             max-width: 300px;
@@ -237,6 +229,16 @@
         
         .showPage_bottleImage {
             margin-left: 200px;
+        }
+        
+        .showWrapper {
+            .tableRowValue {
+                font-family: AkzidenzGroteskPro-Regular;
+                font-size: 10px;
+                color: #000000;
+                letter-spacing: 1.36px;
+                line-height: 15px;
+            }
         }
     }
 }

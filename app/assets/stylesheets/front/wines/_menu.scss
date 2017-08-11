@@ -79,6 +79,8 @@
 
 					font-size: 12px;
 					line-height: 20px;
+
+                    font-family: AkzidenzGroteskPro-Md;
 				}
 
 				.contactItem:hover > .arrowSmall {
@@ -134,6 +136,12 @@
 
 		.signatureWrapper {
 			display: none;
+            
+            font-family: AkzidenzGroteskPro-Md;
+            font-size: 10px;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+            line-height: 15px;
 		}
 
 	}
@@ -299,10 +307,6 @@
 					width: 126px;
 					height: 51px;
 					margin-top: 53px;
-
-					font-size: 10px;
-					letter-spacing: 1px;
-					line-height: 15px;
 
 					color: #fff;
 
