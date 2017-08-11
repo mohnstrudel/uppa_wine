@@ -356,3 +356,15 @@
 		left: -200px;
 	}
 }
+
+@media (min-width: 1000px) {
+    .menuWrapper.mobileHelper {
+        left: 0;
+    }
+    
+    .mobileHelper {
+        .menuHeaderOpenBtn {
+            display: none;
+        }
+    }
+}

@@ -230,3 +230,13 @@
         }
     }
 }
+
+@media (min-width: 1000px) {
+    .showOuterWrapper {
+        padding-left: 250px;
+        
+        .showPage_bottleImage {
+            margin-left: 200px;
+        }
+    }
+}
