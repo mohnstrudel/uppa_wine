@@ -1,0 +1,124 @@
+
+.bottlesWrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    .bottle {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 100vh;
+
+        .bottleImage {
+            align-self: center;
+
+            width: auto;
+            height: auto;
+            min-height: 85%;
+            max-height: 100%;
+            padding-top: 15vh;
+        }
+
+        .bottleDescription {
+            position: absolute;
+            bottom: 10px;
+            left: 25px;
+
+            display: flex;
+
+            width: auto;
+            height: 45px;
+
+            letter-spacing: 1.5px;
+
+            font-size: 10px;
+            line-height: 15px;
+
+            .wineDescription {
+                display: flex;
+                flex-direction: column;
+
+                width: auto;
+                height: 45px;
+
+                text-decoration: none;
+
+                color: #000;
+            }
+
+            .arrowWine {
+                align-self: center;
+
+                width: 11px;
+                height: 5px;
+
+                background-image: asset-url('arrow_wine.svg');
+            }
+        }
+    }
+
+    .upperBlock {
+        background-color: #EEEDE7;
+    }
+
+    .firstBottle {
+        background-color: #EDE1C5;
+    }
+
+    .secondBottle {
+        background-color: #DBC2C5;
+    }
+
+    .thirdBottle {
+        background-color: #EAE6D7;
+    }
+
+    .fourthBottle {
+        background-color: #C5BEAA;
+    }
+
+    .fifthBottle {
+        background-color: #BBB77A;
+    }
+
+    .sixthBottle {
+        background-color: #FFEFE5;
+    }
+}
+
+@media (min-width: 800px) {
+    
+    .bottlesWrapper {
+        position: relative;
+        
+        flex-direction: row;
+        padding-left: 50px;
+        
+        width: auto;
+        
+        overflow-x: scroll;
+        overflow-y: hidden;
+        
+        .bottle {
+            width: 250px;
+            flex-shrink: 0;
+            
+            .bottleImage {
+                min-height: 95%;
+                padding-top: 11vh;
+            }
+            
+            .bottleDescription {
+                left: 50px;
+                bottom: 22px;
+            }
+        }
+    }
+}
