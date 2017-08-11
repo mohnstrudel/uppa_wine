@@ -1,3 +1,20 @@
+.valleyView {
+    display: none;
+    
+    min-width: 250px;
+    height: 100vh;
+    
+    overflow: hidden;
+    
+    background-image: asset-url('800px_item_valley_pic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.showPage_bottleImage {
+    display: none;
+}
+
 .showWrapper {
 	display: flex;
 	flex-flow: column nowrap;
@@ -77,6 +94,10 @@
 	.tableRowName {
 		width: 190px;
 	}
+    
+    .wineSelector {
+        display: none;
+    }
 
 	.footer {
 		display: flex;
@@ -105,4 +126,107 @@
 
 		color: #EEEDE7;
 	}
+}
+
+@media (min-width: 800px) {
+    .showOuterWrapper {
+        display: flex;
+        flex-direction: row;
+
+        padding-left: 50px;
+    }
+    
+    .valleyView {
+        display: flex;
+    }
+    
+    .showPage_bottleImage {
+        position: absolute;
+        display: flex;
+        
+        width: 132px;
+        height: auto;
+        left: 234px;
+        
+        padding-top: 11vh;
+    }
+    
+    .showWrapper {
+        min-width: 500px;
+        
+        padding-left: 127px;
+        padding-right: 80px;
+        padding-top: 40px;
+        
+        .choice {
+            display: none;
+        }
+        
+        .grapeVariety {
+            font-size: 34px;
+            letter-spacing: 0.55px;
+            font-family: Kazimir-Regular;
+            color: #000000;
+            padding-top: 5px;
+        }
+        
+        .title {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+            font-family: AkzidenzGroteskPro-Md;
+        }
+        
+        .brandName,
+        .tableRowName {
+            font-family: Kazimir-Regular;
+        }
+        
+        .description {
+            padding-bottom: 14px;
+            max-width: 300px;
+            
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 1.36px;
+            font-family: AkzidenzGroteskPro-Regular;
+        }
+        
+        
+        .wineSelector {
+            display: flex;
+            justify-content: space-between;
+            
+            width: 77px;
+            height: 15px;
+            
+            margin-left: 100px;
+            margin-top: auto;
+            margin-bottom: 37px;
+            
+            font-family: AkzidenzGroteskPro-Md;
+            font-size: 10px;
+            color: #000000;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+            
+            a {
+                cursor: pointer;
+            }
+            
+            .arrowLeft {
+                width: 12px;
+                height: 7px;
+            }
+            
+            .arrowRight {
+                width: 12px;
+                height: 7px;
+            }
+        }
+        
+        .footer {
+            display: none;
+        }
+    }
 }
