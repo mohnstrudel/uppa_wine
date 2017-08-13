@@ -33,7 +33,7 @@
 
 					color: rgba(216,216,216,0.3);
 
-					font-family: Kazimir-Regular;
+					font-family: $serifFamily;
 					font-size: 24px;
 					line-height: 35px;
 				}
@@ -77,10 +77,10 @@
 
 					color: rgba(216,216,216,0.3);
 
+          font-family: $sansFamily;
 					font-size: 12px;
+					font-weight: 700;
 					line-height: 20px;
-
-                    font-family: AkzidenzGroteskPro-Md;
 				}
 
 				.contactItem:hover > .arrowSmall {
@@ -136,12 +136,15 @@
 
 		.signatureWrapper {
 			display: none;
-            
-            font-family: AkzidenzGroteskPro-Md;
-            font-size: 10px;
-            color: #FFFFFF;
-            letter-spacing: 1px;
-            line-height: 15px;
+
+      letter-spacing: 1px;
+
+      color: #FFFFFF;
+
+      font-family: $sansFamily;
+      font-size: 10px;
+			font-weight: 700;
+      line-height: 15px;
 		}
 
 	}
@@ -325,6 +328,7 @@
 
 					a {
 						text-decoration: none;
+
 						color: #fff;
 						border-bottom: 1px solid rgba(255,255,255,0.3);
 					}
@@ -365,7 +369,7 @@
     .menuWrapper.mobileHelper {
         left: 0;
     }
-    
+
     .mobileHelper {
         .menuHeaderOpenBtn {
             display: none;

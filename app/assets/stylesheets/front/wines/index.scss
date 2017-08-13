@@ -38,7 +38,9 @@
 
             letter-spacing: 1.5px;
 
+            font-family: $sansFamily;
             font-size: 10px;
+            font-weight: 700;
             line-height: 15px;
 
             .wineDescription {
@@ -94,30 +96,30 @@
 }
 
 @media (min-width: 800px) {
-    
+
     .bottlesWrapper {
         position: relative;
-        
-        flex-direction: row;
-        padding-left: 50px;
-        
-        width: auto;
-        
+
         overflow-x: scroll;
         overflow-y: hidden;
-        
+        flex-direction: row;
+
+        width: auto;
+        padding-left: 50px;
+
         .bottle {
-            width: 250px;
             flex-shrink: 0;
-            
+
+            width: 250px;
+
             .bottleImage {
                 min-height: 95%;
                 padding-top: 11vh;
             }
-            
+
             .bottleDescription {
-                left: 50px;
                 bottom: 22px;
+                left: 50px;
             }
         }
     }
