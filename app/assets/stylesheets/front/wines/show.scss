@@ -9,6 +9,26 @@
     background-image: asset-url('800px_item_valley_pic.png');
     background-size: cover;
     background-repeat: no-repeat;
+    
+    .goBack {
+        position: relative;
+        
+        left: 56px;
+        top: 37px;
+        
+        height: 15px;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        color: #000;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 700;
+
+        padding-bottom: 1px;
+
+        border-bottom: 1px solid #000;
+    }
 }
 
 .showPage_bottleImage {
