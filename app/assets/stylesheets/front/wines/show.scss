@@ -165,7 +165,7 @@
         height: auto;
         left: 234px;
 
-        padding-top: 11vh;
+        padding: 15vh 0 10vh;
     }
 
     .showWrapper {
@@ -191,7 +191,8 @@
             font-size: 10px;
             letter-spacing: 1.5px;
             line-height: 15px;
-            font-family: AkzidenzGroteskPro-Md;
+            font-family: $sansFamily;
+            font-weight: 700;
         }
 
         .description {
@@ -201,7 +202,7 @@
             font-size: 10px;
             line-height: 15px;
             letter-spacing: 1.36px;
-            font-family: AkzidenzGroteskPro-Regular;
+            font-family: $sansFamily;
         }
 
 
@@ -216,7 +217,8 @@
             margin-top: auto;
             margin-bottom: 37px;
 
-            font-family: AkzidenzGroteskPro-Md;
+            font-family: $sansFamily;
+            font-weight: 700;
             font-size: 10px;
             color: #000000;
             letter-spacing: 1.5px;
@@ -253,7 +255,8 @@
 
         .showWrapper {
             .tableRowValue {
-                font-family: AkzidenzGroteskPro-Regular;
+                font-family: $sansFamily;
+                font-weight: 400;
                 font-size: 10px;
                 color: #000000;
                 letter-spacing: 1.36px;
