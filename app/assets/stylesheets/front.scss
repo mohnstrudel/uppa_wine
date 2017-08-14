@@ -7,6 +7,10 @@
 html, body {
     width: 100%;
     height: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision
 }
 
 $wineDesc: #000;
@@ -14,6 +18,8 @@ $menuBackground: #1A1A1A;
 $linkColor: rgba(216,216,216,0.3);
 $linkColorHover: #fff;
 $pageBackground: #EEEDE7;
+$serifFamily: Kazimir, Georgia, serif;
+$sansFamily: 'Basis Grotesque Pro', sans-serif;
 
 @import "fonts.scss";
 @import "front/wines/_menu.scss";
