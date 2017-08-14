@@ -1,9 +1,9 @@
 document.addEventListener('turbolinks:load', function () {
-  const headerOpenBtn = document.getElementById('headerOpenBtn')
-  const menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn')
-  const menuHeaderCloseBtn = document.getElementById('menuHeaderCloseBtn')
-  const menu = document.getElementById('menu')
-  const dim = document.getElementById('dim')
+  var headerOpenBtn = document.getElementById('headerOpenBtn')
+  var menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn')
+  var menuHeaderCloseBtn = document.getElementById('menuHeaderCloseBtn')
+  var menu = document.getElementById('menu')
+  var dim = document.getElementById('dim')
 
   menuHeaderOpenBtn.onclick = function () {
     menu.classList.remove('mobileHelper')
