@@ -2,7 +2,7 @@
     display: none;
 
     min-width: 250px;
-    height: 100vh;
+    min-height: 100%;
 
     overflow: hidden;
 
@@ -149,6 +149,7 @@
     .showOuterWrapper {
         display: flex;
         flex-direction: row;
+        height: 100%;
 
         padding-left: 50px;
     }
@@ -165,7 +166,7 @@
         height: auto;
         left: 234px;
 
-        padding: 15vh 0 10vh;
+        padding-top: 11vh;
     }
 
     .showWrapper {
