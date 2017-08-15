@@ -161,3 +161,51 @@
         padding-left: 250px;
     }
 }
+
+@media (min-width: 1200px) {
+    .bottlesWrapper {
+        padding-left: 300px;
+        
+        .upperBlock {
+            .bottleImage {
+                content: asset-url('1200_bottles/1200_first.png');
+            }
+        }
+        .firstBottle {
+            .bottleImage {
+                content: asset-url('1200_bottles/1200_first.png');
+            }
+        }
+        .secondBottle {
+            .bottleImage {
+                content: asset-url('1200_bottles/1200_second.png');
+            }
+        }
+        .thirdBottle {
+            .bottleImage {
+                content: asset-url('1200_bottles/1200_third.png');
+            }
+        }
+        .fourthBottle {
+            .bottleImage {
+                content: asset-url('1200_bottles/1200_fourth.png');
+            }
+        }
+        .fifthBottle {
+            .bottleImage {
+                content: asset-url('1200_bottles/1200_fifth.png');
+            }
+        }
+        .sixthBottle {
+            .bottleImage {
+                content: asset-url('1200_bottles/1200_sixth.png');
+            }
+        }
+        
+        .bottle {
+            .bottleImage {
+                padding: 15vh 0 5vh;
+            }
+        }
+    }
+}
