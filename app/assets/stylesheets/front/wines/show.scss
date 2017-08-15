@@ -291,9 +291,13 @@
 @media (min-width: 1200px) {
     .showOuterWrapper {
         padding-left: 300px;
+        
+        .valleyView {
+            min-width: 300px;
+        }
 
         .showPage__bottleContainer {
-            left: 464px;
+            left: 514px;
         }
 
         .showPage__bottleContainer__bottleImage {
