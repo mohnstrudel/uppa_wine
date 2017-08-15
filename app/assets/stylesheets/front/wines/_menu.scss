@@ -377,3 +377,23 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .menuWrapper {
+        width: 300px;
+        
+        .menuBody {
+            padding-top: 229px;
+            
+            .menuFooter {
+                .socialWrapper {
+                    padding-top: 83px;
+                }
+                
+                .signatureWrapper {
+                    margin-top: 83px;
+                }
+            }
+        }
+    }
+}
