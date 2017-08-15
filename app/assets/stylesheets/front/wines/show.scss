@@ -266,3 +266,28 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .showOuterWrapper {
+        padding-left: 300px;
+        
+        .showPage_bottleImage {
+            width: 173px;
+            
+            left: 214px;
+            padding-top: 12vh;
+            margin-left: 250px;
+            
+            content: asset-url('big_bottles/1200_first.png');
+        }
+        
+        .showWrapper {
+            padding-left: 162px;
+            padding-top: 143px;
+            
+            .wineSelector {
+                margin-bottom: 87px;
+            }
+        }
+    }
+}
