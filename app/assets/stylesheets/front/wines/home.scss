@@ -32,8 +32,21 @@
   }
 
   .mobileHelper ~ .mainWrapper {
-    background-position: -50px;
+    background-position: 50px;
+    background-size: cover;
   }
+}
+
+@media (min-width: 1000px)  {
+    .mainWrapper {
+        background-image: asset-url('main_bottles_1000.png');
+        background-position: 150px;
+    }
+    
+    .mobileHelper ~ .mainWrapper {
+        background-position: 250px 0;
+        background-size: contain;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -43,6 +56,6 @@
     
     .mobileHelper ~ .mainWrapper {
         background-position: 300px 0;
-        background-size: contain;
+        background-size: cover;
     }
 }
