@@ -1,49 +1,65 @@
 <%= render "menu", is_black: true %>
 
-<div class="showWrapper">
-    <!--Выбор-->
-    <div class="choice">
-		<div class="arrowBalance"></div><!--invisible helper element for symmetry-->
-    	<div class="year">2016</div>
-    	<div class="arrow"></div>
+<div class="showOuterWrapper">
+
+    <div class="valleyView">
+        <a href="#" class="goBack">НАЗАД</a>
     </div>
-    <!--Имя бренда-->
-    <div class="brandName title">CLER POLATI</div>
-    <!--Сорт винограда-->
-    <div class="grapeVariety">Chardonay 2016</div>
-    <!--Содержание спирта и кислотность-->
-    <table class="title">
-    	<tr>
-    		<td class="tableRowName">спирт</td>
-    		<td>12,1%</td>
-    	</tr>
-    	<tr>
-  			<td class="tableRowName">кислотность</td>
-    		<td>5,9 г/л</td>
-    	</tr>
-    </table>
-    <!--Внешний вид-->
-	<h3 class="title">внешний вид</h3>
-	<p class="description">Желтовато-соломенного цвета насыщенное вино. Маслянистое.</p>
 
-	<!--Аромат-->
-	<h3 class="title">аромат</h3>
-	<p class="description">Характерный для данного типа вин. Ваниль, полевые цветы, запах корочки ржаного хлеба, акация, медоносы.</p>
+    <!--<div class="bottleImage"></div>-->
+    <%= image_tag 'big_bottles/first.png', class: "showPage_bottleImage" %>
 
-	<!--Вкус-->
-	<h3 class="title">вкус</h3>
-	<p class="description">Насыщенное, округлое вино, с приятной кислотностью, маслянистое, полнотелое.</p>
+    <div class="showWrapper">
+        <!--Выбор-->
+        <div class="choice">
+            <div class="arrowBalance"></div><!--invisible helper element for symmetry-->
+            <div class="year">2016</div>
+            <div class="arrow"></div>
+        </div>
+        <!--Имя бренда-->
+        <div class="brandName title">CLER POLATI</div>
+        <!--Сорт винограда-->
+        <div class="grapeVariety">Chardonay 2016</div>
+        <!--Содержание спирта и кислотность-->
+        <table class="title">
+            <tr>
+                <td class="tableRowName">спирт</td>
+                <td class="tableRowValue">12,1%</td>
+            </tr>
+            <tr>
+                <td class="tableRowName">кислотность</td>
+                <td class="tableRowValue">5,9 г/л</td>
+            </tr>
+        </table>
+        <!--Внешний вид-->
+        <h3 class="title">внешний вид</h3>
+        <p class="description">Желтовато-соломенного цвета насыщенное вино. Маслянистое.</p>
 
-	<!--Период созревания-->
-	<h3 class="title">ожидаемый период зрелости</h3>
-	<p class="description">2016 – 2020 год</p>
+        <!--Аромат-->
+        <h3 class="title">аромат</h3>
+        <p class="description">Характерный для данного типа вин. Ваниль, полевые цветы, запах корочки ржаного хлеба, акация, медоносы.</p>
 
-	<!--Рекомаендации-->
-	<h3 class="title">гастрономические рекомендации</h3>
-	<p class="description">Горячие блюда из птицы, пернатая дичь, свинина, запеченная в тесте, горячие блюда из морепродуктов и сливочными соусами.</p>
+        <!--Вкус-->
+        <h3 class="title">вкус</h3>
+        <p class="description">Насыщенное, округлое вино, с приятной кислотностью, маслянистое, полнотелое.</p>
 
-	<div class="footer">
-		<p>&copy; UPPA by Pavel Shvets</p>
-		<a href="#">Our name</a>
-	</div>
+        <!--Период созревания-->
+        <h3 class="title">ожидаемый период зрелости</h3>
+        <p class="description">2016 – 2020 год</p>
+
+        <!--Рекомаендации-->
+        <h3 class="title">гастрономические рекомендации</h3>
+        <p class="description">Горячие блюда из птицы, пернатая дичь, свинина, запеченная в тесте, горячие блюда из морепродуктов и сливочными соусами.</p>
+
+        <div class="wineSelector">
+            <a href="#" class="arrow"><%= image_tag 'arrow_small_left.png', class: "arrowLeft" %></a>
+            <div class="year">2016</div>
+            <a href="#" class="arrow"><%= image_tag 'arrow_small_right.png', class: "arrowRight" %></a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; UPPA by Pavel Shvets</p>
+            <a href="#">Our name</a>
+        </div>
+    </div>
 </div>

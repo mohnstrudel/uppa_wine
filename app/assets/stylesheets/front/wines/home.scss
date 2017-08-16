@@ -20,18 +20,22 @@
 }
 
 @media (min-width: 800px) {
-	.mainWrapper {
+  .mainWrapper {
     transition: 300ms background-position ease;
 
-		background-image: asset-url('main_bottles_800.png');
+    background-image: asset-url('main_bottles_800.png');
     background-position: 250px;
-	}
+  }
 
-	.mobileHelper {
-		display: inherit;
-	}
+  .mobileHelper {
+    display: inherit;
+  }
 
   .mobileHelper ~ .mainWrapper {
     background-position: 0;
   }
+}
+
+@media (min-width: 1000px) {
+
 }
