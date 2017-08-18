@@ -171,7 +171,8 @@
 
     cursor: pointer;
 
-    background-image: asset-url('logo.png');
+    background-image: asset-url('logo_uppa_white.svg');
+    background-size: cover;
   }
 
   &OpenBtn {
@@ -199,11 +200,12 @@
 
 .header.headerBlack {
   .logoUPPA {
-    background-image: asset-url('logo_black.png');
+    background-image: asset-url('logo_uppa_black.svg');
   }
 
   .headerOpenBtn {
     background-image: asset-url('hamburger_black.svg');
+    background-size: cover;
   }
 }
 
