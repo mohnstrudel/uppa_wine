@@ -8,7 +8,7 @@ document.addEventListener('turbolinks:load', function () {
   menuHeaderOpenBtn.onclick = function () {
     menu.classList.remove('mobileHelper')
     dim.style.display = 'block'
-    setTimeout(() => {
+    setTimeout(function () {
       dim.style.opacity = '0.6'
     }, 50)
   }
@@ -20,7 +20,7 @@ document.addEventListener('turbolinks:load', function () {
   menuHeaderCloseBtn.onclick = function () {
     menu.classList.add('mobileHelper')
     dim.style.opacity = '0'
-    setTimeout(() => {
+    setTimeout(function () {
       dim.style.display = 'none'
     }, 300)
   }

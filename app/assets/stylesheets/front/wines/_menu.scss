@@ -171,7 +171,8 @@
 
     cursor: pointer;
 
-    background-image: asset-url('logo.png');
+    background-image: asset-url('logo_uppa_white.svg');
+    background-size: cover;
   }
 
   &OpenBtn {
@@ -199,7 +200,8 @@
 
 .header.headerBlack {
   .logoUPPA {
-    background-image: asset-url('logo_black.png');
+    background-image: asset-url('logo_uppa_black.svg');
+    background-size: cover;
   }
 
   .headerOpenBtn {
@@ -374,6 +376,26 @@
     .mobileHelper {
         .menuHeaderOpenBtn {
             display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .menuWrapper {
+        width: 300px;
+        
+        .menuBody {
+            padding-top: 229px;
+            
+            .menuFooter {
+                .socialWrapper {
+                    padding-top: 83px;
+                }
+                
+                .signatureWrapper {
+                    margin-top: 83px;
+                }
+            }
         }
     }
 }
