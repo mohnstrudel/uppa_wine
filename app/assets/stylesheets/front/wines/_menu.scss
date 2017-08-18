@@ -201,11 +201,11 @@
 .header.headerBlack {
   .logoUPPA {
     background-image: asset-url('logo_uppa_black.svg');
+    background-size: cover;
   }
 
   .headerOpenBtn {
     background-image: asset-url('hamburger_black.svg');
-    background-size: cover;
   }
 }
 
