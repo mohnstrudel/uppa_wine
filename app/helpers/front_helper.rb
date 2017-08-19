@@ -3,16 +3,18 @@ module FrontHelper
   def get_bottle_class(index)
     case index
     when 0
-      return "firstBottle"
+      return "upperBlock"
     when 1
-      return "secondBottle"
+      return "firstBottle"
     when 2
-      return "thirdBottle"
+      return "secondBottle"
     when 3
-      return "fourthBottle"
+      return "thirdBottle"
     when 4
-      return "fifthBottle"
+      return "fourthBottle"
     when 5
+      return "fifthBottle"
+    when 6
       return "sixthBottle"
     end
   end
