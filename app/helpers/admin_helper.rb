@@ -64,4 +64,12 @@ module AdminHelper
     end
     link_to(name, '#', class: 'add_fields ' + args[:class], data: {id: id, fields: fields.gsub("\n", "")})
   end
+
+    def url_for_page page
+    if page.slug.present?
+      page.slug
+    else
+      "vintages/#{page.id}"
+    end
+  end
 end

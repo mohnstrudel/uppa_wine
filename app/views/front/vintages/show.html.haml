@@ -1,0 +1,47 @@
+= render "menu", is_black: true
+.showOuterWrapper
+  .valleyView
+    %a.goBack{:href => "/wines"} НАЗАД
+  .showPage__bottleContainer
+    = image_tag 'big_bottles/first.png', class: "showPage__bottleContainer__bottleImage"
+  .showWrapper
+    / Выбор
+    .choice
+      .arrowBalance
+      / invisible helper element for symmetry
+      .year 2016
+      .arrow
+    / Имя бренда
+    .brandName.title CLER POLATI
+    / Сорт винограда
+    .grapeVariety Chardonay 2016
+    / Содержание спирта и кислотность
+    %table.title
+      %tr
+        %td.tableRowName спирт
+        %td.tableRowValue=@wine.spirit
+      %tr
+        %td.tableRowName кислотность
+        %td.tableRowValue=@wine.oxygen
+    / Внешний вид
+    %h3.title внешний вид
+    %p.description=@wine.looks
+    / Аромат
+    %h3.title аромат
+    %p.description=@wine.aroma
+    / Вкус
+    %h3.title вкус
+    %p.description=@wine.taste
+    / Период созревания
+    %h3.title ожидаемый период зрелости
+    %p.description=@wine.aging_period
+    / Рекомаендации
+    %h3.title гастрономические рекомендации
+    %p.description=@wine.recommendations
+    .wineSelector
+      %a.arrow{:href => "#"}= image_tag 'arrow_small_left.png', class: "arrowLeft"
+      .year 2016
+      %a.arrow{:href => "#"}= image_tag 'arrow_small_right.png', class: "arrowRight"
+    .footer
+      %p © UPPA by Pavel Shvets
+      %a{:href => "#"} Our name

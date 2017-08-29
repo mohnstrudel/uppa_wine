@@ -20,9 +20,18 @@
     -if object.respond_to?(:title)
       .form-group
         %label.col-sm-2.control-label
-          =t('admin.form.model.title')
+          Заголовок
         .col-sm-10
           =f.text_field :title, class: 'form-control'
+      .hr-line-dashed
+
+    -if object.respond_to?(:subtitle)
+      .form-group
+        %label.col-sm-2.control-label
+          Второй заголовок
+        .col-sm-10
+          =f.text_field :subtitle, class: 'form-control'
+          %span.help-block.m-b-none Например "Charantay CHARDONNAY 2016" - CHARDONNAY в данном случае второй заголовок
       .hr-line-dashed
     / Fields for general settings start (only unique fields)
     =render partial: "admin/shared/form/general_settings_fields", locals: {f: f, object: object}
@@ -64,7 +73,7 @@
       .hr-line-dashed
 
     / Wine part begin
-    =render partial: 'admin/shared/form/wine_fields', locals: { f: f, object: object }
+    =render partial: 'admin/shared/form/vintages/vintage_fields', locals: { f: f, object: object }
     / Wine part end
 
     / User part begin (only unique to user fields)

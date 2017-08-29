@@ -1,7 +1,8 @@
 console.log("settings.js loaded!");
+
 $('form').on('click', ".remove_record", function(event){
   $(this).prev('input[type=hidden]').val('1');
-  $(this).closest('.opening_hours_row').hide();
+  $(this).closest('.wine_row').hide();
   return event.preventDefault();
 });
 

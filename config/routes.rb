@@ -3,12 +3,14 @@ Rails.application.routes.draw do
 
   namespace :admin do
     get '/', to: 'dashboard#index'
-    resources :wines
+    resources :vintages
     resources :settings
   end
 
   scope module: :front do
     root 'wines#home'
-    resources :wines
+    resources :vintages, path: :wines do
+      resources :wines, path: :vintages
+    end
   end
 end
