@@ -1,13 +1,12 @@
-= render "menu", is_black: true
 .bottlesWrapper
-  -@wines.each_with_index do |wine, index|
+  -@vintages.each_with_index do |vintage, index|
     .bottle{class: get_bottle_class(index)}
       -if index == 0
         %a.goToWines{:href => "#"} ВИНА
-      =image_tag_or_default(wine, 'logo', class: 'bottleImage')
+      =image_tag_or_default(vintage.wines.last, 'logo', class: 'bottleImage')
       .bottleDescription
-        =link_to wine_path(wine), class: 'wineDescription' do
-          .wineName=wine.title
+        =link_to vintage_wine_path(vintage, vintage.wines.last), class: 'wineDescription' do
+          .wineName=vintage.title
           .wineSortWrapper
-            .wineSort CHARDONAY
+            .wineSort=vintage.subtitle
             .arrowWine

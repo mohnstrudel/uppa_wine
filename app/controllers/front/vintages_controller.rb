@@ -1,5 +1,5 @@
 class Front::VintagesController < FrontController
   def index
-    @wines = Vintage.all
+    @vintages = Vintage.all
   end
 end

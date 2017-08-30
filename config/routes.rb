@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
 
   scope module: :front do
-    root 'wines#home'
+    root 'vintages#home'
     resources :vintages, path: :wines do
       resources :wines, path: :vintages
     end

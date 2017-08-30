@@ -26,4 +26,12 @@ module FrontHelper
       return image_tag "bottles/second.png", class: options[:class]
     end
   end
+
+  def render_menu
+    if controller_name == 'vintages' && action_name == 'home'
+      render partial: '/front/navigation/menu', is_black: true
+    else
+      render partial: '/front/navigation/menu'
+    end
+  end
 end

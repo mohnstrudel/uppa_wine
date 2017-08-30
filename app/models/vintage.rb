@@ -33,4 +33,12 @@ class Vintage < ApplicationRecord
       end
     end
   end
+
+  def next_wine(wine)
+    self.wines.where('id > ?', wine.id).try(:first).try(:id)
+  end
+
+  def previous_wine(wine)
+    self.wines.where('id < ?', wine.id).try(:first).try(:id)
+  end
 end

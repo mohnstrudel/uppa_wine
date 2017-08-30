@@ -4,7 +4,11 @@ class Front::WinesController < FrontController
   end
 
   def show
-    @wine = Wine.find(params[:id])
+    @wine = Wine.friendly.find(params[:id])
+    @vintage = @wine.vintage
+
+    @next_wine = @vintage.next_wine(@wine)
+    @previous_wine = @vintage.previous_wine(@wine)
   end
 
   def home
