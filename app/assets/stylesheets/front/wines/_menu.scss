@@ -47,7 +47,7 @@
           margin-top: 7px;
           margin-left: 7px;
 
-          background-image: asset-url('arrow_big.png');
+          background-image: asset-url('arrow/arrow_big.svg');
         }
 
         .listItem:hover > a {
@@ -92,7 +92,7 @@
           margin-top: 3px;
           margin-left: 5px;
 
-          background-image: asset-url('arrow_small.png');
+          background-image: asset-url('arrow/arrow_small.svg');
         }
 
         .contactItem:hover > a {
@@ -133,6 +133,10 @@
 
         background-image: asset-url('vk.svg');
       }
+        
+        .instagram:hover, .facebook:hover, .vkontakte:hover {
+            opacity: 0.25;
+        }
     }
 
     .signatureWrapper {
@@ -320,7 +324,7 @@
             width: 86px;
             height: 15px;
 
-            background-image: asset-url('pavel.png');
+            background-image: asset-url('pavel.svg');
             background-repeat: no-repeat;
             background-size: cover;
           }
