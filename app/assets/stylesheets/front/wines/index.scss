@@ -1,3 +1,6 @@
+#bottles-index {
+  overflow: hidden;
+}
 
 .bottlesWrapper {
     display: flex;
@@ -15,23 +18,23 @@
 
         width: 100%;
         height: 100vh;
-        
+
         .goToWines {
             display: none;
             position: absolute;
-            
+
             left: 61px;
             top: 37px;
-            
+
             font-family: $sansFamily;
             font-size: 10px;
             color: #000;
             letter-spacing: 1px;
             text-decoration: none;
             font-weight: 700;
-            
+
             padding-bottom: 1px;
-            
+
             border-bottom: 1px solid #000;
         }
 
@@ -72,13 +75,13 @@
                 text-decoration: none;
 
                 color: #000;
-                
+
                 .wineSortWrapper {
                     display: flex;
-                    
+
                     width: auto;
                     height: 15px;
-                    
+
                     .arrowWine {
                         align-self: center;
 
@@ -138,7 +141,7 @@
             flex-shrink: 0;
 
             width: 33.3333%;
-            
+
             .goToWines {
                 display: flex;
             }
@@ -165,7 +168,7 @@
 @media (min-width: 1200px) {
     .bottlesWrapper {
         padding-left: 300px;
-        
+
         .bottle {
             .bottleImage {
                 padding: 15vh 0 5vh;
