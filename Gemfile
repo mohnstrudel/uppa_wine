@@ -24,7 +24,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'jquery-rails'
 gem 'haml-rails'
 
 # Use CoffeeScript for .coffee assets and views
@@ -42,7 +42,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Use CKEditor for html formatting
-gem 'bootsy' # Screw CKEditor, it's not working on production! 
+gem 'bootsy' # Screw CKEditor, it's not working on production!
 
 # Use font awesome and Glyphicons
 gem "font-awesome-rails"

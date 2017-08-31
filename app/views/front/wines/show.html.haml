@@ -3,7 +3,7 @@
   .valleyView
     %a.goBack{:href => "/wines"} НАЗАД
   .showPage__bottleContainer
-    = image_tag 'big_bottles/first.png', class: "showPage__bottleContainer__bottleImage"
+    = image_tag_or_default(@wine, 'logo', class: 'showPage__bottleContainer__bottleImage')
   .showWrapper
     / Выбор
     .choice

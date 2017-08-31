@@ -1,3 +1,6 @@
+#bottles-index {
+  overflow: hidden;
+}
 
 .bottlesWrapper {
     display: flex;
@@ -5,6 +8,9 @@
 
     width: 100%;
     height: auto;
+    // opacity: 0;
+
+    transition: opacity 1500ms ease-out;
 
     .bottle {
         position: relative;
@@ -15,24 +21,28 @@
 
         width: 100%;
         height: 100vh;
-        
+
+        transition: transform 250ms cubic-bezier(1,.45,.27,.31);
+        transform: translateY(70px);
+
         .goToWines {
-            display: none;
             position: absolute;
-            
-            left: 61px;
             top: 37px;
-            
+            left: 61px;
+
+            display: none;
+
+            padding-bottom: 1px;
+
+            text-decoration: none;
+            letter-spacing: 1px;
+
+            color: #000;
+            border-bottom: 1px solid #000;
+
             font-family: $sansFamily;
             font-size: 10px;
-            color: #000;
-            letter-spacing: 1px;
-            text-decoration: none;
             font-weight: 700;
-            
-            padding-bottom: 1px;
-            
-            border-bottom: 1px solid #000;
         }
 
         .bottleImage {
@@ -72,13 +82,13 @@
                 text-decoration: none;
 
                 color: #000;
-                
+
                 .wineSortWrapper {
                     display: flex;
-                    
+
                     width: auto;
                     height: 15px;
-                    
+
                     .arrowWine {
                         align-self: center;
 
@@ -98,10 +108,14 @@
     }
 
     .firstBottle {
+        transition-delay: 100ms;
+
         background-color: #EDE1C5;
     }
 
     .secondBottle {
+        transition-delay: 200ms;
+
         background-color: #DBC2C5;
     }
 
@@ -138,7 +152,7 @@
             flex-shrink: 0;
 
             width: 33.3333%;
-            
+
             .goToWines {
                 display: flex;
             }
@@ -165,43 +179,7 @@
 @media (min-width: 1200px) {
     .bottlesWrapper {
         padding-left: 300px;
-        
-        .upperBlock {
-            .bottleImage {
-                content: asset-url('1200_bottles/1200_first.png');
-            }
-        }
-        .firstBottle {
-            .bottleImage {
-                content: asset-url('1200_bottles/1200_first.png');
-            }
-        }
-        .secondBottle {
-            .bottleImage {
-                content: asset-url('1200_bottles/1200_second.png');
-            }
-        }
-        .thirdBottle {
-            .bottleImage {
-                content: asset-url('1200_bottles/1200_third.png');
-            }
-        }
-        .fourthBottle {
-            .bottleImage {
-                content: asset-url('1200_bottles/1200_fourth.png');
-            }
-        }
-        .fifthBottle {
-            .bottleImage {
-                content: asset-url('1200_bottles/1200_fifth.png');
-            }
-        }
-        .sixthBottle {
-            .bottleImage {
-                content: asset-url('1200_bottles/1200_sixth.png');
-            }
-        }
-        
+
         .bottle {
             .bottleImage {
                 padding: 15vh 0 5vh;

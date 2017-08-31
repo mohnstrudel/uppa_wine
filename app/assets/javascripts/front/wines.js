@@ -24,4 +24,14 @@ document.addEventListener('turbolinks:load', function () {
       dim.style.display = 'none'
     }, 300)
   }
+
+  var winesCatalog = $('#bottles-index')
+  if (winesCatalog) {
+    winesCatalog.mousewheel(function(event, delta) {
+      this.scrollLeft -= (delta * 2)
+      event.preventDefault()
+    })
+    $('.bottle').css('transform', 'translateY(0)')
+    // winesCatalog.css('opacity', '1')
+  }
 })
