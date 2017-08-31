@@ -35,6 +35,7 @@
       .hr-line-dashed
     / Fields for general settings start (only unique fields)
     =render partial: "admin/shared/form/general_settings_fields", locals: {f: f, object: object}
+    
     -if object.respond_to?(:description)
       .form-group
         %label.col-sm-2.control-label
