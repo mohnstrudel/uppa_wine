@@ -7,6 +7,6 @@
     = javascript_include_tag 'front', 'data-turbolinks-track': 'reload'
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
 
-  %body
+  %body{class: "#{controller_name} #{action_name}"}
     =render_menu
     =yield
