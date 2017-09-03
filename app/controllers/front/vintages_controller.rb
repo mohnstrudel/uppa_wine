@@ -1,5 +1,5 @@
 class Front::VintagesController < FrontController
   def index
-    @vintages = Vintage.all
+    @vintages = Vintage.order(sortable: :asc)
   end
 end
