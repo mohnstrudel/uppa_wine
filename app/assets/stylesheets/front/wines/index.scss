@@ -2,6 +2,14 @@
   overflow: hidden;
 }
 
+.wineName{
+    text-transform: uppercase;
+}
+
+.wineSort{
+    text-transform: uppercase;
+}
+
 .bottlesWrapper {
     display: flex;
     flex-direction: column;

@@ -801,6 +801,12 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap-colorpicker@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/bootstrap-colorpicker/-/bootstrap-colorpicker-2.5.1.tgz#fdf70646956f51e640b031f43f22dd868592ef4c"
+  dependencies:
+    jquery ">=1.10"
+
 brace-expansion@^1.1.7:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
@@ -2373,6 +2379,10 @@ javascript-natural-sort@0.7.1:
 jquery-mousewheel@^3.1.13:
   version "3.1.13"
   resolved "https://registry.yarnpkg.com/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
+
+jquery@>=1.10:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.1.9"

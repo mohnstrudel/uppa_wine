@@ -42,6 +42,9 @@
 // TOASTER
 //= require_tree ../../../vendor/assets/javascripts/admin/plugins/toastr/.
 
+// Colorpicker
+//= require bootstrap-colorpicker/dist/js/bootstrap-colorpicker
+
 // REMOVED turbolinks
 //= require bootsy
 // REMOVE require tree .
