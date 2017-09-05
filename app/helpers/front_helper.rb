@@ -28,7 +28,7 @@ module FrontHelper
   end
 
   def render_menu
-    if controller_name == 'vintages' && action_name == 'index'
+    if (controller_name == 'vintages' && action_name == 'index') || (controller_name == 'wines' && action_name == 'show')
       render partial: '/front/navigation/menu', locals: { is_black: true }
     else
       render partial: '/front/navigation/menu'
