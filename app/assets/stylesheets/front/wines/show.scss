@@ -166,11 +166,9 @@
 
     .showPage__bottleContainer {
         position: absolute;
-        z-index: 5;
-        left: 214px;
+        left: 217px;
 
         display: flex;
-        overflow: hidden;
         align-content: center;
         align-items: center;
         justify-content: center;
@@ -277,7 +275,7 @@
         padding-left: 250px;
 
         .showPage__bottleContainer {
-            left: 414px;
+            left: 417px;
         }
 
         .showWrapper {
@@ -298,13 +296,13 @@
 @media (min-width: 1200px) {
     .showOuterWrapper {
         padding-left: 300px;
-        
+
         .valleyView {
             min-width: 300px;
         }
 
         .showPage__bottleContainer {
-            left: 514px;
+            left: 517px;
         }
 
         .showWrapper {
