@@ -13,4 +13,11 @@ class Front::WinesController < FrontController
 
   def home
   end
+
+  def about
+  end
+
+  def contacts
+  end
+
 end
