@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   scope module: :front do
     root 'vintages#home'
+    get '/about', to: 'wines#about'
+    get '/contacts', to: 'wines#contacts'
     resources :vintages, path: :wines do
       resources :wines, path: :vintages
     end

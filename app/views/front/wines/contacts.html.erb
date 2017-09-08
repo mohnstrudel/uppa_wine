@@ -1,0 +1,306 @@
+<div class="contactsOuterWrapper">
+   
+    <div class="contactsInnerWrapper">
+       
+        <h2 class="questionContacts">Как добраться?</h2>
+
+        <h3 class="titleCommon">отдел продаж</h3>
+        <p class="descriptionCommon">+7 (978) 025 63 76 - Алексей</p>
+        <p class="descriptionCommon">aleksey.chuyko@uppawine.com</p>
+
+        <h3 class="titleCommon">визит на виноградник</h3>
+        <p class="descriptionCommon">+7 (978) 259 29 79</p>
+        <p class="descriptionCommon">Александра</p>
+        <p class="descriptionCommon">info@uppawine.com</p>
+
+        <h3 class="titleCommon">адрес виноградника</h3>
+        <p class="descriptionCommon">Россия, с. Родное Балаклавского района г.&nbsp;Севастополя, 2&nbsp;км&nbsp;к&nbsp;северу&nbsp;от&nbsp;с.&nbsp;Родное.</p>
+
+        <h3 class="titleCommon">gps координаты</h3>
+        <p class="descriptionCommon">N 44 33 676</p>
+        <p class="descriptionCommon">E 33 45 182</p>
+
+        <h3 class="titleCommon">почтовый адрес</h3>
+        <p class="descriptionCommon">СПК «Терруар»</p>
+        <p class="descriptionCommon">299007 Россия</p>
+        <p class="descriptionCommon">г.&nbsp;Севастополь,&nbsp;а/я&nbsp;258</p>
+
+        <a href="https://goo.gl/maps/i9bAEjpwgLL2"><div class="showMap">показать на карте<div class="arrowSmallRight"></div></div></a>
+        
+        <div class="wannaVisit">Хотите организовать визит?</div>
+        
+        <a href="#"><div class="knowMore">
+                узнать больше<div class="arrowSmallRight"></div>
+            </div></a>
+        
+        <div class="footerContacts">
+            <p class="UPPA">© UPPA by Pavel Shvets</p>
+            <a href="http://redobureau.com" class="ourName">redo</a>
+        </div>
+        
+    </div>
+    
+    <div id="contactsMap"></div>
+    
+</div>
+
+
+<script>
+    function initMap() {
+        var uluru = {lat: 44.561053, lng: 33.752712};
+        var map = new google.maps.Map(document.getElementById('contactsMap'), {
+            zoom: 9,
+            center: uluru,
+            styles: [
+                {
+                    "featureType": "all",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "saturation": "1"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "saturation": 36
+                        },
+                        {
+                            "color": "#333333"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#fefefe"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "lightness": "63"
+                        },
+                        {
+                            "weight": "2.11"
+                        },
+                        {
+                            "gamma": "1.67"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "saturation": "-100"
+                        },
+                        {
+                            "gamma": "0.76"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "lightness": "-11"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.natural.landcover",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "gamma": "1.09"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.natural.terrain",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "lightness": 21
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "lightness": 17
+                        },
+                        {
+                            "color": "#f0f0f0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 29
+                        },
+                        {
+                            "weight": 0.2
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f0f0f0"
+                        },
+                        {
+                            "lightness": 18
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f0f0f0"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "lightness": 19
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": "1"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e9e9e9"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ddd8d1"
+                        }
+                    ]
+                }
+            ]
+
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiWuSqsU6uDx8GcLWS_gjQkDrV1JYiHT8&callback=initMap">
+</script>
