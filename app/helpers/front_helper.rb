@@ -31,7 +31,7 @@ module FrontHelper
         isShowingBlackMenu =
             (controller_name == 'vintages' && action_name == 'index') ||
             (controller_name == 'wines' &&
-                (action_name == 'show' || action_name == 'contacts')
+                (action_name == 'show' || action_name == 'contacts' || action_name == 'about' || action_name == 'technology')
                 )
         if isShowingBlackMenu
             render partial: '/front/navigation/menu', locals: { is_black: true }

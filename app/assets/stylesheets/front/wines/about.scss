@@ -1,0 +1,269 @@
+.aboutInnerWrapper {
+    display: flex;
+    overflow: scroll;
+    flex-flow: column nowrap;
+
+    width: 100%;
+    padding: 90px 25px 0;
+
+    background-color: #EEEDE7;
+    
+    .headerCommon {
+        font-family: $serifFamily;
+        font-size: 28px;
+        color: #000000;
+        letter-spacing: 0.45px;
+        line-height: 30px;
+        font-weight: 400;
+
+        padding-bottom: 40px;
+    }
+    
+    .descriptionCommon {
+        font-family: $sansFamily;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 1.17px;
+        line-height: 20px;
+        font-weight: 400;
+        
+        padding-bottom: 20px;
+    }
+    
+    .aboutButtonsWrapper {
+        display: none;
+        flex-direction: row;
+        max-width: 512px;
+        justify-content: space-between;
+        margin-top: 20px;
+        
+        a {
+            text-decoration: none;
+            
+            .goToCatalog, .goToTerroir {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 240px;
+                min-height: 55px;
+
+                border: 1px solid #323232;
+
+                font-family: $sansFamily;
+                font-size: 10px;
+                color: #000000;
+                letter-spacing: 1.5px;
+                line-height: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                cursor: pointer;
+
+                .arrowSmallRight {
+                    width: 12px;
+                    height: 7px;
+
+                    margin-left: 5px;
+
+                    background-image: asset-url('arrow/arrow_small_right.svg');
+                }
+            }
+        }
+    }
+    
+    .headerCommon:last-of-type {
+        padding-top: 35px;
+    }
+    
+    .photoContainerAbout {
+        padding-top: 20px;
+        padding-bottom: 28px;
+        
+        .photoAbout {
+            background-image: asset-url('pavel_among_bushes.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            width: 100vw;
+            height: 191px;
+            
+            margin-left: calc(-50vw + 50%);
+            margin-bottom: 11px;
+        }
+        
+        p:first-of-type {
+            font-family: $sansFamily;
+            font-size: 12px;
+            color: #000000;
+            line-height: 15px;
+            font-weight: 700;
+        }
+        
+        p:last-of-type {
+            font-family: $sansFamily;
+            font-size: 12px;
+            color: #888888;
+            line-height: 15px;
+            font-weight: 700;
+        }
+    }
+    
+    .technologyButton {
+        display: none;
+        
+        text-decoration: none;
+        
+        padding-top: 20px;
+        padding-bottom: 60px;
+        
+        .aboutTechnology {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 240px;
+            min-height: 55px;
+
+            border: 1px solid #323232;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            color: #000000;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+            
+            .arrowSmallRight {
+                width: 12px;
+                height: 7px;
+
+                margin-left: 5px;
+
+                background-image: asset-url('arrow/arrow_small_right.svg');
+            }
+        }
+    }
+    
+    .mapContainerAbout {
+        padding-top: 20px;
+        padding-bottom: 78px;
+        
+        #mapAbout {
+            width: 100vw;
+            height: 200px;
+            
+            margin-left: calc(-50vw + 50%);
+            margin-bottom: 11px;
+        }
+        
+        p:first-of-type {
+            font-family: $sansFamily;
+            font-size: 12px;
+            color: #000000;
+            line-height: 15px;
+            font-weight: 700;
+        }
+
+        p:last-of-type {
+            font-family: $sansFamily;
+            font-size: 12px;
+            color: #888888;
+            line-height: 15px;
+            font-weight: 700;
+        }
+    }
+    
+    .footerAbout {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 45px;
+        margin-left: calc(-50vw + 50%);
+        padding: 0 25px;
+
+        letter-spacing: 0.75px;
+        font-family: $sansFamily;
+
+        color: #EEEDE7;
+        background-color: #323232;
+
+        font-size: 9px;
+        line-height: 12px;
+        
+        a {
+            cursor: pointer;
+            text-decoration: none;
+
+            color: #EEEDE7;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+
+}
+
+@media (min-width: 800px) {
+    .aboutInnerWrapper {
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutInnerWrapper {
+        padding-top: 97px;
+        padding-left: 360px;
+        
+        .headerCommon {
+            font-size: 62px;
+            letter-spacing: 1px;
+            line-height: 60px;
+        }
+        
+        .headerCommon:last-of-type {
+            padding-top: 89px;
+            padding-bottom: 45px;
+        }
+        
+        p {
+            max-width: 520px;
+        }
+        
+        .aboutButtonsWrapper {
+            display: flex;
+        }
+        
+        .photoContainerAbout {
+            padding-top: 55px;
+            padding-left: 92px;
+            
+            width: 598px;
+            
+            .photoAbout {
+                margin-left: 0;
+                
+                width: 511px;
+                height: 320px;
+            }
+        }
+        
+        .technologyButton {
+            display: flex;
+        }
+        
+        .mapContainerAbout {
+            #mapAbout {
+                min-height: 400px;
+                
+                margin-bottom: 21px;
+            }
+        }
+        
+        .footerAbout {
+            display: none;
+        }
+    }
+}

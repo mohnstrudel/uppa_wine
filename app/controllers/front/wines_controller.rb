@@ -20,4 +20,7 @@ class Front::WinesController < FrontController
   def contacts
   end
 
+  def technology
+  end
+
 end
