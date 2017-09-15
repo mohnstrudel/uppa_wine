@@ -1,0 +1,255 @@
+.aboutInnerWrapper {
+    display: flex;
+    overflow: scroll;
+    flex-flow: column nowrap;
+
+    width: 100%;
+    padding: 90px 25px 0;
+
+    background-color: #EEEDE7;
+
+    .headerCommon {
+        padding-bottom: 40px;
+    }
+
+    .descriptionCommon {
+        padding-bottom: 20px;
+    }
+
+    .aboutButtonsWrapper {
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+
+        max-width: 512px;
+        margin-top: 20px;
+
+        a {
+            text-decoration: none;
+
+            .goToCatalog, .goToTerroir {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 240px;
+                min-height: 55px;
+
+                cursor: pointer;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+
+                color: #000000;
+                border: 1px solid #323232;
+
+                font-family: $sansFamily;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 15px;
+
+                .arrowSmallRight {
+                    width: 12px;
+                    height: 7px;
+                    margin-left: 5px;
+
+                    background-image: asset-url('arrow/arrow_small_right.svg');
+                }
+            }
+        }
+    }
+
+    .headerCommon:last-of-type {
+        padding-top: 35px;
+    }
+
+    .photoContainerAbout {
+        padding-top: 20px;
+        padding-bottom: 28px;
+
+        .photoAbout {
+            width: 100vw;
+            height: 191px;
+            margin-bottom: 11px;
+            margin-left: calc(-50vw + 50%);
+
+            background-image: asset-url('pavel_among_bushes.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p:first-of-type {
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+
+        p:last-of-type {
+            color: #888888;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+    }
+
+    .technologyButton {
+        display: none;
+
+        padding-top: 20px;
+        padding-bottom: 60px;
+
+        text-decoration: none;
+
+        .aboutTechnology {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 240px;
+            min-height: 55px;
+
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            color: #000000;
+            border: 1px solid #323232;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15px;
+
+            .arrowSmallRight {
+                width: 12px;
+                height: 7px;
+                margin-left: 5px;
+
+                background-image: asset-url('arrow/arrow_small_right.svg');
+            }
+        }
+    }
+
+    .mapContainerAbout {
+        padding-top: 20px;
+        padding-bottom: 78px;
+
+        #mapAbout {
+            width: 100vw;
+            height: 200px;
+            margin-bottom: 11px;
+            margin-left: calc(-50vw + 50%);
+        }
+
+        p:first-of-type {
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+
+        p:last-of-type {
+            color: #888888;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+    }
+
+    .footerAbout {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 45px;
+        margin-left: calc(-50vw + 50%);
+        padding: 0 25px;
+
+        letter-spacing: 0.75px;
+
+        color: #EEEDE7;
+        background-color: #323232;
+
+        font-family: $sansFamily;
+        font-size: 9px;
+        line-height: 12px;
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+
+            color: #EEEDE7;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+
+}
+
+@media (min-width: 800px) {
+    .aboutInnerWrapper {
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutInnerWrapper {
+        padding-top: 97px;
+        padding-left: 360px;
+
+        .headerCommon {
+            letter-spacing: 1px;
+
+            font-size: 62px;
+            line-height: 60px;
+        }
+
+        .headerCommon:last-of-type {
+            padding-top: 89px;
+            padding-bottom: 45px;
+        }
+
+        p {
+            max-width: 520px;
+        }
+
+        .aboutButtonsWrapper {
+            display: flex;
+        }
+
+        .photoContainerAbout {
+            width: 598px;
+            padding-top: 55px;
+            padding-left: 92px;
+
+            .photoAbout {
+                width: 511px;
+                height: 320px;
+                margin-left: 0;
+            }
+        }
+
+        .technologyButton {
+            display: flex;
+        }
+
+        .mapContainerAbout {
+            #mapAbout {
+                min-height: 400px;
+                margin-bottom: 21px;
+            }
+        }
+
+        .footerAbout {
+            display: none;
+        }
+    }
+}

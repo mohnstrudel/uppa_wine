@@ -28,12 +28,13 @@ module FrontHelper
   end
 
     def render_menu
-        isShowingBlackMenu =
-            (controller_name == 'vintages' && action_name == 'index') ||
-            (controller_name == 'wines' &&
-                (action_name == 'show' || action_name == 'contacts')
-                )
-        if isShowingBlackMenu
+        is_showing_black_menu =
+            (controller_name == 'vintages' && action_name == 'index') || (controller_name == 'wines' &&
+              (action_name == 'show' ||
+              action_name == 'contacts' ||
+              action_name == 'about' ||
+              action_name == 'technology'))
+        if is_showing_black_menu
             render partial: '/front/navigation/menu', locals: { is_black: true }
         else
             render partial: '/front/navigation/menu'

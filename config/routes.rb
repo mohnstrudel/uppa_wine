@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     root 'vintages#home'
     get '/about', to: 'wines#about'
     get '/contacts', to: 'wines#contacts'
+    get '/technology', to: 'wines#technology'
     resources :vintages, path: :wines do
       resources :wines, path: :vintages
     end
