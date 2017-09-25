@@ -33,7 +33,10 @@ module FrontHelper
               (action_name == 'show' ||
               action_name == 'contacts' ||
               action_name == 'about' ||
-              action_name == 'technology'))
+              action_name == 'technology' ||
+              action_name == 'visit' ||
+              action_name == 'club' ||
+              action_name == 'terra'))
         if is_showing_black_menu
             render partial: '/front/navigation/menu', locals: { is_black: true }
         else

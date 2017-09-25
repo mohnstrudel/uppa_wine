@@ -1,0 +1,280 @@
+.visitInnerWrapper {
+    display: flex;
+    overflow: scroll;
+    flex-flow: column nowrap;
+
+    width: 100%;
+    padding: 91px 25px 0;
+
+    background-color: #EEEDE7;
+    
+    .organizeVisit {
+        display: none;
+        
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        font-family: $sansFamily;
+        font-size: 10px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 13px;
+        font-weight: 700;
+        
+        position: relative;
+        top: -50px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
+    
+    .headerCommon {
+        font-family: $serifFamily;
+        font-size: 28px;
+        color: #000000;
+        letter-spacing: 0.45px;
+        line-height: 30px;
+        font-weight: 400;
+        
+        padding-bottom: 40px;
+    }
+    
+    .descriptionCommon {
+        font-family: $sansFamily;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 1.17px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    
+    p:nth-of-type(2) {
+        padding-bottom: 40px;
+    }
+    
+    .grapeBunchWrapper {
+        padding-bottom: 43px;
+        
+        .carouselContainer {
+            display: flex;
+            flex-direction: row;
+            
+            .grapeBunch {
+                width: 100vw;
+                height: 191px;
+                margin-bottom: 11px;
+                margin-left: calc(-50vw + 50%);
+                margin-right: calc(-50vw + 50%);
+
+                background-image: asset-url('grape_bunch_small.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .pushLeft, .pushRight {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                
+                width: 43px;
+                height: auto;
+            }
+            
+            .pushLeft {
+                .arrowSlideLeft {
+                    background-image: asset-url('arrow/arrow_carousel_left.svg');
+                    width: 13px;
+                    height: 40px;
+                }
+            }
+            
+            .pushRight {
+                .arrowSlideRight {
+                    background-image: asset-url('arrow/arrow_carousel_right.svg');
+                    width: 16px;
+                    height: 40px;
+                }
+            }
+        }
+
+        p:first-of-type {
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+
+        p:last-of-type {
+            color: #888888;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+    }
+    
+    .visitButtonsContainer {
+        
+        .sendRequest, .goToContacts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: auto;
+            min-height: 55px;
+
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            color: #000000;
+            border: 1px solid #323232;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15px;
+
+            .arrowSmallRight {
+                width: 12px;
+                height: 7px;
+                margin-left: 5px;
+
+                background-image: asset-url('arrow/arrow_small_right.svg');
+            }
+        }
+        
+        .sendRequest {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    }
+    
+    .footerVisit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 45px;
+        margin-left: calc(-50vw + 50%);
+        padding: 0 25px;
+
+        letter-spacing: 0.75px;
+        font-family: $sansFamily;
+
+        color: #EEEDE7;
+        background-color: #323232;
+
+        font-size: 9px;
+        line-height: 12px;
+
+        margin-top: 60px;
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+
+            color: #EEEDE7;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .visitInnerWrapper {
+        padding: 97px 86px 0;
+        padding-bottom: 68px;
+        
+        .organizeVisit {
+            display: table;
+        }
+        
+        .headerCommon {
+            font-size: 62px;
+            color: #000000;
+            letter-spacing: 1px;
+            line-height: 60px;
+        }
+        
+        .descriptionCommon {
+            max-width: 535px;
+        }
+        
+        h2 ~ p:nth-of-type(2) {
+            padding-top: 20px;
+        }
+        
+        .flipperWrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .grapeBunchWrapper {
+            margin: 0 auto;
+            padding-bottom: 0;
+            
+            .carouselContainer {
+                min-width: 598px;
+                min-height: 320px;
+                
+                .grapeBunch {
+                    width: 511px;
+                    min-height: 320px;
+                    
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                
+                .pushLeft, .pushRight {
+                    display: flex;
+                }
+            }
+            
+            p {
+                padding-left: 43px;
+            }
+            
+            p:nth-of-type(2) {
+                padding-bottom: 0;
+            }
+        }
+        
+        .visitButtonsContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            max-width: 510px;
+            
+            padding-bottom: 70px;
+            
+            .sendRequest, .goToContacts {
+                min-width: 240px;
+            }
+        }
+        
+        .footerVisit {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .visitInnerWrapper {
+        padding-left: 310px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visitInnerWrapper {
+        padding-top: 97px;
+        padding-left: 360px;
+    }
+}
