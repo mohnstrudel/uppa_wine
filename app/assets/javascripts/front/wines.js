@@ -34,4 +34,9 @@ document.addEventListener('turbolinks:load', function () {
     $('.bottle').css('transform', 'translateY(0)')
     // winesCatalog.css('opacity', '1')
   }
+
+  var aboutGallery = $('#about-gallery')
+  if (aboutGallery) {
+    $(aboutGallery).slick({accessibility:false})
+  }
 })
