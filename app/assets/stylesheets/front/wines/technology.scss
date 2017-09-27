@@ -1,147 +1,168 @@
-.technologyInnerWrapper {
-    display: flex;
-    overflow: scroll;
-    flex-flow: column nowrap;
+.technologyOuterWrapper {
+    .technologyInnerWrapper {
+        display: flex;
+        overflow: scroll;
+        flex-flow: column nowrap;
 
-    width: 100%;
-    padding: 91px 25px 0;
+        width: 100%;
+        padding: 91px 25px 0;
 
-    background-color: #EEEDE7;
-    
-    .headerCommon {
-        font-family: $serifFamily;
-        font-size: 28px;
-        color: #000000;
-        letter-spacing: 0.45px;
-        line-height: 29px;
-        font-weight: 400;
-
-        padding-bottom: 40px;
-    }
-
-    .titleCommon {
-        font-family: $sansFamily;
-        font-size: 12px;
-        color: #000000;
-        letter-spacing: 1.8px;
-        line-height: 20px;
-        font-weight: 700;
-
-        text-transform: uppercase;
-
-        padding-bottom: 5px;
-        padding-top: 25px;
-    }
-
-    .descriptionCommon {
-        font-family: $sansFamily;
-        font-size: 14px;
-        color: #000000;
-        letter-spacing: 1.17px;
-        line-height: 20px;
-        font-weight: 400;
-
-        padding-bottom: 20px;
-    }
-    
-    .grapePicture {
-        background-image: asset-url('grape_small.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        width: 100vw;
-        height: 191px;
-
-        margin-left: calc(-50vw + 50%);
-        margin-top: 30px;
-        margin-bottom: 14px;
-    }
-    
-    ul {
-        padding-left: 15px;
-    }
-    
-    .notUsing {
-        padding-top: 55px;
-    }
-    
-    li {
-        font-family: $sansFamily;
-        font-size: 14px;
-        color: #000000;
-        letter-spacing: 1.91px;
-        line-height: 20px;
-        font-weight: 400;
-    }
-    
-    .wannaVisit {
-        font-family: $sansFamily;
-        font-size: 18px;
-        color: #000000;
-        letter-spacing: 1px;
-        line-height: 25px;
-        font-weight: 700;
+        background-color: #EEEDE7;
         
-        width: 233px;
-        
-        padding-top: 34px;
-        padding-bottom: 18px;
-    }
-    
-    .knowMoreLink {
-        text-decoration: none;
-        text-transform: uppercase;
-        
-        .knowMore {
-            display: flex;
-            align-items: center;
-            
+        .toTechnology {
+            display: none;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
             font-family: $sansFamily;
             font-size: 10px;
             color: #000000;
             letter-spacing: 1px;
-            font-weight: 400;
             line-height: 13px;
+            font-weight: 700;
 
-            .arrowSmallRight {
-                width: 12px;
-                height: 7px;
+            position: relative;
+            top: -65px;
+            padding-bottom: 1px;
+            border-bottom: 1px solid #000;
+        }
 
-                margin-left: 6px;
+        .headerCommon {
+            font-family: $serifFamily;
+            font-size: 28px;
+            color: #000000;
+            letter-spacing: 0.45px;
+            line-height: 29px;
+            font-weight: 400;
 
-                background-image: asset-url('arrow/arrow_small_right.svg');
+            padding-bottom: 40px;
+        }
+
+        .titleCommon {
+            font-family: $sansFamily;
+            font-size: 12px;
+            color: #000000;
+            letter-spacing: 1.8px;
+            line-height: 20px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            padding-bottom: 5px;
+            padding-top: 25px;
+        }
+
+        .descriptionCommon {
+            font-family: $sansFamily;
+            font-size: 14px;
+            color: #000000;
+            letter-spacing: 1.17px;
+            line-height: 20px;
+            font-weight: 400;
+
+            padding-bottom: 20px;
+        }
+
+        .grapePicture {
+            background-image: asset-url('grape_small.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 100vw;
+            height: 191px;
+
+            margin-left: calc(-50vw + 50%);
+            margin-top: 30px;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 15px;
+        }
+
+        .notUsing {
+            padding-top: 55px;
+        }
+
+        li {
+            font-family: $sansFamily;
+            font-size: 14px;
+            color: #000000;
+            letter-spacing: 1.91px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .wannaVisit {
+            font-family: $sansFamily;
+            font-size: 18px;
+            color: #000000;
+            letter-spacing: 1px;
+            line-height: 25px;
+            font-weight: 700;
+
+            width: 233px;
+
+            padding-top: 34px;
+            padding-bottom: 18px;
+        }
+
+        .knowMoreLink {
+            text-decoration: none;
+            text-transform: uppercase;
+
+            .knowMore {
+                display: flex;
+                align-items: center;
+
+                font-family: $sansFamily;
+                font-size: 10px;
+                color: #000000;
+                letter-spacing: 1px;
+                font-weight: 400;
+                line-height: 13px;
+
+                .arrowSmallRight {
+                    width: 12px;
+                    height: 7px;
+
+                    margin-left: 6px;
+
+                    background-image: asset-url('arrow/arrow_small_right.svg');
+                }
             }
         }
-    }
-    
-    .footerTechnology {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 
-        width: 100vw;
-        height: 45px;
-        margin-left: calc(-50vw + 50%);
-        padding: 0 25px;
+        .footerTechnology {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-        letter-spacing: 0.75px;
-        font-family: $sansFamily;
+            width: 100vw;
+            height: 45px;
+            margin-left: calc(-50vw + 50%);
+            padding: 0 25px;
 
-        color: #EEEDE7;
-        background-color: #323232;
-
-        font-size: 9px;
-        line-height: 12px;
-        
-        margin-top: 87px;
-
-        a {
-            cursor: pointer;
-            text-decoration: none;
+            letter-spacing: 0.75px;
+            font-family: $sansFamily;
 
             color: #EEEDE7;
+            background-color: #323232;
 
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            font-size: 9px;
+            line-height: 12px;
+
+            margin-top: 87px;
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+
+                color: #EEEDE7;
+
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
         }
     }
 }
@@ -158,6 +179,10 @@
             padding: 106px 34px 45px 59px;
             
             min-width: 50%;
+            
+            .toTechnology {
+                display: table;
+            }
             
             .headerCommon {
                 font-size: 34px;
@@ -217,6 +242,12 @@
             min-width: 50%;
             height: auto;
         }
+    }
+}
+
+@media (min-width: 1000px) {
+    .technologyOuterWrapper {
+        padding-left: 250px;
     }
 }
 

@@ -7,6 +7,26 @@
     padding: 90px 25px 0;
 
     background-color: #EEEDE7;
+    
+    .toUppaWinery {
+        display: none;
+
+        text-decoration: none;
+        text-transform: uppercase;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 13px;
+        font-weight: 700;
+
+        position: absolute;
+        top: 40px;
+        left: 110px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
 
     .headerCommon {
         padding-bottom: 40px;
@@ -62,19 +82,84 @@
         padding-top: 35px;
     }
 
-    .photoContainerAbout {
+//    .photoCarouselWrapper {
+//        padding-top: 20px;
+//        padding-bottom: 28px;
+//
+//        .photoAbout {
+//            width: 100vw;
+//            height: 191px;
+//            margin-bottom: 11px;
+//            margin-left: calc(-50vw + 50%);
+//
+//            background-image: asset-url('pavel_among_bushes.png');
+//            background-repeat: no-repeat;
+//            background-size: cover;
+//        }
+//
+//        p:first-of-type {
+//            color: #000000;
+//
+//            font-family: $sansFamily;
+//            font-size: 12px;
+//            font-weight: 700;
+//            line-height: 15px;
+//        }
+//
+//        p:last-of-type {
+//            color: #888888;
+//
+//            font-family: $sansFamily;
+//            font-size: 12px;
+//            font-weight: 700;
+//            line-height: 15px;
+//        }
+//    }
+    
+    .photoCarouselWrapper {
         padding-top: 20px;
         padding-bottom: 28px;
 
-        .photoAbout {
-            width: 100vw;
-            height: 191px;
-            margin-bottom: 11px;
-            margin-left: calc(-50vw + 50%);
+        .carouselContainer {
+            display: flex;
+            flex-direction: row;
 
-            background-image: asset-url('pavel_among_bushes.png');
-            background-repeat: no-repeat;
-            background-size: cover;
+            .photoAbout {
+                width: 100vw;
+                height: 191px;
+                margin-bottom: 11px;
+                margin-left: calc(-50vw + 50%);
+                margin-right: calc(-50vw + 50%);
+
+                background-image: asset-url('pavel_among_bushes.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .pushLeft, .pushRight {
+                display: none;
+                align-items: center;
+                justify-content: center;
+
+                width: 43px;
+                height: auto;
+            }
+
+            .pushLeft {
+                .arrowSlideLeft {
+                    background-image: asset-url('arrow/arrow_carousel_left.svg');
+                    width: 13px;
+                    height: 40px;
+                }
+            }
+
+            .pushRight {
+                .arrowSlideRight {
+                    background-image: asset-url('arrow/arrow_carousel_right.svg');
+                    width: 16px;
+                    height: 40px;
+                }
+            }
         }
 
         p:first-of-type {
@@ -191,25 +276,97 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
     }
-
 }
 
 @media (min-width: 800px) {
     .aboutInnerWrapper {
+        padding-top: 97px;
+        padding-left: 110px;
+        padding-right: 60px;
+        
+        .headerCommon {
+            font-size: 62px;
+            color: #000000;
+            letter-spacing: 1px;
+            line-height: 60px;
+        }
+        
+        .descriptionCommon {
+            font-size: 14px;
+            letter-spacing: 1.17px;
+            line-height: 20px;
+        }
+        
+        .photoCarouselWrapper {
+            margin: 0 auto;
+            padding-bottom: 0;
+            
+            .carouselContainer {
+                min-width: 598px;
+                min-height: 320px;
+                
+                .photoAbout {
+                    width: 511px;
+                    min-height: 320px;
 
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                
+                .pushLeft, .pushRight {
+                    display: flex;
+                }
+            }
+            
+            p {
+                padding-left: 43px;
+            }
+        }
+        
+        .toUppaWinery {
+            display: table;
+        }
+        
+        .aboutButtonsWrapper {
+            display: flex;
+        }
+        
+        .technologyButton {
+            display: flex;
+        }
+        
+        .mapContainerAbout {
+            #mapAbout {
+                min-height: 400px;
+                margin-bottom: 21px;
+                
+                padding-left: 50px;
+//                margin-left: 0;
+            }
+        }
+        
+        .footerAbout {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .aboutInnerWrapper {
+        padding-left: 310px;
+        
+        .toUppaWinery {
+            left: 310px;
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .aboutInnerWrapper {
-        padding-top: 97px;
         padding-left: 360px;
-
-        .headerCommon {
-            letter-spacing: 1px;
-
-            font-size: 62px;
-            line-height: 60px;
+        
+        .toUppaWinery {
+            left: 360px;
         }
 
         .headerCommon:last-of-type {
@@ -219,10 +376,6 @@
 
         p {
             max-width: 520px;
-        }
-
-        .aboutButtonsWrapper {
-            display: flex;
         }
 
         .photoContainerAbout {
@@ -235,21 +388,6 @@
                 height: 320px;
                 margin-left: 0;
             }
-        }
-
-        .technologyButton {
-            display: flex;
-        }
-
-        .mapContainerAbout {
-            #mapAbout {
-                min-height: 400px;
-                margin-bottom: 21px;
-            }
-        }
-
-        .footerAbout {
-            display: none;
         }
     }
 }
