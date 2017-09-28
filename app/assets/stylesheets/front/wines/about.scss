@@ -1,6 +1,7 @@
 .aboutInnerWrapper {
     display: flex;
     overflow: scroll;
+    overflow-x: hidden;
     flex-flow: column nowrap;
 
     width: 100%;
@@ -86,15 +87,46 @@
 //        padding-top: 20px;
 //        padding-bottom: 28px;
 //
-//        .photoAbout {
-//            width: 100vw;
-//            height: 191px;
-//            margin-bottom: 11px;
-//            margin-left: calc(-50vw + 50%);
+//        .carouselContainer {
+//            display: flex;
+//            flex-direction: row;
 //
-//            background-image: asset-url('pavel_among_bushes.png');
-//            background-repeat: no-repeat;
-//            background-size: cover;
+//            .photoAbout {
+//                width: 100vw;
+//                height: 191px;
+//                margin-bottom: 11px;
+//                margin-left: calc(-50vw + 50%);
+//                margin-right: calc(-50vw + 50%);
+//
+//                background-image: asset-url('pavel_among_bushes.png');
+//                background-repeat: no-repeat;
+//                background-size: cover;
+//            }
+//
+//            .pushLeft, .pushRight {
+//                display: none;
+//                align-items: center;
+//                justify-content: center;
+//
+//                width: 43px;
+//                height: auto;
+//            }
+//
+//            .pushLeft {
+//                .arrowSlideLeft {
+//                    background-image: asset-url('arrow/arrow_carousel_left.svg');
+//                    width: 13px;
+//                    height: 40px;
+//                }
+//            }
+//
+//            .pushRight {
+//                .arrowSlideRight {
+//                    background-image: asset-url('arrow/arrow_carousel_right.svg');
+//                    width: 16px;
+//                    height: 40px;
+//                }
+//            }
 //        }
 //
 //        p:first-of-type {
@@ -115,71 +147,6 @@
 //            line-height: 15px;
 //        }
 //    }
-    
-    .photoCarouselWrapper {
-        padding-top: 20px;
-        padding-bottom: 28px;
-
-        .carouselContainer {
-            display: flex;
-            flex-direction: row;
-
-            .photoAbout {
-                width: 100vw;
-                height: 191px;
-                margin-bottom: 11px;
-                margin-left: calc(-50vw + 50%);
-                margin-right: calc(-50vw + 50%);
-
-                background-image: asset-url('pavel_among_bushes.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            .pushLeft, .pushRight {
-                display: none;
-                align-items: center;
-                justify-content: center;
-
-                width: 43px;
-                height: auto;
-            }
-
-            .pushLeft {
-                .arrowSlideLeft {
-                    background-image: asset-url('arrow/arrow_carousel_left.svg');
-                    width: 13px;
-                    height: 40px;
-                }
-            }
-
-            .pushRight {
-                .arrowSlideRight {
-                    background-image: asset-url('arrow/arrow_carousel_right.svg');
-                    width: 16px;
-                    height: 40px;
-                }
-            }
-        }
-
-        p:first-of-type {
-            color: #000000;
-
-            font-family: $sansFamily;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 15px;
-        }
-
-        p:last-of-type {
-            color: #888888;
-
-            font-family: $sansFamily;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 15px;
-        }
-    }
 
     .technologyButton {
         display: none;
@@ -391,3 +358,66 @@
         }
     }
 }
+
+.carouselContainer {
+    display: flex;
+    flex-direction: row;
+//    justify-content: space-between;
+    
+    .uppa-slick-theme {
+        max-width: 600px;
+//        margin: 60px 0 60px 60px;
+
+        img {
+            max-height: 320px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+
+        p {
+            color: #888888;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+    }
+    
+    .sliderArrow {
+        background-color: #EEEDE7;
+        border: none;
+    }
+
+    .rightArrow {
+        background-image: asset-url('arrow/arrow_carousel_right.svg');
+        width: 16px;
+        height: 40px;
+    }
+
+    .leftArrow {
+        background-image: asset-url('arrow/arrow_carousel_left.svg');
+        width: 13px;
+        height: 40px;
+    }
+}
+
+//.slick-prev {
+//    position: absolute;
+//    left: -55px;
+//    top: 160px;
+//}
+//
+//.slick-next {
+//    position: absolute;
+//    right: 55px;
+//    top: 160px;
+//}
