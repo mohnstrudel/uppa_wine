@@ -37,8 +37,11 @@ document.addEventListener('turbolinks:load', function () {
 
   var aboutGallery = $('#about-gallery')
   if (aboutGallery) {
-    $(aboutGallery).slick({accessibility:false,
-                          nextArrow:'#rightArrow',
-                          prevArrow:'#leftArrow'})
+    $(aboutGallery).slick({
+      accessibility: false,
+      nextArrow: '#rightArrow',
+      prevArrow: '#leftArrow',
+      mobileFirst: true
+    })
   }
 })

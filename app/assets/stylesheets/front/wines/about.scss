@@ -8,25 +8,27 @@
     padding: 90px 25px 0;
 
     background-color: #EEEDE7;
-    
+
     .toUppaWinery {
-        display: none;
-
-        text-decoration: none;
-        text-transform: uppercase;
-
-        font-family: $sansFamily;
-        font-size: 10px;
-        color: #000000;
-        letter-spacing: 1px;
-        line-height: 13px;
-        font-weight: 700;
-
         position: absolute;
         top: 40px;
         left: 110px;
+
+        display: none;
+
         padding-bottom: 1px;
+
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #000000;
         border-bottom: 1px solid #000;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 13px;
     }
 
     .headerCommon {
@@ -248,70 +250,71 @@
 @media (min-width: 800px) {
     .aboutInnerWrapper {
         padding-top: 97px;
-        padding-left: 110px;
         padding-right: 60px;
-        
+        padding-left: 110px;
+
         .headerCommon {
-            font-size: 62px;
-            color: #000000;
             letter-spacing: 1px;
+
+            color: #000000;
+
+            font-size: 62px;
             line-height: 60px;
         }
-        
+
         .descriptionCommon {
-            font-size: 14px;
             letter-spacing: 1.17px;
+
+            font-size: 14px;
             line-height: 20px;
         }
-        
+
         .photoCarouselWrapper {
             margin: 0 auto;
             padding-bottom: 0;
-            
+
             .carouselContainer {
                 min-width: 598px;
                 min-height: 320px;
-                
+
                 .photoAbout {
                     width: 511px;
                     min-height: 320px;
-
-                    margin-left: 0;
                     margin-right: 0;
+                    margin-left: 0;
                 }
-                
+
                 .pushLeft, .pushRight {
                     display: flex;
                 }
             }
-            
+
             p {
                 padding-left: 43px;
             }
         }
-        
+
         .toUppaWinery {
             display: table;
         }
-        
+
         .aboutButtonsWrapper {
             display: flex;
         }
-        
+
         .technologyButton {
             display: flex;
         }
-        
+
         .mapContainerAbout {
             #mapAbout {
                 min-height: 400px;
                 margin-bottom: 21px;
-                
                 padding-left: 50px;
 //                margin-left: 0;
             }
         }
-        
+
         .footerAbout {
             display: none;
         }
@@ -321,7 +324,7 @@
 @media (min-width: 1000px) {
     .aboutInnerWrapper {
         padding-left: 310px;
-        
+
         .toUppaWinery {
             left: 310px;
         }
@@ -331,7 +334,7 @@
 @media (min-width: 1200px) {
     .aboutInnerWrapper {
         padding-left: 360px;
-        
+
         .toUppaWinery {
             left: 360px;
         }
@@ -359,14 +362,14 @@
     }
 }
 
-.carouselContainer {
+.slickContainer {
     display: flex;
-    flex-direction: row;
-//    justify-content: space-between;
-    
+    align-items: center;
+    justify-content: center;
+
     .uppa-slick-theme {
-        max-width: 600px;
-//        margin: 60px 0 60px 60px;
+        max-width: 510px;
+        margin: 60px 30px;
 
         img {
             max-height: 320px;
@@ -391,33 +394,33 @@
             line-height: 15px;
         }
     }
-    
+
     .sliderArrow {
-        background-color: #EEEDE7;
         border: none;
+        background-color: #EEEDE7;
+        cursor: pointer;
     }
 
     .rightArrow {
-        background-image: asset-url('arrow/arrow_carousel_right.svg');
         width: 16px;
         height: 40px;
+
+        background-image: asset-url('arrow/arrow_carousel_right.svg');
     }
 
     .leftArrow {
-        background-image: asset-url('arrow/arrow_carousel_left.svg');
-        width: 13px;
+        width: 16px;
         height: 40px;
+
+        background-image: asset-url('arrow/arrow_carousel_left.svg');
     }
 }
 
-//.slick-prev {
-//    position: absolute;
-//    left: -55px;
-//    top: 160px;
-//}
-//
-//.slick-next {
-//    position: absolute;
-//    right: 55px;
-//    top: 160px;
-//}
+@media (max-width: 600px) {
+    .slickContainer {
+      width: 100vw;
+    }
+    .slickTextContainer {
+      margin-left: calc(-50vw + 50%);
+    }
+}
