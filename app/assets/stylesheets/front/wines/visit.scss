@@ -51,70 +51,6 @@
         padding-bottom: 40px;
     }
     
-    .grapeBunchWrapper {
-        padding-bottom: 43px;
-        
-        .carouselContainer {
-            display: flex;
-            flex-direction: row;
-            
-            .grapeBunch {
-                width: 100vw;
-                height: 191px;
-                margin-bottom: 11px;
-                margin-left: calc(-50vw + 50%);
-                margin-right: calc(-50vw + 50%);
-
-                background-image: asset-url('grape_bunch_small.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-            .pushLeft, .pushRight {
-                display: none;
-                align-items: center;
-                justify-content: center;
-                
-                width: 43px;
-                height: auto;
-            }
-            
-            .pushLeft {
-                .arrowSlideLeft {
-                    background-image: asset-url('arrow/arrow_carousel_left.svg');
-                    width: 13px;
-                    height: 40px;
-                }
-            }
-            
-            .pushRight {
-                .arrowSlideRight {
-                    background-image: asset-url('arrow/arrow_carousel_right.svg');
-                    width: 16px;
-                    height: 40px;
-                }
-            }
-        }
-
-        p:first-of-type {
-            color: #000000;
-
-            font-family: $sansFamily;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 15px;
-        }
-
-        p:last-of-type {
-            color: #888888;
-
-            font-family: $sansFamily;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 15px;
-        }
-    }
-    
     .visitButtonsContainer {
         
         .sendRequest, .goToContacts {
@@ -143,6 +79,8 @@
                 margin-left: 5px;
 
                 background-image: asset-url('arrow/arrow_small_right.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         }
         
@@ -152,6 +90,15 @@
         
         a {
             text-decoration: none;
+        }
+        
+        .buttonVisit:hover {
+            color: #EEEDE7;
+            background-color: #1A1A1A;
+        }
+        
+        .buttonVisit:hover > .arrowSmallRight {
+            background-image: asset-url('arrow/arrow_small_right_white.svg');
         }
     }
     

@@ -129,7 +129,18 @@
                     margin-left: 5px;
 
                     background-image: asset-url('arrow/arrow_small_right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
+            }
+            
+            .downloadForm:hover {
+                color: #EEEDE7;
+                background-color: #1A1A1A;
+            }
+            
+            .downloadForm:hover > .arrowSmallRight {
+                background-image: asset-url('arrow/arrow_small_right_white.svg');
             }
         }
 

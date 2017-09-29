@@ -76,7 +76,18 @@
                     margin-left: 5px;
 
                     background-image: asset-url('arrow/arrow_small_right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
+            }
+            
+            .aboutButton:hover {
+                color: #EEEDE7;
+                background-color: #1A1A1A;
+            }
+            
+            .aboutButton:hover > .arrowSmallRight {
+                background-image: asset-url('arrow/arrow_small_right_white.svg');
             }
         }
     }
@@ -84,71 +95,6 @@
     .headerCommon:last-of-type {
         padding-top: 35px;
     }
-
-//    .photoCarouselWrapper {
-//        padding-top: 20px;
-//        padding-bottom: 28px;
-//
-//        .carouselContainer {
-//            display: flex;
-//            flex-direction: row;
-//
-//            .photoAbout {
-//                width: 100vw;
-//                height: 191px;
-//                margin-bottom: 11px;
-//                margin-left: calc(-50vw + 50%);
-//                margin-right: calc(-50vw + 50%);
-//
-//                background-image: asset-url('pavel_among_bushes.png');
-//                background-repeat: no-repeat;
-//                background-size: cover;
-//            }
-//
-//            .pushLeft, .pushRight {
-//                display: none;
-//                align-items: center;
-//                justify-content: center;
-//
-//                width: 43px;
-//                height: auto;
-//            }
-//
-//            .pushLeft {
-//                .arrowSlideLeft {
-//                    background-image: asset-url('arrow/arrow_carousel_left.svg');
-//                    width: 13px;
-//                    height: 40px;
-//                }
-//            }
-//
-//            .pushRight {
-//                .arrowSlideRight {
-//                    background-image: asset-url('arrow/arrow_carousel_right.svg');
-//                    width: 16px;
-//                    height: 40px;
-//                }
-//            }
-//        }
-//
-//        p:first-of-type {
-//            color: #000000;
-//
-//            font-family: $sansFamily;
-//            font-size: 12px;
-//            font-weight: 700;
-//            line-height: 15px;
-//        }
-//
-//        p:last-of-type {
-//            color: #888888;
-//
-//            font-family: $sansFamily;
-//            font-size: 12px;
-//            font-weight: 700;
-//            line-height: 15px;
-//        }
-//    }
 
     .technologyButton {
         display: none;
@@ -184,7 +130,18 @@
                 margin-left: 5px;
 
                 background-image: asset-url('arrow/arrow_small_right.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
             }
+        }
+        
+        .aboutTechnology:hover {
+            color: #EEEDE7;
+            background-color: #1A1A1A;
+        }
+        
+        .aboutTechnology:hover > .arrowSmallRight {
+            background-image: asset-url('arrow/arrow_small_right_white.svg');
         }
     }
 
@@ -269,31 +226,6 @@
             line-height: 20px;
         }
 
-        .photoCarouselWrapper {
-            margin: 0 auto;
-            padding-bottom: 0;
-
-            .carouselContainer {
-                min-width: 598px;
-                min-height: 320px;
-
-                .photoAbout {
-                    width: 511px;
-                    min-height: 320px;
-                    margin-right: 0;
-                    margin-left: 0;
-                }
-
-                .pushLeft, .pushRight {
-                    display: flex;
-                }
-            }
-
-            p {
-                padding-left: 43px;
-            }
-        }
-
         .toUppaWinery {
             display: table;
         }
@@ -311,7 +243,6 @@
                 min-height: 400px;
                 margin-bottom: 21px;
                 padding-left: 50px;
-//                margin-left: 0;
             }
         }
 
@@ -399,6 +330,10 @@
         border: none;
         background-color: #EEEDE7;
         cursor: pointer;
+    }
+    
+    .sliderArrow:hover {
+        opacity: 0.6;
     }
 
     .rightArrow {

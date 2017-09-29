@@ -8,32 +8,16 @@
 
     <div class="aboutButtonsWrapper">
         <a href="#">
-            <div class="goToCatalog">перейти в каталог вин <div class="arrowSmallRight"></div></div>
+            <div class="goToCatalog aboutButton">перейти в каталог вин <div class="arrowSmallRight"></div></div>
         </a>
         <a href="#">
-            <div class="goToTerroir">терруар <div class="arrowSmallRight"></div></div>
+            <div class="goToTerroir aboutButton">терруар <div class="arrowSmallRight"></div></div>
         </a>
     </div>
 
     <h2 class="headerCommon">Наша история</h2>
     <p class="descriptionCommon">Предприятие было основано в 2007 году Павлом Швецом, человеком по-настоящему влюбленным в вино, имеющим 15-летний опыт работы сомелье в Москве, победителем многих конкурсов, ресторатором. Цель – вернуться в родные края и создать уникальное вино, обладающее своим характером, максимально терруарное. «Уппа» в переводе с татарского означает «мать». В то же время это и название небольшой речушки, протекающей рядом с селом Родное, что находится километрах в 20 от Севастополя (по направлению к Ялте)</p>
 
-<!--
-    <div class="photoCarouselWrapper">
-        <div class="carouselContainer">
-
-            <div class="pushLeft">
-                <div class="arrowSlideLeft"></div>
-            </div>
-
-            <div class="photoAbout"></div>
-
-            <div class="pushRight">
-                <div class="arrowSlideRight"></div>
-            </div>
-        </div>
-    </div>
--->
     <div class="slickContainer">
         <button id="leftArrow" class="leftArrow sliderArrow"></button>
         <div id="about-gallery" class="uppa-slick-theme">
@@ -94,6 +78,7 @@
         var map = new google.maps.Map(document.getElementById('mapAbout'), {
             zoom: 9,
             center: uluru,
+            disableDefaultUI: true,
             styles: [
                 {
                     "featureType": "all",
@@ -340,7 +325,8 @@
         });
         var marker = new google.maps.Marker({
             position: uluru,
-            map: map
+            map: map,
+            icon: "<%= asset_path("pin.svg") %>"
         });
     }
 </script>
