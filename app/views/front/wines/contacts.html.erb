@@ -1,7 +1,8 @@
 <div class="contactsOuterWrapper">
    
     <div class="contactsInnerWrapper">
-       
+        <a href="#" class="toContacts">контакты</a>
+        
         <h2 class="headerCommon">Как добраться?</h2>
 
         <h3 class="titleCommon">отдел продаж</h3>
@@ -35,7 +36,7 @@
         
         <div class="footerContacts">
             <p class="UPPA">© UPPA by Pavel Shvets</p>
-            <a href="http://redobureau.com" class="ourName">redo</a>
+            <a href="http://redobureau.com" class="ourName">сделано в redo</a>
         </div>
         
     </div>
@@ -51,6 +52,7 @@
         var map = new google.maps.Map(document.getElementById('contactsMap'), {
             zoom: 9,
             center: uluru,
+            disableDefaultUI: true,
             styles: [
                 {
                     "featureType": "all",
@@ -297,7 +299,8 @@
         });
         var marker = new google.maps.Marker({
             position: uluru,
-            map: map
+            map: map,
+            icon: "<%= asset_path("pin.svg") %>"
         });
     }
 </script>

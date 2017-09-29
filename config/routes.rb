@@ -12,6 +12,9 @@ Rails.application.routes.draw do
     get '/about', to: 'wines#about'
     get '/contacts', to: 'wines#contacts'
     get '/technology', to: 'wines#technology'
+    get '/visit', to: 'wines#visit'
+    get '/club', to: 'wines#club'
+    get '/terra', to: 'wines#terra'
     resources :vintages, path: :wines do
       resources :wines, path: :vintages
     end

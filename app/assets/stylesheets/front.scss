@@ -22,6 +22,7 @@ $serifFamily: Kazimir, Georgia, serif;
 $sansFamily: 'Basis Grotesque Pro', sans-serif;
 
 @import "fonts.scss";
+@import "slick-carousel/slick/slick.scss";
 @import "front/wines/_menu.scss";
 @import "front/wines/home.scss";
 @import "front/wines/index.scss";
@@ -30,3 +31,6 @@ $sansFamily: 'Basis Grotesque Pro', sans-serif;
 @import "front/wines/about.scss";
 @import "front/wines/contacts.scss";
 @import "front/wines/technology.scss";
+@import "front/wines/visit.scss";
+@import "front/wines/club.scss";
+@import "front/wines/terra.scss";

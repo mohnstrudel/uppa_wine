@@ -23,4 +23,13 @@ class Front::WinesController < FrontController
   def technology
   end
 
+  def visit
+  end
+
+  def club
+  end
+
+  def terra
+  end
+
 end

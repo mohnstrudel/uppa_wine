@@ -7,9 +7,30 @@
     padding: 91px 25px 0;
 
     background-color: #EEEDE7;
+    
+    .toContacts {
+        display: none;
+
+        text-decoration: none;
+        text-transform: uppercase;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 13px;
+        font-weight: 700;
+
+        position: absolute;
+        top: -50px;
+        left: 110px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
 
     .headerCommon {
         padding-bottom: 15px;
+        font-size: 34px;
     }
 
     .titleCommon {
@@ -163,6 +184,13 @@
 
                 font-size: 34px;
                 line-height: 60px;
+            }
+            
+            .toContacts {
+                display: table;
+                position: relative;
+
+                left: 0;
             }
 
             .titleCommon {
