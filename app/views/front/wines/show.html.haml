@@ -4,12 +4,10 @@
   .showPage__bottleContainer
     = image_tag_or_default(@wine, 'logo', class: 'showPage__bottleContainer__bottleImage')
   .showWrapper
-    / Выбор
-    .choice
-      .arrowBalance
-      / invisible helper element for symmetry
-      .year=@wine.year
-      .arrow
+    / Выбор виннишка на мобилке
+    -if @vintage.wines.count > 1
+      / =select_tag 'wines', options_from_collection_for_select(@vintage.wines, "id", "year"), class: "choice", data: {remote: true, url: { :controller => "wines", :action => "show", :id => "this.value" }}
+      =select_tag 'wines', options_from_collection_for_select(@vintage.wines, "id", "year", params[:id]), class: "choice", id: 'mobile_year_change'
     / Имя бренда
     .brandName.title=@vintage.title
     / Сорт винограда

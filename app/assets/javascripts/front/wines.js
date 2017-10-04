@@ -5,6 +5,26 @@ document.addEventListener('turbolinks:load', function () {
   var menu = document.getElementById('menu')
   var dim = document.getElementById('dim')
 
+  $('#mobile_year_change').change(function(){
+    var url = $(location).attr('pathname');
+    var to = url.lastIndexOf('/');
+    to = to == -1 ? url.length : to + 1;
+    url = url.substring(0, to);
+    
+    var value = $('#mobile_year_change option:selected').val();
+    console.log("Url is: " + url + value);
+    $.ajax({
+      url: url + value,
+      type: "GET",
+    }).done(function(){
+      // console.log("done!");
+      window.location=url+value;
+    })
+    .fail(function(){
+      // console.log("failed!");
+    });
+  });
+
   menuHeaderOpenBtn.onclick = function () {
     menu.classList.remove('mobileHelper')
     dim.style.display = 'block'
