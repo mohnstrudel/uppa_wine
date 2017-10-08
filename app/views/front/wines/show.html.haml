@@ -47,9 +47,15 @@
         -if @previous_wine
           =link_to vintage_wine_path(@vintage, @previous_wine), class: 'arrow' do 
             =image_tag 'arrow_small_left.png', class: "arrowLeft"
+        -else
+          =link_to '#' do
+            =image_tag 'arrow_small_left.png', class: "arrowLeft"
         .year=@wine.year
         -if @next_wine
           =link_to vintage_wine_path(@vintage, @next_wine), class: 'arrow' do 
+            =image_tag 'arrow_small_right.png', class: "arrowRight"
+        -else
+          =link_to '#' do
             =image_tag 'arrow_small_right.png', class: "arrowRight"
 
     .footer

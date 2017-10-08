@@ -8,13 +8,13 @@ Rails.application.routes.draw do
   end
 
   scope module: :front do
-    root 'vintages#home'
-    get '/about', to: 'wines#about'
-    get '/contacts', to: 'wines#contacts'
-    get '/technology', to: 'wines#technology'
-    get '/visit', to: 'wines#visit'
-    get '/club', to: 'wines#club'
-    get '/terra', to: 'wines#terra'
+    root 'static_pages#home'
+    get '/about', to: 'static_pages#about'
+    get '/contacts', to: 'static_pages#contacts'
+    get '/technology', to: 'static_pages#technology'
+    get '/visit', to: 'static_pages#visit'
+    get '/club', to: 'static_pages#club'
+    get '/terra', to: 'static_pages#terra'
     resources :vintages, path: :wines do
       resources :wines, path: :vintages
     end
