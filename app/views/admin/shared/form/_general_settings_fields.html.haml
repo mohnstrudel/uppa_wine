@@ -17,7 +17,7 @@
           %span.fileinput-new Select file
           %span.fileinput-exists Change
           =f.file_field :logo
-          
+
         %a.input-group-addon.btn.btn-default.fileinput-exists{"data-dismiss" => "fileinput", :href => "#"} Remove
     .col-sm-2
       -if object.logo.present?
@@ -44,7 +44,7 @@
   .form-group
     %label.col-sm-2.control-label Долгота
     .col-sm-10
-      =f.number_field :long, class: 'form-control'
+      =f.number_field :long, class: 'form-control', step: :any
       %span.help-block.m-b-none Для карты (например 52.1241423)
   .hr-line-dashed
 
@@ -52,7 +52,7 @@
   .form-group
     %label.col-sm-2.control-label Широта
     .col-sm-10
-      =f.number_field :lat, class: 'form-control'
+      =f.number_field :lat, class: 'form-control', step: :any
       %span.help-block.m-b-none Для карты (например 34.01923808)
   .hr-line-dashed
 
