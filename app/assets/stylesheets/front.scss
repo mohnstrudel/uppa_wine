@@ -14,6 +14,12 @@ html, body {
     background-color: #EEEDE7;
 }
 
+@media (min-width: 1000px) {
+    body.wines.show {
+        overflow: hidden;
+    }
+}
+
 $wineDesc: #000;
 $menuBackground: #1A1A1A;
 $linkColor: rgba(216,216,216,0.3);
