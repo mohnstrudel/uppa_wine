@@ -10,7 +10,7 @@ document.addEventListener('turbolinks:load', function () {
     var to = url.lastIndexOf('/');
     to = to == -1 ? url.length : to + 1;
     url = url.substring(0, to);
-    
+
     var value = $('#mobile_year_change option:selected').val();
     console.log("Url is: " + url + value);
     $.ajax({
@@ -53,6 +53,16 @@ document.addEventListener('turbolinks:load', function () {
     })
     $('.bottle').css('transform', 'translateY(0)')
     // winesCatalog.css('opacity', '1')
+  }
+
+  var fakeScrollArea = $('#fakeScrollArea')
+  var scrollObject = $('#scrollObject')
+  if (fakeScrollArea) {
+    fakeScrollArea.mousewheel(function(event, delta) {
+      var currentScrollTop = scrollObject.scrollTop()
+      scrollObject.scrollTop(currentScrollTop - delta)
+      event.preventDefault()
+    })
   }
 
   var aboutGallery = $('#about-gallery')
