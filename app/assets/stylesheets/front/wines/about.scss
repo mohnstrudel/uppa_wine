@@ -84,6 +84,14 @@
             .aboutButton:hover {
                 color: #EEEDE7;
                 background-color: #1A1A1A;
+                
+                animation: slowly 0.2s;
+                
+                @keyframes slowly {
+                    0% {
+                        opacity: 0;
+                    }
+                }
             }
             
             .aboutButton:hover > .arrowSmallRight {
@@ -138,6 +146,14 @@
         .aboutTechnology:hover {
             color: #EEEDE7;
             background-color: #1A1A1A;
+            
+            animation: slowly 0.2s;
+
+            @keyframes slowly {
+                0% {
+                    opacity: 0;
+                }
+            }
         }
         
         .aboutTechnology:hover > .arrowSmallRight {
@@ -301,6 +317,7 @@
     .uppa-slick-theme {
         max-width: 510px;
         margin: 60px 30px;
+        margin-right: 0;
 
         img {
             max-height: 320px;
@@ -333,7 +350,18 @@
     }
     
     .sliderArrow:hover {
-        opacity: 0.6;
+        opacity: 0.4;
+        
+        animation: animate 0.6s;
+
+        @keyframes animate {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.4;
+            }
+        }
     }
 
     .rightArrow {

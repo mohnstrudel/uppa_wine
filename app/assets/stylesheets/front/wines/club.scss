@@ -137,6 +137,14 @@
             .downloadForm:hover {
                 color: #EEEDE7;
                 background-color: #1A1A1A;
+                
+                animation: slowly 0.2s;
+
+                @keyframes slowly {
+                    0% {
+                        opacity: 0;
+                    }
+                }
             }
             
             .downloadForm:hover > .arrowSmallRight {
@@ -207,7 +215,7 @@
             .descriptionCommon {
                 font-size: 10px;
                 color: #000000;
-                letter-spacing: 1.36px;
+                letter-spacing: 1.1px;
                 line-height: 15px;
                 
                 padding-bottom: 40px;
@@ -221,7 +229,7 @@
                 li {
                     font-size: 10px;
                     color: #000000;
-                    letter-spacing: 1.36px;
+                    letter-spacing: 1.1px;
                     line-height: 15px;
                 }
             }
