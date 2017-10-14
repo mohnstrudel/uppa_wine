@@ -92,7 +92,7 @@
     padding-top: 5px;
     padding-bottom: 20px;
 
-    letter-spacing: 1.91px;
+    letter-spacing: 1.1px;
 
     font-size: 14px;
     line-height: 20px;
@@ -139,8 +139,9 @@
     color: #EEEDE7;
     background-color: #323232;
 
+    font-family: $sansFamily;
     font-size: 9px;
-    line-height: 20px;
+    line-height: 12px;
   }
 
   .footer a {
@@ -222,7 +223,7 @@
             max-width: 300px;
             padding-bottom: 14px;
 
-            letter-spacing: 1.36px;
+            letter-spacing: 1.1px;
 
             font-family: $sansFamily;
             font-size: 10px;
@@ -280,7 +281,7 @@
 
         .showWrapper {
             .tableRowValue {
-                letter-spacing: 1.36px;
+                letter-spacing: 1.1px;
 
                 color: #000000;
 

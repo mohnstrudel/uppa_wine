@@ -95,6 +95,14 @@
         .buttonVisit:hover {
             color: #EEEDE7;
             background-color: #1A1A1A;
+            
+            animation: slowly 0.2s;
+
+            @keyframes slowly {
+                0% {
+                    opacity: 0;
+                }
+            }
         }
         
         .buttonVisit:hover > .arrowSmallRight {

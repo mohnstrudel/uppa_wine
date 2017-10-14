@@ -10,7 +10,14 @@ html, body {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: geometricPrecision
+    text-rendering: geometricPrecision;
+    background-color: #EEEDE7;
+}
+
+@media (min-width: 1000px) {
+    body.wines.show {
+        overflow: hidden;
+    }
 }
 
 $wineDesc: #000;
