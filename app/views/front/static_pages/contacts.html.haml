@@ -1,14 +1,16 @@
+-meta title: 'Контакты'
+
 .contactsOuterWrapper
   .contactsInnerWrapper
     %a.toContacts{:href => "#"} контакты
     %h2.headerCommon Как добраться?
     
     %h3.titleCommon отдел продаж
-    %p.descriptionCommon="#{@setting.sales_phone} - #{@setting.sales_name}"
+    %p.descriptionCommon="#{link_to @setting.sales_phone, 'tel:'+@clean_sales_phone} - #{@setting.sales_name}".html_safe
     %p.descriptionCommon=link_to @setting.sales_email, "mailto:#{@setting.sales_email}".html_safe
     
     %h3.titleCommon визит на виноградник
-    %p.descriptionCommon="#{@setting.visit_phone} - #{@setting.visit_name}"
+    %p.descriptionCommon="#{link_to @setting.visit_phone, 'tel:'+@clean_visit_phone} - #{@setting.visit_name}".html_safe
     %p.descriptionCommon=link_to @setting.visit_email, "mailto:#{@setting.visit_email}".html_safe
     
     %h3.titleCommon адрес виноградника
@@ -25,7 +27,7 @@
         показать на карте
         .arrowSmallRight
     .wannaVisit Хотите организовать визит?
-    %a{:href => "#"}
+    %a{:href => "/visit"}
       .knowMore
         узнать больше
         .arrowSmallRight

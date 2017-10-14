@@ -140,6 +140,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
+    metamagic (3.1.7)
+      rails (>= 3.0.0)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -276,6 +278,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  metamagic
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.2)
@@ -293,4 +296,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.1

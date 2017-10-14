@@ -31,9 +31,12 @@
             %a{:href => "/visit"} Организация визита
             .arrowSmall
       .socialWrapper
-        %a.instagram{:href => "#{@setting.instagram}"}
-        %a.facebook{:href => "#{@setting.facebook}"}
-        %a.vkontakte{:href => "#{@setting.vk}"}
+        -if @setting.instagram.present?
+          %a.instagram{:href => "#{@setting.instagram}"}
+        -if @setting.facebook.present?
+          %a.facebook{:href => "#{@setting.facebook}"}
+        -if @setting.vk.present?
+          %a.vkontakte{:href => "#{@setting.vk}"}
       .signatureWrapper
         .signImg
         .uppaShvets UPPA by Pavel Shvets

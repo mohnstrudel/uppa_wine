@@ -6,6 +6,8 @@ class Front::StaticPagesController < FrontController
   end
 
   def contacts
+    @clean_sales_phone = @setting.clean_phone(@setting.sales_phone)
+    @clean_visit_phone = @setting.clean_phone(@setting.visit_phone)
   end
 
   def technology
