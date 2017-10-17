@@ -6,8 +6,14 @@
   .showWrapper
     / Выбор виннишка на мобилке
     -if @vintage.wines.count > 1
-      / =select_tag 'wines', options_from_collection_for_select(@vintage.wines, "id", "year"), class: "choice", data: {remote: true, url: { :controller => "wines", :action => "show", :id => "this.value" }}
-      =select_tag 'wines', options_from_collection_for_select(@vintage.wines, "id", "year", params[:id]), class: "choice", id: 'mobile_year_change'
+      .winesSelector
+        .winesSelector__Title#winesSelector__Title
+          = @wine.year
+        .winesSelector__Options.hidden#winesSelector__Options
+          - @vintage.wines.each do |vw|
+            .winesSelector__Options__Item{'data-select-option': vw.id}
+              = vw.year
+
     / Имя бренда
     .brandName.title=@vintage.title
     / Сорт винограда
@@ -22,37 +28,37 @@
       %tr
         %td.tableRowName кислотность
         %td.tableRowValue=@wine.oxygen
-    
+
     / Внешний вид
     %h3.title внешний вид
     %p.description=@wine.looks
-    
+
     / Аромат
     %h3.title аромат
     %p.description=@wine.aroma
-    
+
     / Вкус
     %h3.title вкус
     %p.description=@wine.taste
-    
+
     / Период созревания
     %h3.title ожидаемый период зрелости
     %p.description=@wine.aging_period
-    
+
     / Рекомаендации
     %h3.title гастрономические рекомендации
     %p.description=@wine.recommendations
     -if @vintage.wines.count > 1
       .wineSelector
         -if @previous_wine
-          =link_to vintage_wine_path(@vintage, @previous_wine), class: 'arrow' do 
+          =link_to vintage_wine_path(@vintage, @previous_wine), class: 'arrow' do
             =image_tag 'arrow_small_left.png', class: "arrowLeft"
         -else
           =link_to '#' do
             =image_tag 'arrow_small_left.png', class: "arrowLeft"
         .year=@wine.year
         -if @next_wine
-          =link_to vintage_wine_path(@vintage, @next_wine), class: 'arrow' do 
+          =link_to vintage_wine_path(@vintage, @next_wine), class: 'arrow' do
             =image_tag 'arrow_small_right.png', class: "arrowRight"
         -else
           =link_to '#' do

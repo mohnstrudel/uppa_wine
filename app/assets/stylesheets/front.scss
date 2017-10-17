@@ -41,3 +41,7 @@ $sansFamily: 'Basis Grotesque Pro', sans-serif;
 @import "front/wines/visit.scss";
 @import "front/wines/club.scss";
 @import "front/wines/terra.scss";
+
+.hidden {
+    display: none;
+}

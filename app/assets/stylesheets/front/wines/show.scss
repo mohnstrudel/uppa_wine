@@ -1,3 +1,59 @@
+.winesSelector {
+    margin-bottom: 55px;
+
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    font-size: 10px;
+    &__Title {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+        height: 55px;
+
+        border: 1px solid black;
+
+        &::after {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+
+            display: block;
+
+            width: 7px;
+            height: 5px;
+
+            content: '';
+
+            background-image: asset-url('arrow/arrow_small_down.svg');
+            background-repeat: no-repeat;
+        }
+    }
+    &__Options {
+        display: flex;
+        flex-direction: column;
+
+        width: auto;
+
+        text-align: center;
+
+        border: 1px solid black;
+        border-top: none;
+        border-bottom: none;
+
+        &__Item {
+            width: 100%;
+            padding: 25px 0;
+
+            border-bottom: 1px solid #000;
+        }
+    }
+}
+
 .valleyView {
     display: none;
     overflow: hidden;
@@ -44,56 +100,23 @@
 
   background-color: #EEEDE7;
 
-  .choice {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: auto;
-    height: 55px;
-    margin-bottom: 40px;
-
-    border: 1px solid black;
-
-    .year {
-      letter-spacing: 1px;
-
-      font-size: 10px;
-    }
-
-    .arrowBalance {
-      width: 7px;
-      height: 5px;
-      padding-right: 25px;
-    }
-
-    .arrow {
-      width: 7px;
-      height: 5px;
-      padding-right: 25px;
-
-      background-image: asset-url('arrow/arrow_small_down.svg');
-      background-repeat: no-repeat;
-    }
-  }
-
   .title {
     letter-spacing: 1.8px;
     text-transform: uppercase;
 
+    font-family: $sansFamily;
     font-size: 12px;
     font-weight: 700;
     line-height: 20px;
-    font-family: $sansFamily;
   }
 
   .description {
-    font-family: $sansFamily;
     padding-top: 5px;
     padding-bottom: 20px;
 
     letter-spacing: 1.1px;
 
+    font-family: $sansFamily;
     font-size: 14px;
     line-height: 20px;
   }
@@ -195,7 +218,7 @@
         padding-right: 80px;
         padding-left: 130px;
 
-        .choice {
+        .winesSelector {
             display: none;
         }
 

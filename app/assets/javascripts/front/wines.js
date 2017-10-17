@@ -5,22 +5,20 @@ document.addEventListener('turbolinks:load', function () {
   var menu = document.getElementById('menu')
   var dim = document.getElementById('dim')
 
-  $('#mobile_year_change').change(function(){
-    var url = $(location).attr('pathname');
-    var to = url.lastIndexOf('/');
-    to = to === -1 ? url.length : to + 1;
-    url = url.substring(0, to);
-
-    var value = $('#mobile_year_change option:selected').val();
-    // console.log("Url is: " + url + value);
-    $.ajax({
-      url: url + value,
-      type: "GET",
-    }).done(function(){
-      // console.log("done!");
-      window.location=url+value;
+  var winesSelector = $('#winesSelector__Title')
+  if (winesSelector) {
+    var winesOptions = $('#winesSelector__Options')
+    var winesOptionsItems = $('[data-select-option]')
+    winesSelector.on('click', function (e) {
+      winesOptions.toggle('fast')
     })
-  });
+    $.map(winesOptionsItems, function (option) {
+      $(option).on('click', function (e) {
+        var id = e.target.dataset.selectOption
+        window.location.href = window.location.href.slice(0, -1) + id
+      })
+    })
+  }
 
   menuHeaderOpenBtn.onclick = function () {
     menu.classList.remove('mobileHelper')
