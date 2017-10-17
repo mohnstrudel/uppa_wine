@@ -8,11 +8,11 @@ document.addEventListener('turbolinks:load', function () {
   $('#mobile_year_change').change(function(){
     var url = $(location).attr('pathname');
     var to = url.lastIndexOf('/');
-    to = to == -1 ? url.length : to + 1;
+    to = to === -1 ? url.length : to + 1;
     url = url.substring(0, to);
 
     var value = $('#mobile_year_change option:selected').val();
-    console.log("Url is: " + url + value);
+    // console.log("Url is: " + url + value);
     $.ajax({
       url: url + value,
       type: "GET",
@@ -20,9 +20,6 @@ document.addEventListener('turbolinks:load', function () {
       // console.log("done!");
       window.location=url+value;
     })
-    .fail(function(){
-      // console.log("failed!");
-    });
   });
 
   menuHeaderOpenBtn.onclick = function () {
@@ -52,7 +49,6 @@ document.addEventListener('turbolinks:load', function () {
       event.preventDefault()
     })
     $('.bottle').css('transform', 'translateY(0)')
-    // winesCatalog.css('opacity', '1')
   }
 
   var fakeScrollArea = $('#fakeScrollArea')
@@ -65,13 +61,23 @@ document.addEventListener('turbolinks:load', function () {
     })
   }
 
-  var aboutGallery = $('#about-gallery')
-  if (aboutGallery) {
-    $(aboutGallery).slick({
+  var slickGallery = $('#slick-gallery')
+  if (slickGallery) {
+    $(slickGallery).slick({
       accessibility: false,
       nextArrow: '#rightArrow',
       prevArrow: '#leftArrow',
       mobileFirst: true
+    })
+  }
+
+  var bottles = $('[data-wine-path]')
+  if (bottles) {
+    $.map(bottles, function (bottle) {
+      $(bottle).on('click', function (e) {
+        var url = e.target.dataset.winePath
+        window.location.href = window.location.origin + url
+      })
     })
   }
 })
