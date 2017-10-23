@@ -29,7 +29,7 @@ module FrontHelper
 
     def render_menu
         is_showing_black_menu =
-            (controller_name == 'vintages' && action_name == 'index') || (controller_name == 'wines' &&
+            (controller_name == 'vintages' && action_name == 'index') || (controller_name == 'static_pages' &&
               (action_name == 'show' ||
               action_name == 'contacts' ||
               action_name == 'about' ||
