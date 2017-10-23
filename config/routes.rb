@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get '/visit', to: 'static_pages#visit'
     get '/club', to: 'static_pages#club'
     get '/terra', to: 'static_pages#terra'
+    get '/age_confirmation', to: 'static_pages#age_confirmation'
     resources :vintages, path: :wines do
       resources :wines, path: :vintages
     end

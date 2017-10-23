@@ -21,4 +21,9 @@ class Front::StaticPagesController < FrontController
 
   def terra
   end
+
+  def age_confirmation
+    session[:already_18] = true
+    redirect_to root_path
+  end
 end
