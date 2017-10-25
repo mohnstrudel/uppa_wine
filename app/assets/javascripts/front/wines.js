@@ -5,6 +5,7 @@ document.addEventListener('turbolinks:load', function () {
   var menu = document.getElementById('menu')
   var dim = document.getElementById('dim')
 
+  // Выбор года бутылки из выпадашки на мобилках
   var winesSelector = $('#winesSelector__Title')
   if (winesSelector) {
     var winesOptions = $('#winesSelector__Options')
@@ -76,17 +77,6 @@ document.addEventListener('turbolinks:load', function () {
       nextArrow: '#rightArrow',
       prevArrow: '#leftArrow',
       mobileFirst: true
-    })
-  }
-
-  var bottles = $('[data-wine-path]')
-  if (bottles) {
-    $.map(bottles, function (bottle) {
-      $(bottle).on('click', function (e) {
-        console.log(e.target.dataset.winePath);
-        var url = e.target.dataset.winePath;
-        window.location.href = window.location.origin + url;
-      })
     })
   }
 })
