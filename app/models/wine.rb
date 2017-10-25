@@ -3,7 +3,7 @@ class Wine < ApplicationRecord
   belongs_to :vintage, optional: true
 
   extend FriendlyId
-  friendly_id :year, use: :slugged
+  friendly_id :slug_candidates, use: :slugged
 
   after_save :set_slug
 
@@ -25,7 +25,7 @@ class Wine < ApplicationRecord
         slugged_one = slugged_one.split(" ").join("-").delete(".").delete(",")
         slugged_two = self.vintage.subtitle.downcase
         slugged_two = slugged_two.split(" ").join("-").delete(".").delete(",")
-        slugged_three = self.id
+        slugged_three = self.year
         self.slug = "#{slugged_one}-#{slugged_two}-#{slugged_three}"
       rescue NoMethodError => e
         self.slug = nil

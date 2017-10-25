@@ -20,9 +20,7 @@ module FrontHelper
   end
 
   def image_tag_or_default(object, field, options = {})
-    if object.send(field).index_picture.present?
-      return image_tag(object.send(field).index_picture.url, class: options[:class])
-    elsif object.send(field).present?
+    if object.send(field).present?
       return image_tag(object.send(field).url, class: options[:class])
     else
       return image_tag "bottles/second.png", class: options[:class]

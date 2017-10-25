@@ -12,6 +12,8 @@
         =f.file_field :logo
         
       %a.input-group-addon.btn.btn-default.fileinput-exists{"data-dismiss" => "fileinput", :href => "#"} Удалить
+
+    %span.help-block.m-b-none Размер картинки — 170 на 635. Высота бутылки 545. Отступ снизу.
   .col-sm-2
     -if f.object.logo.present?
       =image_tag f.object.logo.url(:mini_thumb)
