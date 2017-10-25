@@ -21,9 +21,12 @@ class Wine < ApplicationRecord
   def set_slug
     if self.year.present?
       begin
-        slugged_one = self.year
-        slugged_two = self.id
-        self.slug = "#{slugged_one}-#{slugged_two}"
+        slugged_one = self.vintage.title.downcase
+        slugged_one = slugged_one.split(" ").join("-").delete(".").delete(",")
+        slugged_two = self.vintage.subtitle.downcase
+        slugged_two = slugged_two.split(" ").join("-").delete(".").delete(",")
+        slugged_three = self.id
+        self.slug = "#{slugged_one}-#{slugged_two}-#{slugged_three}"
       rescue NoMethodError => e
         self.slug = nil
       end
