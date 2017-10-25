@@ -13,7 +13,7 @@
           = @wine.year
         .winesSelector__Options.hidden#winesSelector__Options
           - @vintage.wines.each do |vw|
-            .winesSelector__Options__Item{'data-select-option': vw.id}
+            .winesSelector__Options__Item{'data-select-option': vw.slug}
               = vw.year
 
     / Имя бренда
