@@ -78,4 +78,15 @@ document.addEventListener('turbolinks:load', function () {
       mobileFirst: true
     })
   }
+
+  var bottles = $('[data-wine-path]')
+  if (bottles) {
+    $.map(bottles, function (bottle) {
+      $(bottle).on('click', function (e) {
+        console.log(e.target.dataset.winePath);
+        var url = e.target.dataset.winePath;
+        window.location.href = window.location.origin + url;
+      })
+    })
+  }
 })
