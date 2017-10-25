@@ -10,7 +10,7 @@ class Front::WinesController < FrontController
 
     @next_wine = @vintage.next_wine(@wine)
     @previous_wine = @vintage.previous_wine(@wine)
-
+    # debug
   end
 
   
