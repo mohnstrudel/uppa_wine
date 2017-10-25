@@ -47,6 +47,14 @@ document.addEventListener('turbolinks:load', function () {
       event.preventDefault()
     })
     $('.bottle').css('transform', 'translateY(0)')
+
+    var bottles = $('[data-wine-path]')
+    $.map(bottles, function (bottle) {
+      $(bottle).on('click', function (e) {
+        var url = e.currentTarget.dataset.winePath
+        window.location.href = window.location.origin + url
+      })
+    })
   }
 
   var fakeScrollArea = $('#fakeScrollArea')
@@ -66,16 +74,6 @@ document.addEventListener('turbolinks:load', function () {
       nextArrow: '#rightArrow',
       prevArrow: '#leftArrow',
       mobileFirst: true
-    })
-  }
-
-  var bottles = $('[data-wine-path]')
-  if (bottles) {
-    $.map(bottles, function (bottle) {
-      $(bottle).on('click', function (e) {
-        var url = e.target.dataset.winePath
-        window.location.href = window.location.origin + url
-      })
     })
   }
 })
