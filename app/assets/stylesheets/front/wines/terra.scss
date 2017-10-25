@@ -148,7 +148,8 @@
         .polatiBigPicture {
             min-height: 50%;
 
-            background-image: asset-url('palati_big.png');
+            // background-image: asset-url('palati_big.png');
+            background-image: asset-url('terra_upper_pic.jpg');
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -156,7 +157,8 @@
         .nummuliteBigPicture {
             min-height: 50%;
 
-            background-image: asset-url('numullite_big.png');
+            // background-image: asset-url('numullite_big.png');
+            background-image: asset-url('terra_lower_pic.jpg');
             background-repeat: no-repeat;
             background-size: cover;
         }
