@@ -14,8 +14,10 @@ document.addEventListener('turbolinks:load', function () {
     })
     $.map(winesOptionsItems, function (option) {
       $(option).on('click', function (e) {
-        var id = e.target.dataset.selectOption
-        window.location.href = window.location.href.slice(0, -1) + id
+        var newSlug = e.target.dataset.selectOption
+        var oldUrl = window.location.href
+        var prevSlugStartIndex = oldUrl.lastIndexOf('/') + 1
+        window.location.href = oldUrl.slice(0, prevSlugStartIndex) + newSlug
       })
     })
   }
@@ -47,6 +49,14 @@ document.addEventListener('turbolinks:load', function () {
       event.preventDefault()
     })
     $('.bottle').css('transform', 'translateY(0)')
+
+    var bottles = $('[data-wine-path]')
+    $.map(bottles, function (bottle) {
+      $(bottle).on('click', function (e) {
+        var url = e.currentTarget.dataset.winePath
+        window.location.href = window.location.origin + url
+      })
+    })
   }
 
   var fakeScrollArea = $('#fakeScrollArea')
