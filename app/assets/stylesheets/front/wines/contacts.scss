@@ -7,7 +7,7 @@
     padding: 91px 25px 0;
 
     background-color: #EEEDE7;
-    
+
     .toContacts {
         display: none;
 
@@ -186,7 +186,7 @@
                 font-size: 34px;
                 line-height: 60px;
             }
-            
+
             .toContacts {
                 display: table;
                 position: relative;
@@ -243,7 +243,8 @@
         padding-left: 250px;
 
         .contactsInnerWrapper {
-
+            overflow: hidden;
+            
             .wannaVisit {
                 padding-top: 54px;
             }
