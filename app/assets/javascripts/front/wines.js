@@ -73,8 +73,9 @@ document.addEventListener('turbolinks:load', function () {
   if (bottles) {
     $.map(bottles, function (bottle) {
       $(bottle).on('click', function (e) {
-        var url = e.target.dataset.winePath
-        window.location.href = window.location.origin + url
+        console.log(e.target.dataset.winePath);
+        var url = e.target.dataset.winePath;
+        window.location.href = window.location.origin + url;
       })
     })
   }
