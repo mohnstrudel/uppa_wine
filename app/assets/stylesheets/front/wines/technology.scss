@@ -1,7 +1,7 @@
 .technologyOuterWrapper {
     .technologyInnerWrapper {
         display: flex;
-        overflow: scroll;
+//        overflow: scroll;
         flex-flow: column nowrap;
 
         width: 100%;
@@ -111,6 +111,8 @@
         .knowMoreLink {
             text-decoration: none;
             text-transform: uppercase;
+            
+            margin-bottom: 62px;
 
             .knowMore {
                 display: flex;
@@ -240,7 +242,7 @@
             background-size: cover;
 
             min-width: 50%;
-            height: auto;
+            min-height: 170%;
         }
     }
 }
@@ -248,15 +250,22 @@
 @media (min-width: 1000px) {
     .technologyOuterWrapper {
         padding-left: 250px;
+        
+        .grapeBush {
+            min-height: 170%;
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .technologyOuterWrapper {
         padding-left: 300px;
+        
+        .grapeBush {
+            min-height: 130%;
+        }
 
         .technologyInnerWrapper {
-            overflow-x: hidden;
             padding-right: 15px;
 
             .descriptionCommon {
@@ -272,6 +281,39 @@
             .notUsing {
                 padding-top: 55px;
             }
+        }
+    }
+}
+
+@media (max-height: 673px) {
+    .technologyOuterWrapper {
+        .grapeBush {
+            min-height: 200%;
+        }
+    }
+}
+
+@media (min-height: 673px) {
+    .technologyOuterWrapper {
+        .grapeBush {
+            min-height: 150%;
+        }
+    }
+}
+
+
+@media (min-height: 750px) {
+    .technologyOuterWrapper {
+        .grapeBush {
+            min-height: 135%;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    .technologyOuterWrapper {
+        .grapeBush {
+            min-height: 105%;
         }
     }
 }
