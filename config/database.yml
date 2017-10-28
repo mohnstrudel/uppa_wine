@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  host: localhost
   database: uppa_wine_production
   username: uppa_wine
   password: <%= Figaro.env.database_password %>
