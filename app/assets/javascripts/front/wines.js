@@ -1,9 +1,9 @@
 document.addEventListener('turbolinks:load', function () {
-  var headerOpenBtn = document.getElementById('headerOpenBtn')
-  var menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn')
-  var menuHeaderCloseBtn = document.getElementById('menuHeaderCloseBtn')
-  var menu = document.getElementById('menu')
-  var dim = document.getElementById('dim')
+  var headerOpenBtn = document.getElementById('headerOpenBtn');
+  var menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn');
+  var menuHeaderCloseBtn = document.getElementById('menuHeaderCloseBtn');
+  var menu = document.getElementById('menu');
+  var dim = document.getElementById('dim');
 
   // Выбор года бутылки из выпадашки на мобилках
   var winesSelector = $('#winesSelector__Title')

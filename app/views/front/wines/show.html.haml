@@ -50,6 +50,11 @@
     / Рекомаендации
     %h3.title гастрономические рекомендации
     %p.description=@wine.recommendations
+
+    / Особенность
+    %h3.title Особенность
+    %p.description=@wine.speciality
+    
     -if @vintage.wines.count > 1
       .wineSelector
         -if @previous_wine
