@@ -1,4 +1,5 @@
 /* 18 есть? */
+
 .ageOuterWrapper {
     position: absolute;
     z-index: 10;
@@ -16,7 +17,7 @@
 
     transition: opacity 300ms ease;
 
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 
     .ageContainer {
         display: flex;
@@ -103,6 +104,7 @@
         }
     }
 }
+
 /* есть, есть */
 
 .mainWrapper {
@@ -111,24 +113,19 @@
     width: 100%;
     height: 100%;
 
-    background-image: asset-url('main_bottles.png');
+    background-image: asset-url('posterimg_mobile.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bgVideo {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    min-width: 100%;
-    min-height: 100%;
-}
-
 .mobileHelper {
     display: none;
+}
+
+@media (max-width: 799px) {
+    .bgVideo {
+        display: none;
+    }
 }
 
 @media (min-width: 568px) and (orientation: landscape) {
@@ -138,26 +135,37 @@
 }
 
 @media (min-width: 800px) {
-  .mainWrapper {
-    transition: 300ms background-position ease;
+    .mainWrapper {
+        transition: 300ms background-position ease;
 
-    background-image: asset-url('main_bottles_800.png');
-    background-position: 250px;
-  }
+        background-image: asset-url('posterimg.jpeg');
+        background-position: 250px;
+    }
+    
+    .bgVideo {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
 
-  .mobileHelper {
-    display: inherit;
-  }
+        min-width: 100%;
+        min-height: 100%;
+    }
 
-  .mobileHelper ~ .mainWrapper {
-    background-position: 50px;
-    background-size: cover;
-  }
+    .mobileHelper {
+        display: inherit;
+    }
+
+    .mobileHelper ~ .mainWrapper {
+        background-position: 50px;
+        background-size: cover;
+    }
 }
 
-@media (min-width: 1000px)  {
+@media (min-width: 1000px) {
     .mainWrapper {
-        background-image: asset-url('main_bottles_1000.png');
+        background-image: asset-url('posterimg.jpeg');
         background-position: 150px;
     }
 
@@ -169,7 +177,7 @@
 
 @media (min-width: 1200px) {
     .mainWrapper {
-        background-image: asset-url('main_bottles_1200.png');
+        background-image: asset-url('posterimg.jpeg');
     }
 
     .mobileHelper ~ .mainWrapper {
