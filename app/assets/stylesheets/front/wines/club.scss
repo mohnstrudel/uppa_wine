@@ -2,8 +2,6 @@
     
     .clubInnerWrapper {
         display: flex;
-        overflow: scroll;
-        overflow-x: hidden;
         flex-flow: column nowrap;
 
         width: 100%;
@@ -185,9 +183,6 @@
     }
 }
 
-.grapeBerriesBig {
-    display: none;
-}
 
 @media (min-width: 800px) {
     .clubOuterWrapper {
@@ -271,8 +266,38 @@
 @media (min-width: 1200px) {
     .clubOuterWrapper {
             padding-left: 300px;
-        
-        .clubInnerWrapper {
+    }
+}
+
+@media (max-height: 673px) {
+    .clubOuterWrapper {
+        .grapeBerriesBig {
+            min-height: 200%;
+        }
+    }
+}
+
+@media (min-height: 673px) {
+    .clubOuterWrapper {
+        .grapeBerriesBig {
+            min-height: 150%;
+        }
+    }
+}
+
+
+@media (min-height: 750px) {
+    .clubOuterWrapper {
+        .grapeBerriesBig {
+            min-height: 115%;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    .technologyOuterWrapper {
+        .grapeBush {
+            min-height: 105%;
         }
     }
 }
