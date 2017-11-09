@@ -45,8 +45,8 @@ document.addEventListener('turbolinks:load', function () {
 
   var winesCatalog = $('#bottles-index')
   if (winesCatalog) {
-    winesCatalog.mousewheel(function(event, delta) {
-      this.scrollLeft -= (delta * 2)
+    winesCatalog.mousewheel(function(event) {
+      this.scrollLeft -= (event.deltaY * 2)
       event.preventDefault()
     })
     $('.bottle').css('transform', 'translateY(0)')
