@@ -45,20 +45,34 @@ document.addEventListener('turbolinks:load', function () {
 
   var winesCatalog = $('#bottles-index')
   if (winesCatalog) {
-    winesCatalog.mousewheel(function(event) {
-      function normalizeWheelSpeed(event) {
-        var normalized;
-        if (event.wheelDelta) {
-          normalized = (event.wheelDelta % 120 - 0) === -0 ? event.wheelDelta / 120 : event.wheelDelta / 12;
-        } else {
-          var rawAmmount = event.deltaY ? event.deltaY : event.detail;
-          normalized = -(rawAmmount % 3 ? rawAmmount * 10 : rawAmmount / 3);
-        }
-        return normalized;
+    var timeout, trackpad = false;
+    winesCatalog.mousewheel(function(e, delta) {
+      if( trackpad || Math.abs(e.deltaX) ) {
+        // probably using trackpad
+        // only respond on X axis for a second
+        trackpad = true; clearTimeout( timeout );
+        timeout = setTimeout(function(){ trackpad = false; }, 1000);
+        // use a smaller multiplier
+          this.scrollLeft -= (e.deltaX * 10);
+      } else {
+          // most likely not trackpad
+          this.scrollLeft -= (e.deltaY * 20);
       }
-      var d = normalizeWheelSpeed(event)
-      this.scrollLeft -= d * 0.8
-      event.preventDefault()
+
+      e.preventDefault();
+      // function normalizeWheelSpeed(event) {
+      //   var normalized;
+      //   if (event.wheelDelta) {
+      //     normalized = (event.wheelDelta % 120 - 0) === -0 ? event.wheelDelta / 120 : event.wheelDelta / 12;
+      //   } else {
+      //     var rawAmmount = event.deltaY ? event.deltaY : event.detail;
+      //     normalized = -(rawAmmount % 3 ? rawAmmount * 10 : rawAmmount / 3);
+      //   }
+      //   return normalized;
+      // }
+      // var d = normalizeWheelSpeed(event)
+      // this.scrollLeft -= d * 0.8
+      // event.preventDefault()
     })
     $('.bottle').css('transform', 'translateY(0)')
 
