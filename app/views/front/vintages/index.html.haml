@@ -5,7 +5,7 @@
       -if index == 0
         %a.goToWines{:href => "#"} ВИНА
       =image_tag_or_default(vintage.wines.last, 'logo', class: 'bottleImage')
-      .bottleDescription
+      .bottleDescription{style: "cursor: default;"}
         .wineDescription
           .wineName=vintage.title
           .wineSortWrapper
