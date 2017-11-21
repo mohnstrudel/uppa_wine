@@ -5,6 +5,7 @@ document.addEventListener('turbolinks:load', function () {
   var menu = document.getElementById('menu');
   var dim = document.getElementById('dim');
 
+
   // Выбор года бутылки из выпадашки на мобилках
   var winesSelector = $('#winesSelector__Title')
   if (winesSelector) {
@@ -46,20 +47,26 @@ document.addEventListener('turbolinks:load', function () {
   var winesCatalog = $('#bottles-index')
   if (winesCatalog) {
     var timeout, trackpad = false;
-    winesCatalog.mousewheel(function(e, delta) {
-      if( trackpad || Math.abs(e.deltaX) ) {
-        // probably using trackpad
-        // only respond on X axis for a second
-        trackpad = true; clearTimeout( timeout );
-        timeout = setTimeout(function(){ trackpad = false; }, 1000);
-        // use a smaller multiplier
-          this.scrollLeft -= (e.deltaX * 10);
-      } else {
-          // most likely not trackpad
-          this.scrollLeft -= (e.deltaY * 40);
-      }
+    this.$container = $('#bottles-index');
+    var self = this;
+    this.$container.on('mousewheel', function(event) {
+    // winesCatalog.mousewheel(function(e, delta, deltaX, deltaY) {
+      self.$container.scrollLeft( self.$container.scrollLeft() - ( event.deltaY * event.deltaFactor ) );
+      // console.log("DeltaX is : " + deltaX);
+      // console.log("DeltaY is : " + deltaY);
+      // if( trackpad || Math.abs(e.deltaX) ) {
+      //   // probably using trackpad
+      //   // only respond on X axis for a second
+      //   trackpad = true; clearTimeout( timeout );
+      //   timeout = setTimeout(function(){ trackpad = false; }, 1000);
+      //   // use a smaller multiplier
+      //     this.scrollLeft -= (e.deltaY * 1.5);
+      // } else {
+      //     // most likely not trackpad
+      //     this.scrollLeft -= (e.deltaY * 60);
+      // }
 
-      e.preventDefault();
+      // e.preventDefault();
       // function normalizeWheelSpeed(event) {
       //   var normalized;
       //   if (event.wheelDelta) {
@@ -72,11 +79,11 @@ document.addEventListener('turbolinks:load', function () {
       // }
       // var d = normalizeWheelSpeed(event)
       // this.scrollLeft -= d * 0.8
-      // event.preventDefault()
-    })
-    $('.bottle').css('transform', 'translateY(0)')
+      event.preventDefault()
+    });
+    $('.bottle').css('transform', 'translateY(0)');
 
-    var bottles = $('[data-wine-path]')
+    var bottles = $('[data-wine-path]');
     $.map(bottles, function (bottle) {
       $(bottle).on('click', function (e) {
         var url = e.currentTarget.dataset.winePath
