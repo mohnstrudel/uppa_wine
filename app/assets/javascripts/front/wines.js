@@ -50,44 +50,21 @@ document.addEventListener('turbolinks:load', function () {
     this.$container = $('#bottles-index');
     var self = this;
     this.$container.on('mousewheel', function(event) {
-    // winesCatalog.mousewheel(function(e, delta, deltaX, deltaY) {
       self.$container.scrollLeft( self.$container.scrollLeft() - ( event.deltaY * event.deltaFactor ) );
-      // console.log("DeltaX is : " + deltaX);
-      // console.log("DeltaY is : " + deltaY);
-      // if( trackpad || Math.abs(e.deltaX) ) {
-      //   // probably using trackpad
-      //   // only respond on X axis for a second
-      //   trackpad = true; clearTimeout( timeout );
-      //   timeout = setTimeout(function(){ trackpad = false; }, 1000);
-      //   // use a smaller multiplier
-      //     this.scrollLeft -= (e.deltaY * 1.5);
-      // } else {
-      //     // most likely not trackpad
-      //     this.scrollLeft -= (e.deltaY * 60);
-      // }
-
-      // e.preventDefault();
-      // function normalizeWheelSpeed(event) {
-      //   var normalized;
-      //   if (event.wheelDelta) {
-      //     normalized = (event.wheelDelta % 120 - 0) === -0 ? event.wheelDelta / 120 : event.wheelDelta / 12;
-      //   } else {
-      //     var rawAmmount = event.deltaY ? event.deltaY : event.detail;
-      //     normalized = -(rawAmmount % 3 ? rawAmmount * 10 : rawAmmount / 3);
-      //   }
-      //   return normalized;
-      // }
-      // var d = normalizeWheelSpeed(event)
-      // this.scrollLeft -= d * 0.8
       event.preventDefault()
     });
+
     $('.bottle').css('transform', 'translateY(0)');
 
     var bottles = $('[data-wine-path]');
     $.map(bottles, function (bottle) {
       $(bottle).on('click', function (e) {
+        var senderElement = e.target;
+        // console.log("senderElement is: " + senderElement);
         var url = e.currentTarget.dataset.winePath
-        window.location.href = window.location.origin + url
+        if($(e.target).is(".bottle") || ($(e.target).is(".bottleImage"))) {
+          window.location.href = window.location.origin + url
+        }
       })
     })
   }
