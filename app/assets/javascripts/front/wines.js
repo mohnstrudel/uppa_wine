@@ -46,7 +46,18 @@ document.addEventListener('turbolinks:load', function () {
   var winesCatalog = $('#bottles-index')
   if (winesCatalog) {
     winesCatalog.mousewheel(function(event) {
-      this.scrollLeft -= (event.deltaY * 2)
+      function normalizeWheelSpeed(event) {
+        var normalized;
+        if (event.wheelDelta) {
+          normalized = (event.wheelDelta % 120 - 0) === -0 ? event.wheelDelta / 120 : event.wheelDelta / 12;
+        } else {
+          var rawAmmount = event.deltaY ? event.deltaY : event.detail;
+          normalized = -(rawAmmount % 3 ? rawAmmount * 10 : rawAmmount / 3);
+        }
+        return normalized;
+      }
+      var d = normalizeWheelSpeed(event)
+      this.scrollLeft -= d * 0.8
       event.preventDefault()
     })
     $('.bottle').css('transform', 'translateY(0)')
