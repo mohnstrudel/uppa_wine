@@ -56,7 +56,7 @@ document.addEventListener('turbolinks:load', function () {
           this.scrollLeft -= (e.deltaX * 10);
       } else {
           // most likely not trackpad
-          this.scrollLeft -= (e.deltaY * 20);
+          this.scrollLeft -= (e.deltaY * 40);
       }
 
       e.preventDefault();
