@@ -1,3 +1,4 @@
+
 document.addEventListener('turbolinks:load', function () {
   var headerOpenBtn = document.getElementById('headerOpenBtn');
   var menuHeaderOpenBtn = document.getElementById('menuHeaderOpenBtn');
@@ -44,7 +45,7 @@ document.addEventListener('turbolinks:load', function () {
     }, 300)
   }
 
-  var winesCatalog = $('#bottles-index')
+  var winesCatalog = $('#bottles-index');
   if (winesCatalog) {
     var timeout, trackpad = false;
     this.$container = $('#bottles-index');
@@ -53,6 +54,26 @@ document.addEventListener('turbolinks:load', function () {
       self.$container.scrollLeft( self.$container.scrollLeft() - ( event.deltaY * event.deltaFactor ) );
       event.preventDefault()
     });
+
+    $(document).on('keyup', function(event, delta, deltaX, deltaY){
+      if(event.keyCode == 39 || event.keyCode == 40){
+        // При нажатии на вниз ИЛИ вправо скроллим вправо
+        var leftPos = winesCatalog.scrollLeft();
+        winesCatalog.animate({scrollLeft: leftPos + 600}, 800);
+        
+        // console.log('pressing right arrow');
+      }
+      else if(event.keyCode == 37 || event.keyCode == 38){
+        // При нажатии на вверх ИЛИ влево скроллим влево
+        var leftPos = winesCatalog.scrollLeft();
+        winesCatalog.animate({scrollLeft: leftPos - 600}, 800);
+        self.$container.scrollLeft();
+        
+      }
+        
+    })
+
+
 
     $('.bottle').css('transform', 'translateY(0)');
 
