@@ -57,7 +57,7 @@ gem 'friendly_id'
 
 gem 'metamagic'
 
-gem 'devise'
+gem 'devise', git: 'https://github.com/plataformatec/devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
