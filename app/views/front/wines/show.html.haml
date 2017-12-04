@@ -1,7 +1,7 @@
 -meta title: @vintage.title + " " + @vintage.subtitle + " " + @wine.year
 
 .showOuterWrapper
-  .valleyView
+  .valleyView{style: "background-image: url(#{asset_path(@picture_path)});"}
     %a.goBack{:href => "/wines"} НАЗАД
   .showPage__bottleContainer
     = image_tag_or_default(@wine, 'logo', class: 'showPage__bottleContainer__bottleImage')
