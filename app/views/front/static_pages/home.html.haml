@@ -2,15 +2,12 @@
 -unless @legal_age
   .ageOuterWrapper
     .ageContainer
-      .theWords Для посещения сайта необходимо подтвердить свой возраст
+      .theWords=t('static.home.visit')
       %a{:href => age_confirmation_path}
         .alreadyEighteen
-          мне есть 18
+          =t('static.home.legal')
           .arrowSmallRight
   / есть, есть
 .mainWrapper
-%div.text-on-index
-  Биодинамическая винодельня
-  %br Uppa Winery 
 %video.bgVideo{preload: "auto", autoplay: "true", loop: "loop", muted: "muted", volume: "0"}
   %source{src: asset_path("bg.mp4"), type: "video/mp4"}
