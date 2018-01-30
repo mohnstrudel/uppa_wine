@@ -114,6 +114,14 @@
                 .contactItem:hover > a {
                     color: #fff;
                 }
+
+                .contactItemLanguage a:hover  {
+                    color: #fff;
+                }
+                .contactItemLanguage  {
+                    margin-top: 5px;
+                    color: rgba(216, 216, 216, 0.3);
+               }
             }
         }
 
