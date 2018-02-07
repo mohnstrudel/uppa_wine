@@ -9,6 +9,9 @@
           .arrowSmallRight
   / есть, есть
 .mainWrapper
-%div.text-on-index=t('static.home.main')
+%div.text-on-index
+  =t('static.home.main_1')
+  %br
+  =t('static.home.main_2')
 %video.bgVideo{preload: "auto", autoplay: "true", loop: "loop", muted: "muted", volume: "0"}
   %source{src: asset_path("bg.mp4"), type: "video/mp4"}
