@@ -31,11 +31,11 @@
             =link_to t('menu.visit'), visit_path
             .arrowSmall
           %li.contactItemLanguage
-            =link_to "ENG  ", locale: 'en'
+            =link_to "ENG  ", { locale: 'en' }, { class: "#{'activeLanguage' if I18n.locale == :en }" }
             &#x2f;
-            =link_to " RU ", locale: 'ru'
+            =link_to " RU ", { locale: 'ru' }, { class: "#{I18n.locale == :ru ? 'activeLanguage' : ''}" }
             &#x2f;
-            =link_to "  CN", locale: 'cn'
+            =link_to "  CN", { locale: 'cn' }, { class: "#{I18n.locale == :cn ? 'activeLanguage' : ''}" }
             
 
       .socialWrapper
@@ -49,7 +49,7 @@
         .signImg
         .uppaShvets UPPA by Pavel Shvets
         .ourName
-          Сделано
+          =t('menu.made')
           %a{:href => "http://redobureau.com/"} redo
 -if is_black ||= false
   .header.headerBlack

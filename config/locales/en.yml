@@ -10,6 +10,12 @@ en:
     visit: Visit  us
     to_catalog: go to the catalogue
     about_technology: About technology
+    made: made 
+    made_by_redo: made by redo
+
+  wines:
+    title: wines
+    breadcrumb: wines
 
   static:
     about:
@@ -61,6 +67,8 @@ en:
       download_logo: Download logo
       organize_visit: Would you like to arrange a visit?
       knowMore: More information
+      full_address:
+      postal_full_address: 
 
     home:
       visit: Please confirm your age

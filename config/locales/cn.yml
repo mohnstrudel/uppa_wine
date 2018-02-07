@@ -10,6 +10,12 @@ cn:
     visit: 安排庄园游览
     to_catalog: 查目录
     about_technology: 工艺简介
+    made: 
+    made_by_redo: 
+
+  wines:
+    title: 
+    breadcrumb: 
 
   static:
     about:
@@ -61,6 +67,8 @@ cn:
       download_logo: 下载商标
       organize_visit: 愿意安排庄园导览吗？
       knowMore: 得到更多信息
+      full_address:
+      postal_full_address: 
 
     home:
       visit: 网站访客要证明年龄

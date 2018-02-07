@@ -10,6 +10,12 @@ ru:
     visit: Организация визита
     to_catalog: перейти в каталог
     about_technology: о технологии
+    made: сделано
+    made_by_redo: сделано в redo
+
+  wines:
+    title: ВИНА
+    breadcrumb: ВИНА 
 
   static:
     about:
@@ -61,6 +67,8 @@ ru:
       download_logo: Скачать логотип
       organize_visit: Хотите организовать визит?
       knowMore: узнать больше
+      full_address:
+      postal_full_address: 
 
     home:
       visit: Для посещения сайта необходимо подтвердить свой возраст

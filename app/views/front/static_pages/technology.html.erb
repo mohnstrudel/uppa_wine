@@ -38,13 +38,13 @@
 
         <div class="wannaVisit"><%= t('static.technology.visit') %> </div>
 
-        <a href="/visit" class="knowMoreLink">
+        <%= link_to visit_path, class: 'knowMoreLink' do %>
             <div class="knowMore"><%= t('static.technology.learn_more')%> <div class="arrowSmallRight"></div></div>
-        </a>
+        <% end %>
 
         <div class="footerTechnology">
             <p class="UPPA">© UPPA by Pavel Shvets</p>
-            <a href="http://redobureau.com" class="ourName">сделано в redo</a>
+            <a href="http://redobureau.com" class="ourName"> <%=t('menu.made_by_redo')%> </a>
         </div>
     </div>
 
