@@ -1,7 +1,7 @@
 -meta title: t('wines.title')
 #bottles-index.bottlesWrapper
   -@vintages.each_with_index do |vintage, index|
-    .bottle{class: get_bottle_class(index), style: "background-color: #{vintage.background_color}", "data-wine-path": vintage_wine_path(vintage, vintage.wines.last)}
+    .bottle{class: get_bottle_class(index), style: "background-color: #{vintage.background_color}", "data-wine-path": vintage_wine_path(vintage, vintage.wines.last), "data-locale": I18n.locale}
       -if index == 0
         %a.goToWines{:href => "#"}=t('wines.breadcrumb')
       =image_tag_or_default(vintage.wines.last, 'logo', class: 'bottleImage')

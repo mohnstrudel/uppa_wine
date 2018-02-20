@@ -78,13 +78,19 @@ document.addEventListener('turbolinks:load', function () {
     $('.bottle').css('transform', 'translateY(0)');
 
     var bottles = $('[data-wine-path]');
+    var locale = $('.bottle');
+    console.log("locale is: " + locale.html);
+    
     $.map(bottles, function (bottle) {
       $(bottle).on('click', function (e) {
         var senderElement = e.target;
         // console.log("senderElement is: " + senderElement);
         var url = e.currentTarget.dataset.winePath
         if($(e.target).is(".bottle") || ($(e.target).is(".bottleImage"))) {
-          window.location.href = window.location.origin + url
+          if(locale == "ru"){
+            window.location.href = window.location.origin + url  
+          }
+          
         }
       })
     })
