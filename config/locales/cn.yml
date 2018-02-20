@@ -10,12 +10,12 @@ cn:
     visit: 安排庄园游览
     to_catalog: 查目录
     about_technology: 工艺简介
-    made: 
-    made_by_redo: 
+    made:
+    made_by_redo:
 
   wines:
-    title: 
-    breadcrumb: 
+    title:
+    breadcrumb:
 
   static:
     about:
@@ -67,14 +67,14 @@ cn:
       download_logo: 下载商标
       organize_visit: 愿意安排庄园导览吗？
       knowMore: 得到更多信息
-      full_address:
-      postal_full_address: 
+      full_address: 俄罗斯，Rodnoe村，巴拉克拉瓦区，塞瓦斯托坡尔市，离Rodnkoe村往北走2公里，乡村中心有指路牌
+      postal_full_address: SPK «Terruar» 299007 Russia, Sevastopol, a/ya 258
 
     home:
       visit: 网站访客要证明年龄
       legal: 我已经十八岁
-      main_1: asd
-      main_2: asd
+      main_1: Uppa Winery
+      main_2: 欢迎光临！
 
     technology:
       to_technology: 生物动物学
@@ -147,11 +147,11 @@ cn:
       height_4: 60厘米
 
     visit:
-      title: Визит на винодельню
-      main: организация визита
+      title: 安排庄园游览
+      main: 安排庄园游览
       headerCommon: 得到更多信息
       descriptionCommon_1: 欢迎到我们葡萄庄园参观参观！
-      descriptionCommon_2: 在提前安排条件下欢迎参观我们葡萄庄园。特意为你们安排游览和品酒。请您确认好把日期，时间，客人数量之类信息发到我们邮箱info@uppawine.com或给我们打个电话：7 (978) 259 29 79 – 亚历山大
+      descriptionCommon_2: 在提前安排条件下欢迎参观我们葡萄庄园。特意为你们安排游览和品酒。请您确认好把日期，时间，客人数量之类信息发到我们邮箱info@uppawine.com或给我们打个电话：+7 (915) 330-82-19
       we_await_you: 每年5月1日到10月1日欢迎到我们葡萄庄园亲身体会欣赏乡村美丽，游览无边无际葡萄园！
       picture_1_header: 安东·列比索夫
       picture_1_desc: 志同道合的人

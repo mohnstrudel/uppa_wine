@@ -10,7 +10,7 @@ en:
     visit: Visit  us
     to_catalog: go to the catalogue
     about_technology: About technology
-    made: made 
+    made: made
     made_by_redo: made by redo
 
   wines:
@@ -67,14 +67,14 @@ en:
       download_logo: Download logo
       organize_visit: Would you like to arrange a visit?
       knowMore: More information
-      full_address:
-      postal_full_address: 
+      full_address: Russia, Rodnoye village, Balaklava District, Sevastopol city, 2 km to the North from Rodnoye village, from the center of the village, please, follow the signs
+      postal_full_address: To SPK «Terruar» Adress 299007 Russia, Sevastopol, a/ya 258
 
     home:
       visit: Please confirm your age
       legal: I'm under 18
-      main_1: asd
-      main_2: asd
+      main_1: Uppa biodynamic winery
+      main_2: by Pavel Shvets
 
     technology:
       to_technology: Technology
@@ -147,11 +147,11 @@ en:
       height_4: 60 сm
 
     visit:
-      title: Визит на винодельню
-      main: организация визита
+      title: Visit winery
+      main: Visit us
       headerCommon: We are looking forward to seeing you at our winery!
       descriptionCommon_1: You can visit our winery by prior arrangement. We invite you to make a walking tour around the winery and to taste wine.
-      descriptionCommon_2:  Accomplish this by sending an email with request, including time, date, number of visitors and contact information to info@uppawine.com or call us at 7972592979 (Alexandra).
+      descriptionCommon_2:  Accomplish this by sending an email with request, including time, date, number of visitors and contact information to info@uppawine.com or call us at +7 (915) 330-82-19.
       we_await_you: We are ready to welcome you from the 1st of May to the 1st of October.
       picture_1_header: Anton Rebizov
       picture_1_desc: Team member
