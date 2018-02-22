@@ -87,9 +87,9 @@ document.addEventListener('turbolinks:load', function () {
         // console.log("senderElement is: " + senderElement);
         var url = e.currentTarget.dataset.winePath
         if($(e.target).is(".bottle") || ($(e.target).is(".bottleImage"))) {
-          if(locale == "ru"){
+          // if(locale == "ru"){
             window.location.href = window.location.origin + url  
-          }
+          // }
           
         }
       })
