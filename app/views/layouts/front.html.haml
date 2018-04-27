@@ -8,5 +8,7 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
 
   %body{class: "#{controller_name} #{action_name}"}
+    %noscript
+      %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-P8P9K4N", :style => "display:none;visibility:hidden", :width => "0"}
     =render_menu
     =yield
