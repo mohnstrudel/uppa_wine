@@ -1,5 +1,6 @@
 # Change these
-server '128.199.56.94', port: 22, roles: [:web, :app, :db], primary: true
+# server '128.199.56.94', port: 22, roles: [:web, :app, :db], primary: true
+server '188.225.73.159', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:mohnstrudel/uppa_wine.git'
 set :application,     'uppa_wine'
