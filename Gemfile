@@ -48,7 +48,7 @@ gem 'bootsy' # Screw CKEditor, it's not working on production!
 gem "font-awesome-rails"
 gem 'bootstrap-glyphicons'
 
-gem 'rollbar'
+gem 'rollbar', '~> 2.15.5'
 gem 'figaro'
 
 gem 'carrierwave'
