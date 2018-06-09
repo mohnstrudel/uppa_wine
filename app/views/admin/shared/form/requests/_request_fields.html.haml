@@ -1,0 +1,23 @@
+-if object.respond_to?(:name)
+  .form-group
+    %label.col-sm-2.control-label
+      Имя
+    .col-sm-10
+      =f.text_field :name, class: 'form-control'
+  .hr-line-dashed
+
+-if object.respond_to?(:phone)
+  .form-group
+    %label.col-sm-2.control-label
+      Телефон
+    .col-sm-10
+      =f.text_field :phone, class: 'form-control'
+  .hr-line-dashed
+
+-if object.respond_to?(:city)
+  .form-group
+    %label.col-sm-2.control-label
+      Город
+    .col-sm-10
+      =f.text_field :city, class: 'form-control'
+  .hr-line-dashed

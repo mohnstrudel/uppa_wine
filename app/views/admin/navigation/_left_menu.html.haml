@@ -33,6 +33,15 @@
           %li
             =link_to 'Новое вино', new_admin_vintage_path
 
+      =nav_link "" do
+        %i.fa.fa-flask
+        %span.nav-label
+          Сервисы
+        %span.fa.arrow
+        %ul.nav.nav-second-level.collapse
+          %li.active
+            =link_to "Заявки", admin_requests_path
+
       =nav_link admin_settings_path do
         %i.fa.fa-cog
         %span.nav-label

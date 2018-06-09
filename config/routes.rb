@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # devise_for :admins
   devise_for :admins, 
       controllers: {
@@ -18,6 +19,7 @@ Rails.application.routes.draw do
     get '/', to: 'dashboard#index'
     resources :vintages
     resources :settings
+    resources :requests
   end
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
@@ -33,6 +35,7 @@ Rails.application.routes.draw do
       resources :vintages, path: :wines do
         resources :wines, path: :vintages
       end
+      resources :requests, only: :create
     end
   end
 

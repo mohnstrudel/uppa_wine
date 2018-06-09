@@ -95,6 +95,10 @@
     =render partial: "admin/shared/form/general_settings/contact_fields", locals: { f: f, object: object }
     / User part end
 
+    / User part begin (only unique to user fields)
+    =render partial: "admin/shared/form/requests/request_fields", locals: { f: f, object: object }
+    / User part end
+
 
     .hr-line-dashed
     .form-group

@@ -1,4 +1,7 @@
 class Front::StaticPagesController < FrontController
+    
+  before_action :set_page_loading_time
+
   def about
   end
 
@@ -8,6 +11,8 @@ class Front::StaticPagesController < FrontController
   def contacts
     @clean_sales_phone = @setting.clean_phone(@setting.sales_phone)
     @clean_visit_phone = @setting.clean_phone(@setting.visit_phone)
+
+    @request = Request.new
   end
 
   def technology
@@ -25,5 +30,15 @@ class Front::StaticPagesController < FrontController
   def age_confirmation
     session[:already_18] = true
     redirect_to root_path
+  end
+
+  private
+
+  def set_page_loading_time
+    # Delete old timers
+    session.delete(:timer_1)
+    session.delete(:timer_2)
+    # Setup new
+    session[:timer_1] = Time.now
   end
 end

@@ -37,6 +37,22 @@
       .knowMore
         =t('static.contacts.knowMore')
         .arrowSmallRight
+
+    .contact_form#form
+      =form_with(model: @request) do |f|
+        .name
+          =f.text_field :name, placeholder: 'Имя Фамилия Отчество'
+        .email
+          =f.text_field :email, placeholder: 'Ваша почта'
+        .phone
+          =f.text_field :phone, placeholder: 'Телефон'
+        .city
+          =f.text_field :city, placeholder: 'Ваш город'
+        .message
+          =f.text_area :body, placeholder: 'Ваше сообщение'
+        .submit
+          =f.submit 'Отправить'
+
     .footerContacts
       %p.UPPA © UPPA by Pavel Shvets
       %a.ourName{:href => "http://redobureau.com"}=t('menu.made_by_redo')
