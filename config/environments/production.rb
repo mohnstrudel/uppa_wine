@@ -106,7 +106,7 @@ Rails.application.configure do
     :address => Figaro.env.mailer_address,
     :port => Figaro.env.mailer_port,
     :authentication => :plain,
-    # :enable_starttls_auto => true
+    :enable_starttls_auto => true
     tls: true
   }
 end
