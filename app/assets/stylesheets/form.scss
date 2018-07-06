@@ -7,3 +7,47 @@
   padding: 0;
   margin: 0;
 }
+
+.contact_form {
+
+}
+
+.contact_form input:focus{
+  border: none;
+}
+
+.contact_form input{
+  appearance: none;
+  font: inherit;
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+
+  height: 50px;
+  width: 400px;
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+.contact_form input[type=text]{
+  background-color: #dcd7d1;
+  padding-left: 13px;
+}
+
+.contact_form input[type=submit]{
+  width: 240px;
+  border: 1px solid black;
+}
+
+.contact_form textarea{
+  display: none;
+}
+.g-form__text{
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 300;
+  font-style: normal;
+}
