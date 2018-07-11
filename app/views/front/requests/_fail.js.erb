@@ -1,12 +1,14 @@
 $('#form').find('.text-error').empty();
 
 var errors = "<%= @request.errors.messages %>";
-// console.log(typeof errors);
+console.log('Errors are: ' + errors);
 
 errors_array = errors.split(',');
 
+
 for (item of errors_array) {
   var field_name = item.substring(item.lastIndexOf(":")+1, item.lastIndexOf("="));
+  console.log('Item is: ' + item);
 
   if (field_name == 'bot') {
     $('#form').append("<p><div class='g-form__text text-error'>К сожалению, ваши действия очень похожи на действия бота. Попробуйте заполнить форму в более спокойном темпе.</p></div>");

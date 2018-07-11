@@ -12,7 +12,7 @@ class Front::StaticPagesController < FrontController
     @clean_sales_phone = @setting.clean_phone(@setting.sales_phone)
     @clean_visit_phone = @setting.clean_phone(@setting.visit_phone)
 
-    @request = Request.new
+    
   end
 
   def technology
@@ -22,6 +22,7 @@ class Front::StaticPagesController < FrontController
   end
 
   def club
+    @request = Request.new
   end
 
   def terra

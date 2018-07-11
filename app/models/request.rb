@@ -5,5 +5,5 @@ class Request < ApplicationRecord
   validates :email, presence: true,
                 format: { with: VALID_EMAIL_REGEX }
 
-  validates :name, :phone, :body, presence: true
+  validates :name, :phone, presence: true
 end
