@@ -30,7 +30,7 @@ class Front::RequestsController < FrontController
         end
       end
     else
-      @request.errors.add(:bot, "К сожалению, у нас подозрение, что вы бот. Попробуйте заполнить форму ещё раз.")
+      @request.errors.add(:bot, "Подозрение на бота. Попробуйте заполнить форму ещё раз.")
       respond_to do |format|
         format.js { render partial: 'fail' }
       end

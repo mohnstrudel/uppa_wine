@@ -15,9 +15,10 @@ for (item of errors_array) {
   }
   else if (field_name == 'attachments'){
     $('#form').append("<p><div class='g-form__text text-error'>К сожалению, формат загруженных файлов не поддерживается.</p></div>");
-  }
+  } else {
   // $input = $('form').find("input[name='request[" + field_name + "]']");
   // $input.parents(".g-input").toggleClass("g-input_error", true);
 
-  $('#form').append("<p><div class='g-form__text text-error'>Поле "+ field_name + " не заполнено.</p></div>");
+    $('#form').append("<p><div class='g-form__text text-error'>Поле "+ field_name + " не заполнено.</p></div>");
+  }
 }
