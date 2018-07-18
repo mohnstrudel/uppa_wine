@@ -46,10 +46,10 @@ en:
     club:
       enter: Join the Uppa Club!
       descriptionCommon_1: Join our Wine Club and enjoy its benefits. UPPA WINERY wine is widely known among connoisseurs and the major part of it is reserved by distributing companies prior to bottling. We’re sorry to tell you that due to a limited edition we are not always ready to provide required quantity to individual customers and collectors. For the purpose of direct selling we have created the UPPA WINERY Club. So, its members have an opportunity to buy the wine first, directly and at special prices. Also, members of the community receive notifications about availability of every batch of our wine.
-      what_to_know: About the Club
-      know_li_1: To enter the Club you should fill up the form and send it by email to 7557390@mail.ru    
-      know_li_2: Both membership and each batch of wine are limited.  
-      know_li_3: Outgoing minimum quantity of wine makes 12 bottles of the same item.  
+      what_to_know: To enter the Club you should fill up the form on this page
+      know_li_1: To enter the Club you should fill up the form and send it by email to 7557390@mail.ru  
+      know_li_2: Both membership and each batch of wine are limited. 
+      know_li_3: Outgoing minimum quantity of wine makes 12 bottles of the same item. 
       know_li_4: Dispatch is performed after 100% advance payment.
       know_li_5: Delivery is at your expense. It is important to bear in mind that in summer wine could be spoiled due to overheat, and in winter — due to overcooling.
       welcome: Welcome!
@@ -82,7 +82,7 @@ en:
       descriptionCommon_1: From the very moment of our vineyards layout we follow the special principles of biodynamics.
       descriptionCommon_2: Our vineyards are grown in harmony with surrounding nature. Our careful attitude to nature and non-use of pesticides allow to form natural environment and ecological balance in order to defend the vineyard of pest’s outbreaks. Our agricultural methods are characterized by some special features. They provide balanced vine nutrition, decreasing influence of stress factors, monitoring of species composition of potential pests, increasing biological diversity at the vineyard.
       what_we_use: "THAT’S WHAT WE USE:"
-      li_1: Green harvest (total wine output about 30 hl/ha)  
+      li_1: Green harvest (total wine output about 30 hl/ha) 
       li_2: The best level of fruit ripeness 
       li_3: Manual harvesting into boxes of up to 10 kg
       li_4: Manual sorting of bunches and berries 
@@ -93,7 +93,7 @@ en:
       li_9: Aging of wine in barrels of 228 and 500 l
       what_we_dont_use: "That’s what we do not use:"
       li_10: Chaptalisation
-      li_11: Chemical deoxidation and acidification  
+      li_11: Chemical deoxidation and acidification 
       li_12: Colour correction
       li_13: Tannin content correction
       li_14: Microoxidation

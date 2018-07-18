@@ -12,25 +12,19 @@
 
         <div class="titleCommon possibilities"><%= t('static.club.what_to_know') %></div>
 
-        <ol>
-            <li><%= t('static.club.know_li_1') %></li>
-            <li><%= t('static.club.know_li_2') %></li>
-            <li><%= t('static.club.know_li_3') %></li>
-            <li><%= t('static.club.know_li_4') %></li>
-            <li><%= t('static.club.know_li_5') %></li>
-        </ol>
 
-        <div class="titleCommon welcomeToUppa"> <%= t('static.club.welcome') %> </div>
+
+  
 
 <!--         <a href="anketa.pdf", download="anketa"><div class="downloadForm"> <%= t('static.club.download') %><div class="arrowSmallRight"></div></div></a> -->
 
         <div class='contact_form' id='form'>
             <%= form_with(model: @request) do |f| %>
                 <div class='name'>
-                  <%= f.text_field :name, placeholder: 'Имя Фамилия Отчество' %>
+                  <%= f.text_field :name, placeholder: 'Имя' %>
                 </div>
                 <div class='email'>
-                  <%= f.text_field :email, placeholder: 'Ваша почта' %>
+                  <%= f.text_field :email, placeholder: 'Электронная почта' %>
                 </div>
                 <div class='phone'>
                   <%= f.text_field :phone, placeholder: 'Телефон' %>
