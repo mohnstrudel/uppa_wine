@@ -34,6 +34,9 @@
                 -if object.has_attribute? :first_name
                   %th
                     =t('admin.form.model.first_name')
+                -if object.has_attribute? :name
+                  %th
+                    Имя
                 -if object.has_attribute? :body
                   %th
                     =t('admin.form.model.body')
@@ -43,6 +46,9 @@
                 -if object.has_attribute? :email
                   %th
                     =t('admin.form.model.email')
+                -if object.has_attribute? :phone
+                  %th
+                    Телефон
                 %th
                   =t('admin.form.model.created')
                 %th.text-right
@@ -61,6 +67,9 @@
                   -if obj.respond_to?(:first_name)
                     %td
                       =obj.first_name
+                  -if obj.respond_to?(:name)
+                    %td
+                      =obj.name
                   -if obj.respond_to?(:body)
                     %td
                       %small
@@ -71,6 +80,9 @@
                   -if obj.respond_to?(:email)
                     %td
                       =obj.email
+                  -if obj.respond_to?(:phone)
+                    %td
+                      =obj.phone
 
                   %td
                     =time_ago_in_words(obj.created_at)
