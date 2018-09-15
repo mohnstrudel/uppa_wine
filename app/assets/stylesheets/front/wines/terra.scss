@@ -1,6 +1,6 @@
 .terraInnerWrapper {
     display: flex;
-    overflow: scroll;
+    //overflow: scroll;
     overflow-x: hidden;
     flex-flow: column nowrap;
 
@@ -152,7 +152,7 @@
             }
 
             // background-image: asset-url('palati_big.png');
-            background-image: asset-url('terra_upper_pic.jpg');
+            //background-image: asset-url('terra_upper_pic.jpg');
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -161,15 +161,37 @@
             min-height: 100%;
 
             // background-image: asset-url('numullite_big.png');
-            background-image: asset-url('terra_lower_pic.jpg');
+            //background-image: asset-url('terra_lower_pic.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
         }
     }
 }
 
 
 @media (min-width: 800px) {
+
+    .terraImgholder {
+      position: relative;
+      width: 100%;
+      display: block;
+    }
+
+    .terraImg {
+      background-color: black;
+      background-color: black;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      //background-image: asset-url('terra_lower_pic.jpg');
+      background-repeat: no-repeat;
+      //background-attachment: fixed;
+    }
+    .terraImg img{
+      width: 50%;
+    }
+
     .terraInnerWrapper {
         flex-direction: row;
 
@@ -201,8 +223,12 @@
 
                 color: #000000;
 
-                font-size: 10px;
-                line-height: 15px;
+                font-size: 12px;
+                line-height: 16px;
+
+                .tableRowName, .tableRowValue {
+                  padding-bottom: 10px;
+                }
             }
 
             .descriptionCommon {
@@ -212,8 +238,8 @@
 
                 color: #000000;
 
-                font-size: 10px;
-                line-height: 15px;
+                font-size: 12px;
+                line-height: 16px;
             }
 
             .tableRowName {

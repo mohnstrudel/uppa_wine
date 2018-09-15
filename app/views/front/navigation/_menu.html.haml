@@ -21,36 +21,36 @@
         %li.listItem
           =link_to t('menu.club'), club_path
           .arrowBig
-    .menuFooter
-      .contactsWrapper
-        %ul
-          %li.contactItem
-            =link_to t('menu.contacts'), contacts_path
-            .arrowSmall
-          %li.contactItem
-            =link_to t('menu.visit'), visit_path
-            .arrowSmall
-          %li.contactItemLanguage
-            =link_to "ENG  ", { locale: 'en' }, { class: "#{'activeLanguage' if I18n.locale == :en }" }
-            &#x2f;
-            =link_to " RU ", { locale: 'ru' }, { class: "#{I18n.locale == :ru ? 'activeLanguage' : ''}" }
-            &#x2f;
-            =link_to "  CN", { locale: 'cn' }, { class: "#{I18n.locale == :cn ? 'activeLanguage' : ''}" }
-            
+        .contactsWrapper
+          %ul
+            %li.contactItem
+              =link_to t('menu.contacts'), contacts_path
+              .arrowSmall
+            %li.contactItem
+              =link_to t('menu.visit'), visit_path
+              .arrowSmall
+            %li.contactItemLanguage
+              =link_to "EN", { locale: 'en' }, { class: "#{'activeLanguage' if I18n.locale == :en }" }
+              &nbsp;&#x2f;&nbsp;
+              =link_to " RU", { locale: 'ru' }, { class: "#{I18n.locale == :ru ? 'activeLanguage' : ''}" }
+              &nbsp;&#x2f;&nbsp;
+              =link_to "  CN", { locale: 'cn' }, { class: "#{I18n.locale == :cn ? 'activeLanguage' : ''}" }
 
-      .socialWrapper
-        -if @setting.instagram.present?
-          %a.instagram{:href => "#{@setting.instagram}"}
-        -if @setting.facebook.present?
-          %a.facebook{:href => "#{@setting.facebook}"}
-        -if @setting.vk.present?
-          %a.vkontakte{:href => "#{@setting.vk}"}
+
+        .socialWrapper
+          -if @setting.instagram.present?
+            %a.instagram{:href => "#{@setting.instagram}"}
+          -if @setting.facebook.present?
+            %a.facebook{:href => "#{@setting.facebook}"}
+          -if @setting.vk.present?
+            %a.vkontakte{:href => "#{@setting.vk}"}
+    .menuFooter
       .signatureWrapper
         .signImg
         .uppaShvets UPPA by Pavel Shvets
         .ourName
           =t('menu.made')
-          %a{:href => "http://redobureau.com/"} redo
+          %a{:href => "http://redobureau.com/"} Redo
 -if is_black ||= false
   .header.headerBlack
     %a.logoUPPA{href: '/'}

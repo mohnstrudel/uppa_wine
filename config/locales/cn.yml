@@ -10,8 +10,8 @@ cn:
     visit: 安排庄园游览
     to_catalog: 查目录
     about_technology: 工艺简介
-    made:
-    made_by_redo:
+    made: Made by
+    made_by_redo:  Made by Redo
 
   wines:
     title:
@@ -47,7 +47,7 @@ cn:
       enter: 欢迎加入我们UPPA俱乐部！
       descriptionCommon_1: 成为我们UPPA俱乐部成员并享受优惠。UPPA葡萄酒在酿酒业界比较有名，每年分装之前大部酒量已被经营者预定。由于产量有限制我们无满足每位买方或收藏家要求。为促进直接出售我们成立UPPA WINERY俱乐部，其成员享受优先购买及优惠价格。除此之外成员会每次收到新批酒瓶进入出售的通知。
       what_to_know: 俱乐部成员基本知识
-      know_li_1: 加入俱乐部之前须填表并发到下列邮箱地址：7557390@mail.ru   
+      know_li_1: 加入俱乐部之前须填表并发到下列邮箱地址：7557390@mail.ru  
       know_li_2: 成员数有限，每批葡萄酒有限
       know_li_3: 每次起订量：12瓶同一品种酒
       know_li_4: 预付款-全款。收全款以后发货

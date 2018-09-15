@@ -4,7 +4,11 @@
     justify-content: space-between;
 
     max-width: 512px;
-    margin-top: 20px;
+    margin-top: 30px;
+    @media (max-width: 800px) {
+            max-width: 100%;
+    }
+
 
     a {
         text-decoration: none;
@@ -15,6 +19,9 @@
             justify-content: center;
 
             width: 240px;
+            @media (max-width: 800px) {
+                  width: 100%;
+            }
             min-height: 55px;
 
             cursor: pointer;
@@ -60,11 +67,11 @@
 }
 .contactsInnerWrapper {
     display: flex;
-    overflow: scroll;
+    overflow: auto;
     flex-flow: column nowrap;
 
     width: 100%;
-    padding: 91px 25px 0;
+    padding: 110px 25px 0;
 
     background-color: #EEEDE7;
 
@@ -82,7 +89,7 @@
         font-weight: 700;
 
         position: absolute;
-        top: -50px;
+        top: -66px;
         left: 110px;
         padding-bottom: 1px;
         border-bottom: 1px solid #000;
@@ -118,8 +125,8 @@
 
         width: auto;
         min-height: 55px;
-        margin-top: 39px;
-        margin-bottom: 60px;
+        margin-top: 43px;
+        margin-bottom: 10px;
 
         cursor: pointer;
         letter-spacing: 1.5px;
@@ -194,7 +201,8 @@
 
         width: 100vw;
         height: 45px;
-        margin-left: calc(-50vw  50%);
+        //margin-left: calc(-50vw  50%);
+        margin: 60px -25px 0;
         padding: 0 25px;
 
         letter-spacing: 0.75px;
@@ -267,8 +275,8 @@
             .descriptionCommon {
                 letter-spacing: 1.1px;
 
-                font-size: 10px;
-                line-height: 15px;
+                font-size: 12px;
+                line-height: 16px;
             }
 
             .wannaVisit {
@@ -304,7 +312,7 @@
 
         .contactsInnerWrapper {
             overflow: hidden;
-            
+
             .wannaVisit {
                 padding-top: 54px;
             }
@@ -317,7 +325,7 @@
         padding-left: 300px;
 
         .contactsInnerWrapper {
-            padding: 106px 58px 45px;
+            padding: 106px 59px 45px;
         }
     }
 }

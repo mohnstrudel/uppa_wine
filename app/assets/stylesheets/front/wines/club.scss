@@ -1,9 +1,9 @@
 .clubOuterWrapper {
-    
+
     .clubInnerWrapper {
         display: flex;
         flex-flow: column nowrap;
-
+        position: relative;
         width: 100%;
         padding: 91px 25px 0;
 
@@ -21,10 +21,9 @@
             letter-spacing: 1px;
             line-height: 13px;
             font-weight: 700;
-
             position: absolute;
-            top: -50px;
-            left: 110px;
+            top: 40px;
+            left: 60px;
             padding-bottom: 1px;
             border-bottom: 1px solid #000;
         }
@@ -131,11 +130,11 @@
                     background-size: cover;
                 }
             }
-            
+
             .downloadForm:hover {
                 color: #EEEDE7;
                 background-color: #1A1A1A;
-                
+
                 animation: slowly 0.2s;
 
                 @keyframes slowly {
@@ -144,7 +143,7 @@
                     }
                 }
             }
-            
+
             .downloadForm:hover > .arrowSmallRight {
                 background-image: asset-url('arrow/arrow_small_right_white.svg');
             }
@@ -191,35 +190,35 @@
 
         height: 100%;
         padding-left: 50px;
-        
-        
+
+
         .clubInnerWrapper {
             min-width: 50%;
-            
+
             padding-left: 60px;
             padding-right: 60px;
             padding-bottom: 45px;
-            
+
             .headerCommon {
                 font-size: 34px;
                 color: #1A1A1A;
                 letter-spacing: 0.55px;
                 line-height: 41px;
             }
-            
+
             .descriptionCommon {
-                font-size: 10px;
+                font-size: 12px;
                 color: #000000;
                 letter-spacing: 1.1px;
-                line-height: 15px;
-                
+                line-height: 16px;
+
                 padding-bottom: 40px;
             }
-            
+
             .possibilities {
                 padding-bottom: 11px;
             }
-            
+
             ol {
                 li {
                     font-size: 10px;
@@ -228,23 +227,23 @@
                     line-height: 15px;
                 }
             }
-            
+
             .toUppaClub {
                 display: table;
-                position: relative;
+                //position: relative;
 
-                left: 0;
+              //  left: 0;
             }
-            
+
             .footerClub {
                 display: none;
             }
-            
+
             .grapeBerriesPicture {
                 display: none;
             }
         }
-        
+
         .grapeBerriesBig {
             display: flex;
             background-image: asset-url('grape_berries_big.png');

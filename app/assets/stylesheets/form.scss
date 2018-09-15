@@ -26,14 +26,16 @@
   margin: 0;
 
   height: 50px;
-  width: 400px;
+  width: 100%;
   font-family: 'Basis Grotesque Pro';
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
   margin-bottom: 15px;
   color: #4c4947;
   font-size: 12px;
 }
+
+
 
 .contact_form input[type=text]{
   background-color: #dcd7d1;
@@ -41,8 +43,28 @@
 }
 
 .contact_form input[type=submit]{
-  width: 240px;
+  //width: 240px;
   border: 1px solid black;
+  text-transform: uppercase;
+  font-size:10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.contact_form input[type=submit]:hover {
+color: #EEEDE7;
+background-color: #1A1A1A;
+animation: slowly 0.2s;
+cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .contact_form input{
+    //width: 300px;
+  }
+  .contact_form input[type=submit]{
+    width: 100%;
+  }
 }
 
 .contact_form textarea{
@@ -52,4 +74,7 @@
   font-family: 'Basis Grotesque Pro';
   font-weight: 300;
   font-style: normal;
+  color: red;
+  font-size: 12px;
+    letter-spacing: 1.5px;
 }
