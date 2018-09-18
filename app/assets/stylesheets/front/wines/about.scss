@@ -380,11 +380,23 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 430px) {
     .slickContainer {
       width: 100vw;
     }
     .slickTextContainer {
-      margin-left: calc(-50vw + 50%);
+      margin-left: calc(-55vw + 50%);
     }
+}
+@media (max-width: 635px) {
+.sliderArrow{
+  opacity: 0;
+}
+}
+@media (max-width: 530px) {
+  @media (min-width: 425px) {
+    .slickTextContainer {
+      display: none;
+    }
+  }
 }

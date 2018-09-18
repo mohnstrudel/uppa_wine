@@ -40,7 +40,7 @@ module FrontHelper
         if is_showing_black_menu
             render partial: '/front/navigation/menu', locals: { is_black: true }
         else
-            render partial: '/front/navigation/menu'
+            render partial: '/front/navigation/menu', locals: { is_black: true }
         end
     end
 end
