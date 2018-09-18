@@ -4,31 +4,31 @@
   .contactsInnerWrapper
     %a.toContacts{:href => "#"}=t('static.contacts.toContacts')
     %h2.headerCommon=t('static.contacts.how_to_get_there')
-    
+
     %h3.titleCommon=t('static.contacts.sales_department')
     %p.descriptionCommon="#{link_to @setting.sales_phone, 'tel:'+@clean_sales_phone} - #{@setting.sales_name}".html_safe
     %p.descriptionCommon=link_to @setting.sales_email, "mailto:#{@setting.sales_email}".html_safe
-    
+
     %h3.titleCommon=t('static.contacts.visit')
     %p.descriptionCommon="#{link_to @setting.visit_phone, 'tel:'+@clean_visit_phone} - #{@setting.visit_name}".html_safe
     %p.descriptionCommon=link_to @setting.visit_email, "mailto:#{@setting.visit_email}".html_safe
-    
+
     %h3.titleCommon=t('static.contacts.address')
     %p.descriptionCommon=t('static.contacts.full_address')
     %h3.titleCommon=t('static.contacts.gps')
     %p.descriptionCommon N 44 33 676
     %p.descriptionCommon E 33 45 182
-    
+
     %h3.titleCommon=t('static.contacts.postal')
     %p.descriptionCommon=t('static.contacts.postal_full_address')
-    
+
     %a{:href => "https://goo.gl/maps/i9bAEjpwgLL2"}
       .showMap
         =t('static.contacts.show_map')
         .arrowSmallRight
 
     .aboutButtonsWrapper
-      =link_to root_url+'logo.eps', target: "_blank" do
+      =link_to root_url+'Uppa_logo.zip', target: "_blank" do
         .downloadLogo.aboutButton
           =t('static.contacts.download_logo')
           .arrowSmallRight

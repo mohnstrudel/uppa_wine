@@ -33,7 +33,8 @@
         padding-bottom: 40px;
 
         letter-spacing: 0.45px;
-
+        top: -10PX;
+        position: relative;
         color: #000000;
 
         font-family: $serifFamily;
@@ -147,6 +148,9 @@
     }
 }
 
+@media (max-width: 800px) {
+          padding-top: 25px;
+}
 @media (min-width: 800px) {
     .visitInnerWrapper {
         padding: 87px 86px 0;
